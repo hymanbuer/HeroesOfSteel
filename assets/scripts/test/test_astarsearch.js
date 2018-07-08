@@ -12,8 +12,8 @@ cc.Class({
 
     start () {
         try {
-            const n = 200;
-            const m = 20;
+            const n = 50;
+            const m = 50;
             const grids = [];
             for (let y = 0; y < n; ++y) {
                 for (let x = 0; x < n; ++x) {
@@ -36,15 +36,19 @@ cc.Class({
 
             cc.log('-------- ------ --------');
             const start = graph.grid2index(0, 0);
-            const target = graph.grid2index(m-1, m-1);
-            cc.log(start, target);
 
             const search = function () {
+                const k = 10 + Math.floor((n - 10) * Math.random()) % n
+                const target = graph.grid2index(k-1, k-1);
+                const targetNode = graph.getNodeByIndex(target);
+                cc.log(start, target, k, targetNode);
+
                 let sTime = performance ? performance.now() : new Date().getTime();
                 cc.log('--- search: ', astar.search(start, target));
                 let fTime = performance ? performance.now() : new Date().getTime();
                 cc.log('--- time: ', (fTime-sTime).toFixed(2));
                 cc.log(astar.path());
+                cc.log('-------- ------ --------');
             }
             this._search = search;
         } catch (error) {

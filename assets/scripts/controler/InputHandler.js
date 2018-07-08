@@ -42,6 +42,7 @@ class ScaleGestureHandler extends BaseHandler {
         const touches = event.getTouches();
         if (touches.length < 2) return;
 
+        event.stopPropagationImmediate();
         const touch1 = touches[0], touch2 = touches[1];
         const previous1 = touch1.getPreviousLocation(), previous2 = touch2.getPreviousLocation();
         const current1 = touch1.getLocation(), current2 = touch2.getLocation();
@@ -57,10 +58,12 @@ class ScaleGestureHandler extends BaseHandler {
 class DragGestureHandler extends BaseHandler {
     onEvents () {
         this.inputComp.node.on('touchmove', this.onTouchMove, this);
+        this.inputComp.node.on('touchend', this.onTouchEnd, this);
     }
 
     offEvents () {
         this.inputComp.node.off('touchmove', this.onTouchMove, this);
+        this.inputComp.node.off('touchend', this.onTouchEnd, this);
     }
 
     onTouchMove (event) {
@@ -70,7 +73,33 @@ class DragGestureHandler extends BaseHandler {
         const delta = touches[0].getDelta();
         if (cc.pLengthSQ(delta) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             this.inputComp.moveWorld(cc.pNeg(delta));
+            this.isTriggerMove = true;
         }
+    }
+
+    onTouchEnd (event) {
+        if (this.isTriggerMove) {
+            event.stopPropagationImmediate();
+        }
+        this.isTriggerMove = false;
+    }
+}
+
+class TouchGestureHandler extends BaseHandler {
+    onEvents () {
+        this.inputComp.node.on('touchend', this.onTouchEnd, this);
+    }
+
+    offEvents () {
+        this.inputComp.node.off('touchend', this.onTouchEnd, this);
+    }
+
+    onTouchEnd (event) {
+        const touches = event.getTouches();
+        if (touches.length > 1) return;
+
+        const location = touches[0].getLocation();
+        this.inputComp.touchWorld(location);
     }
 }
 
@@ -85,6 +114,7 @@ cc.Class({
         this.mouseWheelHandler = new MouseWheelHandler(this);
         this.scaleGestureHandler = new ScaleGestureHandler(this);
         this.dragGestureHandler = new DragGestureHandler(this);
+        this.touchGestureHandler = new TouchGestureHandler(this);
     },
 
     scaleWorld (step) {
@@ -96,5 +126,9 @@ cc.Class({
         delta = cc.pMult(delta, 1 / this.camera.zoomRatio);
         this.camera.node.x += delta.x;
         this.camera.node.y += delta.y;
+    },
+
+    touchWorld (screenLocation) {
+        cc.log('touch: ', screenLocation.x, screenLocation.y);
     },
 });

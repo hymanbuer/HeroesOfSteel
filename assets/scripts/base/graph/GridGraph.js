@@ -30,9 +30,9 @@ class GridNode {
 }
 
 function indexes2grids(graph, index1, index2) {
-    const node1 = graph.getNodeByIndex(index1);
-    const node2 = graph.getNodeByIndex(index2);
-    return [node1.x, node1.y, node2.x, node2.y];
+    const grid1 = graph.index2grid(index1);
+    const grid2 = graph.index2grid(index2);
+    return [grid1.x, grid1.y, grid2.x, grid2.y];
 }
 
 class GridGraph {
@@ -85,6 +85,12 @@ class GridGraph {
 
     grid2index (x, y) {
         return y * this._maxColumns + x + 1;
+    }
+
+    index2grid (index) {
+        const x = --index % this._maxColumns;
+        const y = Math.floor(index / this._maxColumns);
+        return {x, y};
     }
 
     getNodeByIndex (index) {
