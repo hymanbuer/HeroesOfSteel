@@ -1,0 +1,18 @@
+monster_jelly.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+jelly_leg
+  rotate: false
+  xy: 2, 2
+  size: 41, 207
+  orig: 41, 207
+  offset: 0, 0
+  index: -1
+jelly_torso
+  rotate: false
+  xy: 45, 2
+  size: 164, 166
+  orig: 164, 166
+  offset: 0, 0
+  index: -1

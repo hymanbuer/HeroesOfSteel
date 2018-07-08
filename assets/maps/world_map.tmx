@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="64" tileheight="64" nextobjectid="26">
+ <tileset firstgid="1" name="worldmap_tileset" tilewidth="64" tileheight="64" tilecount="256" columns="16">
+  <image source="worldmap_tileset.png" width="1024" height="1024"/>
+  <terraintypes>
+   <terrain name="Walls" tile="-1"/>
+   <terrain name="Second" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,0"/>
+  <tile id="1" terrain=",0,,0"/>
+  <tile id="2" terrain="0,0,0,"/>
+  <tile id="3" terrain=",,,0"/>
+  <tile id="4" terrain=",,0,"/>
+  <tile id="5" terrain="0,,0,"/>
+  <tile id="16" terrain=",0,0,0"/>
+  <tile id="17" terrain=",0,,0"/>
+  <tile id="18" terrain=",,0,0"/>
+  <tile id="19" terrain=",,0,0"/>
+  <tile id="20" terrain=",,0,0"/>
+  <tile id="21" terrain="0,,0,"/>
+  <tile id="32" terrain="0,,0,0"/>
+  <tile id="33" terrain=",0,,0"/>
+  <tile id="34" terrain="0,0,,0"/>
+  <tile id="35" terrain=",,,0"/>
+  <tile id="36" terrain=",,0,"/>
+  <tile id="37" terrain="0,,0,"/>
+  <tile id="49" terrain=",0,,"/>
+  <tile id="50" terrain="0,0,,"/>
+  <tile id="51" terrain="0,0,,"/>
+  <tile id="52" terrain="0,0,,"/>
+  <tile id="53" terrain="0,,,"/>
+ </tileset>
+ <layer name="Environment" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt121uwyAMBmAu0LUX2NY17c99RLlQjtaj7Gg1WtAQwsROaIHmfSRrWUUGxoZtxsTtKF4o9hQHZsyz+aA4Tc+vFG8U7xRHZswz+6T4ovim+Cm8Fok1/Rq+y9W4htpza+D6VULzbqk98OeNrWFNv0refWTemv7b4j3de89r+j5lrt9ySdVvbl67Dznu6ZL32r3qJ1Xirvd/9pL6SdbWUVwWre5x7rXH3V/8SsbWdH9K9iMcE34/UN6DYs7S58/R9EJq7NmYq2be1Pmr4W8dLW3+uebNqY98FlubPefnIDS9X4Jbc8fUqfcixu2D5o6rhV2zqw99vU71GsNxXO7uc3vHtZa7FTublMfoepfrCZtvSz0eM9evtrauJ2JnOnUmajT9Hh7ts9/3HD+/nona+ffxYP57e0m/tpKzI6mxVEt5Wzlzbw1y36Yt535R/o8JAAAAAAAAAAAAAAAAAAAAAAAA+d0ANb8sCw==
+  </data>
+ </layer>
+ <layer name="Background" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztlg1OwzAMhS3YCQYXgCOtO0C19QIt7D45So+GTWKRGpdNU9ICfZ8U9S+qY+f5tUQAgGvs117Aihx4NERh7XV4PPF4rhzjVPn99yL7MlSOsY9xxsphJkhefYrdx+vgzSmdu6el08K5p5jutdZFRo1993S+tPZlz21unHfbpLWkGoxSA7n3wuO1UGwv1yPHsvrb0ZcmD+m6FHP1lhpIbXIflntcq7ZU7DN977U57z+ZY4HY4ZqubS/W8ADVmtI5+08xbvC06nHhd6q3NM7zW7+vvZlTqzelBrv4/jDQvAd68XOPksG500ATD2uPZv4tuUutz0brS3mT9p7F8+W5XHQuP29ZU0H10N2/pkX/ycQbZC/fKPrvAx8f4zm903TPc41rbbrY36Ptly56+efwesOre2nPLc2QvMzL15L7jZzb+uUa0/vWB/466jf5tWpC+0TqKBr0fOA/85t1Xoufcr5saO89mpn/kS3RZN8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2xAf7R1Y9
+  </data>
+ </layer>
+ <layer name="TileStateBeta" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt181Nw0AQhuE58HMGCbjSQiQagA4IDViQBgK4HFA4hhI4bVdw5BsnllCEokVZe3D8PtJoD7HWM57djW0G7KcLs3SuOFNE5xLhWHUfKQ53qP+tYD45DgrOpbpN9ftzGIwns0WpubTuTevf98Fg3EcnEGxesP9DdxKdQCCv3ddC7jOozapPjV8d5tSnqeJ5NS62XTfT7/PVaKfWnJ+p8+Q65j1vz0GNKWcNqO6qu4z619bTjleRyQRS/b4P0sOe9TeX9336z/d0zjvbnfpXl7+vz2uTwvP+lfpT/XZO+xmuszn5+Vxy/X6sx8n63relJt7Bz/fWa8WN9fMu689gqXjv4V7bqL/e6zaanj/GpjQovpc3z7nNc8WvmY3k+6Ae8X9errF/K461/hfFqzX1XwanEqoeaf8BAAAAAAAAAAAAAAAAAPgGfFkz3g==
+  </data>
+ </layer>
+ <layer name="TileStateAlpha" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIA6D1b2FTr2XwEBKQAFBzHQAAAAAAAAAAAAAAAAAA4K0FUJcAog==
+  </data>
+ </layer>
+ <layer name="Label" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt17cOwkAURFHz/59C7AmiJdOSacm0ZKaDBpsV2n1Yvke6BTLymxKiCEjWtB6QUnlV8Pj+m7p7fH+WtVTb8P4j8L26agS+iZeJmlqPSDBS47fPK7UOdPugjl9+t6wqHrfAzUANrUc4qKqa9Yg/0lP9mOcXdXV430Itfxlk7KTOhvdnam5434eiKlmPMLBT+w/PNmobcAvCiP19kgs4BKnUUV3rEUBG8f8SAAAAAAAAAAAAAAAAAABYeQIE7SYT
+  </data>
+ </layer>
+ <objectgroup name="StateBeta">
+  <object id="1" name="737" x="2304" y="256" width="64" height="256"/>
+  <object id="2" name="237" x="1088" y="960" width="256" height="256"/>
+  <object id="3" name="237" x="1344" y="1024" width="320" height="192"/>
+  <object id="4" name="237" x="1664" y="960" width="128" height="128"/>
+  <object id="5" name="655" x="2432" y="512" width="192" height="320"/>
+  <object id="6" name="616" x="2560" y="832" width="192" height="64"/>
+  <object id="7" name="615" x="2560" y="832" width="192" height="64"/>
+  <object id="8" name="946" x="3008" y="960" width="256" height="192"/>
+  <object id="9" name="765" x="2432" y="1216" width="128" height="128"/>
+  <object id="10" name="1020" x="3072" y="640" width="128" height="64"/>
+  <object id="11" name="655" x="2368" y="704" width="64" height="64"/>
+  <object id="12" name="655" x="2624" y="704" width="64" height="64"/>
+  <object id="13" name="616" x="2624" y="896" width="64" height="64"/>
+  <object id="14" name="615" x="2624" y="896" width="64" height="64"/>
+  <object id="15" name="1024" x="3200" y="576" width="128" height="192"/>
+  <object id="16" name="1039" x="3328" y="640" width="64" height="64"/>
+  <object id="17" name="1024" x="3328" y="576" width="64" height="64"/>
+  <object id="18" name="1021" x="2176" y="1216" width="128" height="64"/>
+  <object id="19" name="1090" x="2688" y="768" width="64" height="64"/>
+  <object id="20" name="1090" x="2560" y="896" width="64" height="64"/>
+  <object id="21" name="1155" x="3520" y="128" width="192" height="256"/>
+  <object id="24" name="1283" x="2752" y="1216" width="128" height="64"/>
+  <object id="25" name="1375" x="2880" y="1344" width="256" height="256"/>
+ </objectgroup>
+ <objectgroup name="StateAlpha"/>
+</map>

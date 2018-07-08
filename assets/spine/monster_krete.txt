@@ -1,0 +1,249 @@
+monster_krete.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+chest_veteran
+  rotate: false
+  xy: 2, 260
+  size: 121, 93
+  orig: 121, 93
+  offset: 0, 0
+  index: -1
+chief_chain_out
+  rotate: false
+  xy: 470, 249
+  size: 36, 82
+  orig: 36, 82
+  offset: 0, 0
+  index: -1
+chief_head
+  rotate: false
+  xy: 2, 450
+  size: 88, 118
+  orig: 88, 118
+  offset: 0, 0
+  index: -1
+chief_weapon_chain
+  rotate: false
+  xy: 402, 419
+  size: 43, 107
+  orig: 43, 107
+  offset: 0, 0
+  index: -1
+chief_weapon_chain_out
+  rotate: false
+  xy: 125, 260
+  size: 113, 98
+  orig: 113, 98
+  offset: 0, 0
+  index: -1
+crest
+  rotate: false
+  xy: 92, 525
+  size: 20, 73
+  orig: 20, 73
+  offset: 0, 0
+  index: -1
+crest2
+  rotate: false
+  xy: 92, 450
+  size: 20, 73
+  orig: 20, 73
+  offset: 0, 0
+  index: -1
+haga_chest
+  rotate: false
+  xy: 260, 194
+  size: 208, 223
+  orig: 208, 223
+  offset: 0, 0
+  index: -1
+head_savage
+  rotate: false
+  xy: 345, 419
+  size: 55, 77
+  orig: 55, 77
+  offset: 0, 0
+  index: -1
+head_veteran
+  rotate: false
+  xy: 255, 419
+  size: 88, 101
+  orig: 88, 101
+  offset: 0, 0
+  index: -1
+orc_bicep_left
+  rotate: false
+  xy: 2, 973
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+orc_bicep_right
+  rotate: false
+  xy: 168, 665
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+orc_chest_bare
+  rotate: false
+  xy: 2, 355
+  size: 110, 93
+  orig: 110, 93
+  offset: 0, 0
+  index: -1
+orc_foot_left
+  rotate: false
+  xy: 168, 600
+  size: 34, 63
+  orig: 34, 63
+  offset: 0, 0
+  index: -1
+orc_foot_right
+  rotate: false
+  xy: 204, 360
+  size: 34, 63
+  orig: 34, 63
+  offset: 0, 0
+  index: -1
+orc_forearm_left
+  rotate: false
+  xy: 470, 416
+  size: 35, 81
+  orig: 35, 81
+  offset: 0, 0
+  index: -1
+orc_forearm_right
+  rotate: false
+  xy: 470, 333
+  size: 35, 81
+  orig: 35, 81
+  offset: 0, 0
+  index: -1
+orc_thigh_left
+  rotate: false
+  xy: 447, 499
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+orc_thigh_right
+  rotate: false
+  xy: 345, 498
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+shaman_head
+  rotate: false
+  xy: 114, 360
+  size: 88, 147
+  orig: 88, 147
+  offset: 0, 0
+  index: -1
+shaman_staff
+  rotate: false
+  xy: 92, 600
+  size: 74, 135
+  orig: 74, 135
+  offset: 0, 0
+  index: -1
+shield_veteran
+  rotate: false
+  xy: 204, 425
+  size: 49, 65
+  orig: 49, 65
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 470, 194
+  size: 37, 53
+  orig: 37, 53
+  offset: 0, 0
+  index: -1
+tail_crest
+  rotate: false
+  xy: 68, 708
+  size: 13, 49
+  orig: 13, 49
+  offset: 0, 0
+  index: -1
+tail_crest_flipped
+  rotate: false
+  xy: 240, 370
+  size: 13, 49
+  orig: 13, 49
+  offset: 0, 0
+  index: -1
+tail_end
+  rotate: false
+  xy: 68, 657
+  size: 21, 49
+  orig: 21, 49
+  offset: 0, 0
+  index: -1
+tail_middle
+  rotate: false
+  xy: 382, 528
+  size: 29, 52
+  orig: 29, 52
+  offset: 0, 0
+  index: -1
+tile_arrow_krete
+  rotate: false
+  xy: 240, 260
+  size: 17, 108
+  orig: 17, 108
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_bow
+  rotate: false
+  xy: 2, 570
+  size: 88, 85
+  orig: 88, 85
+  offset: 0, 0
+  index: -1
+weapon_bow_drawn
+  rotate: false
+  xy: 114, 509
+  size: 88, 89
+  orig: 88, 89
+  offset: 0, 0
+  index: -1
+weapon_club
+  rotate: false
+  xy: 2, 657
+  size: 64, 136
+  orig: 64, 136
+  offset: 0, 0
+  index: -1
+weapon_spear
+  rotate: false
+  xy: 2, 795
+  size: 43, 176
+  orig: 43, 176
+  offset: 0, 0
+  index: -1
+weapon_spear_extended
+  rotate: false
+  xy: 204, 492
+  size: 44, 176
+  orig: 44, 176
+  offset: 0, 0
+  index: -1

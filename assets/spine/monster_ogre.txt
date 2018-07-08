@@ -1,0 +1,151 @@
+monster_ogre.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bicep
+  rotate: false
+  xy: 433, 319
+  size: 57, 75
+  orig: 57, 75
+  offset: 0, 0
+  index: -1
+fur
+  rotate: false
+  xy: 59, 309
+  size: 89, 99
+  orig: 89, 99
+  offset: 0, 0
+  index: -1
+fur2
+  rotate: false
+  xy: 410, 166
+  size: 89, 99
+  orig: 89, 99
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 435, 85
+  size: 68, 79
+  orig: 68, 79
+  offset: 0, 0
+  index: -1
+hand_axe
+  rotate: false
+  xy: 133, 410
+  size: 123, 93
+  orig: 123, 93
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 299, 396
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+head_shaman
+  rotate: false
+  xy: 248, 2
+  size: 185, 90
+  orig: 185, 90
+  offset: 0, 0
+  index: -1
+head_warrior
+  rotate: false
+  xy: 150, 309
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+lightning1
+  rotate: false
+  xy: 433, 267
+  size: 58, 50
+  orig: 58, 50
+  offset: 0, 0
+  index: -1
+lightning2
+  rotate: false
+  xy: 258, 394
+  size: 39, 114
+  orig: 39, 114
+  offset: 0, 0
+  index: -1
+lightning3
+  rotate: false
+  xy: 2, 267
+  size: 55, 153
+  orig: 55, 153
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 2, 422
+  size: 63, 81
+  orig: 63, 81
+  offset: 0, 0
+  index: -1
+shoulder
+  rotate: false
+  xy: 435, 2
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+thigh
+  rotate: false
+  xy: 67, 410
+  size: 64, 98
+  orig: 64, 98
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 248, 94
+  size: 160, 138
+  orig: 160, 138
+  offset: 0, 0
+  index: -1
+torso_shaman
+  rotate: false
+  xy: 280, 273
+  size: 151, 113
+  orig: 151, 113
+  offset: 0, 0
+  index: -1
+torso_up
+  rotate: false
+  xy: 67, 194
+  size: 151, 113
+  orig: 151, 113
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_axe
+  rotate: false
+  xy: 232, 273
+  size: 46, 119
+  orig: 46, 119
+  offset: 0, 0
+  index: -1
+weapon_staff
+  rotate: false
+  xy: 2, 194
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+weapon_sword
+  rotate: false
+  xy: 258, 234
+  size: 145, 37
+  orig: 145, 37
+  offset: 0, 0
+  index: -1

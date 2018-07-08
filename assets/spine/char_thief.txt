@@ -1,0 +1,137 @@
+char_thief.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+casting_circle
+  rotate: false
+  xy: 248, 17
+  size: 160, 157
+  orig: 160, 157
+  offset: 0, 0
+  index: -1
+casting_left_forearm
+  rotate: false
+  xy: 248, 176
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 103, 339
+  size: 63, 40
+  orig: 63, 40
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 59, 194
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 410, 118
+  size: 95, 90
+  orig: 95, 90
+  offset: 0, 0
+  index: -1
+head2
+  rotate: false
+  xy: 410, 26
+  size: 95, 90
+  orig: 95, 90
+  offset: 0, 0
+  index: -1
+head_under
+  rotate: false
+  xy: 428, 2
+  size: 70, 22
+  orig: 70, 22
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 59, 237
+  size: 37, 74
+  orig: 37, 74
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 74, 395
+  size: 44, 75
+  orig: 44, 75
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 120, 395
+  size: 30, 74
+  orig: 30, 74
+  offset: 0, 0
+  index: -1
+right_leg_back
+  rotate: false
+  xy: 2, 194
+  size: 55, 194
+  orig: 55, 194
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 2, 395
+  size: 46, 97
+  orig: 46, 97
+  offset: 0, 0
+  index: -1
+shoulder_pad
+  rotate: false
+  xy: 59, 320
+  size: 42, 48
+  orig: 42, 48
+  offset: 0, 0
+  index: -1
+thrown_dagger_tami
+  rotate: false
+  xy: 50, 395
+  size: 22, 90
+  orig: 22, 90
+  offset: 0, 0
+  index: -1
+tile_arrow_tami
+  rotate: false
+  xy: 248, 2
+  size: 178, 13
+  orig: 178, 13
+  offset: 0, 0
+  index: -1
+torso_heavy
+  rotate: false
+  xy: 392, 310
+  size: 116, 83
+  orig: 116, 83
+  offset: 0, 0
+  index: -1
+torso_leaned
+  rotate: false
+  xy: 392, 210
+  size: 116, 98
+  orig: 116, 98
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_bow_extended
+  rotate: false
+  xy: 103, 194
+  size: 119, 143
+  orig: 119, 143
+  offset: 0, 0
+  index: -1

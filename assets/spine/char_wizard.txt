@@ -1,0 +1,158 @@
+char_wizard.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+head_white
+  rotate: false
+  xy: 2, 499
+  size: 131, 133
+  orig: 131, 133
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 216, 403
+  size: 33, 59
+  orig: 33, 59
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 423, 194
+  size: 72, 89
+  orig: 72, 89
+  offset: 0, 0
+  index: -1
+right_bicep
+  rotate: false
+  xy: 407, 376
+  size: 49, 56
+  orig: 49, 56
+  offset: 0, 0
+  index: -1
+right_hand_unarmed
+  rotate: false
+  xy: 189, 464
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 162, 342
+  size: 52, 79
+  orig: 52, 79
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 353
+  size: 131, 144
+  orig: 131, 144
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 135, 423
+  size: 52, 79
+  orig: 52, 79
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 260, 194
+  size: 161, 97
+  orig: 161, 97
+  offset: 0, 0
+  index: -1
+left_thigh
+  rotate: false
+  xy: 423, 285
+  size: 72, 89
+  orig: 72, 89
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 260
+  size: 158, 91
+  orig: 158, 91
+  offset: 0, 0
+  index: -1
+weapon_spell
+  rotate: false
+  xy: 382, 434
+  size: 123, 124
+  orig: 123, 124
+  offset: 0, 0
+  index: -1
+weapon_spell_slash2
+  rotate: false
+  xy: 168, 522
+  size: 116, 87
+  orig: 116, 87
+  offset: 0, 0
+  index: -1
+left_hand
+  rotate: false
+  xy: 162, 260
+  size: 89, 80
+  orig: 89, 80
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: false
+  xy: 216, 342
+  size: 33, 59
+  orig: 33, 59
+  offset: 0, 0
+  index: -1
+waist
+  rotate: false
+  xy: 251, 414
+  size: 129, 106
+  orig: 129, 106
+  offset: 0, 0
+  index: -1
+weapon_spell_slash
+  rotate: false
+  xy: 168, 522
+  size: 116, 87
+  orig: 116, 87
+  offset: 0, 0
+  index: -1
+right_hand
+  rotate: false
+  xy: 135, 504
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 458, 376
+  size: 49, 56
+  orig: 49, 56
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 253, 293
+  size: 152, 119
+  orig: 152, 119
+  offset: 0, 0
+  index: -1

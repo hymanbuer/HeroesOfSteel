@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "952b0638-9f0c-4eae-a1ba-5eebbd874fd0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "HeroesOfSteel.win32 2018-06-20 22-25-31-889": {
+      "ver": "1.0.3",
+      "uuid": "da296503-0812-4d2e-8ba8-1b7376aa1c0c",
+      "rawTextureUuid": "952b0638-9f0c-4eae-a1ba-5eebbd874fd0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 960,
+      "height": 640,
+      "rawWidth": 960,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

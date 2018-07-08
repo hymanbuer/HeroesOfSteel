@@ -1,0 +1,39 @@
+ui_progress.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ui_hud_bar_container_full
+  rotate: false
+  xy: 131, 2
+  size: 362, 38
+  orig: 362, 38
+  offset: 0, 0
+  index: -1
+ui_progress_bar
+  rotate: false
+  xy: 2, 209
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+ui_progress_bar_tick
+  rotate: false
+  xy: 2, 191
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+ui_progress_big_gear
+  rotate: false
+  xy: 2, 2
+  size: 127, 127
+  orig: 127, 127
+  offset: 0, 0
+  index: -1
+ui_progress_small_gear
+  rotate: false
+  xy: 2, 131
+  size: 58, 58
+  orig: 58, 58
+  offset: 0, 0
+  index: -1

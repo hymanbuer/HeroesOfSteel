@@ -1,0 +1,375 @@
+monster_ratkin.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bicep_left
+  rotate: false
+  xy: 44, 885
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+bicep_left_shaman
+  rotate: false
+  xy: 2, 862
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+bicep_right
+  rotate: false
+  xy: 2, 814
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+bicep_right_shaman
+  rotate: false
+  xy: 152, 747
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+blade_chest
+  rotate: false
+  xy: 385, 315
+  size: 117, 78
+  orig: 117, 78
+  offset: 0, 0
+  index: -1
+blade_hand_left
+  rotate: false
+  xy: 2, 731
+  size: 63, 81
+  orig: 63, 81
+  offset: 0, 0
+  index: -1
+blade_hand_right
+  rotate: false
+  xy: 109, 659
+  size: 63, 81
+  orig: 63, 81
+  offset: 0, 0
+  index: -1
+blade_head
+  rotate: false
+  xy: 2, 646
+  size: 75, 83
+  orig: 75, 83
+  offset: 0, 0
+  index: -1
+blade_weapon
+  rotate: false
+  xy: 174, 659
+  size: 21, 86
+  orig: 21, 86
+  offset: 0, 0
+  index: -1
+chain_link
+  rotate: false
+  xy: 356, 514
+  size: 23, 66
+  orig: 23, 66
+  offset: 0, 0
+  index: -1
+chain_uplink
+  rotate: false
+  xy: 355, 582
+  size: 23, 53
+  orig: 23, 53
+  offset: 0, 0
+  index: -1
+chain_weapon
+  rotate: false
+  xy: 2, 915
+  size: 35, 92
+  orig: 35, 92
+  offset: 0, 0
+  index: -1
+chest_great_shaman
+  rotate: false
+  xy: 227, 304
+  size: 128, 78
+  orig: 128, 78
+  offset: 0, 0
+  index: -1
+foot_left
+  rotate: false
+  xy: 79, 933
+  size: 38, 63
+  orig: 38, 63
+  offset: 0, 0
+  index: -1
+foot_right
+  rotate: false
+  xy: 39, 933
+  size: 38, 63
+  orig: 38, 63
+  offset: 0, 0
+  index: -1
+forearm_left
+  rotate: false
+  xy: 119, 961
+  size: 35, 44
+  orig: 35, 44
+  offset: 0, 0
+  index: -1
+forearm_right
+  rotate: false
+  xy: 119, 915
+  size: 35, 44
+  orig: 35, 44
+  offset: 0, 0
+  index: -1
+hand_left
+  rotate: false
+  xy: 79, 685
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+hand_left_elite
+  rotate: false
+  xy: 134, 281
+  size: 91, 85
+  orig: 91, 85
+  offset: 0, 0
+  index: -1
+hand_right
+  rotate: false
+  xy: 79, 646
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+hand_right_dkin_chain
+  rotate: false
+  xy: 296, 616
+  size: 53, 57
+  orig: 53, 57
+  offset: 0, 0
+  index: -1
+hand_right_elite
+  rotate: false
+  xy: 136, 194
+  size: 91, 85
+  orig: 91, 85
+  offset: 0, 0
+  index: -1
+head_bandages
+  rotate: false
+  xy: 197, 656
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+head_dkin_shaman
+  rotate: false
+  xy: 416, 2
+  size: 94, 144
+  orig: 94, 144
+  offset: 0, 0
+  index: -1
+head_elite
+  rotate: false
+  xy: 134, 368
+  size: 84, 103
+  orig: 84, 103
+  offset: 0, 0
+  index: -1
+head_shaman
+  rotate: false
+  xy: 115, 566
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+head_shaman_great
+  rotate: false
+  xy: 2, 539
+  size: 111, 105
+  orig: 111, 105
+  offset: 0, 0
+  index: -1
+head_soldier
+  rotate: false
+  xy: 214, 563
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+head_warrior
+  rotate: false
+  xy: 132, 473
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+lights
+  rotate: false
+  xy: 384, 395
+  size: 126, 84
+  orig: 126, 84
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 335, 491
+  size: 19, 41
+  orig: 19, 41
+  offset: 0, 0
+  index: -1
+tail_switch_left
+  rotate: false
+  xy: 351, 637
+  size: 29, 35
+  orig: 29, 35
+  offset: 0, 0
+  index: -1
+tail_switch_right
+  rotate: false
+  xy: 385, 142
+  size: 29, 35
+  orig: 29, 35
+  offset: 0, 0
+  index: -1
+thigh_left
+  rotate: false
+  xy: 67, 808
+  size: 40, 75
+  orig: 40, 75
+  offset: 0, 0
+  index: -1
+thigh_right
+  rotate: false
+  xy: 67, 731
+  size: 40, 75
+  orig: 40, 75
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 385, 245
+  size: 120, 68
+  orig: 120, 68
+  offset: 0, 0
+  index: -1
+torso_bowrat
+  rotate: false
+  xy: 2, 385
+  size: 128, 76
+  orig: 128, 76
+  offset: 0, 0
+  index: -1
+torso_shaman
+  rotate: false
+  xy: 2, 463
+  size: 128, 74
+  orig: 128, 74
+  offset: 0, 0
+  index: -1
+torso_soldier
+  rotate: false
+  xy: 2, 194
+  size: 132, 64
+  orig: 132, 64
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+warrior_torso
+  rotate: false
+  xy: 385, 179
+  size: 122, 64
+  orig: 122, 64
+  offset: 0, 0
+  index: -1
+weapon_arrow
+  rotate: false
+  xy: 361, 195
+  size: 22, 138
+  orig: 22, 138
+  offset: 0, 0
+  index: -1
+weapon_bow
+  rotate: false
+  xy: 357, 335
+  size: 25, 79
+  orig: 25, 79
+  offset: 0, 0
+  index: -1
+weapon_bow_back
+  rotate: false
+  xy: 335, 384
+  size: 20, 105
+  orig: 20, 105
+  offset: 0, 0
+  index: -1
+weapon_bow_drawn
+  rotate: false
+  xy: 2, 260
+  size: 130, 123
+  orig: 130, 123
+  offset: 0, 0
+  index: -1
+weapon_bow_raised
+  rotate: false
+  xy: 229, 195
+  size: 130, 107
+  orig: 130, 107
+  offset: 0, 0
+  index: -1
+weapon_spell
+  rotate: false
+  xy: 248, 2
+  size: 166, 138
+  orig: 166, 138
+  offset: 0, 0
+  index: -1
+weapon_staff
+  rotate: false
+  xy: 383, 481
+  size: 113, 177
+  orig: 113, 177
+  offset: 0, 0
+  index: -1
+weapon_staff_adv
+  rotate: false
+  xy: 220, 384
+  size: 113, 177
+  orig: 113, 177
+  offset: 0, 0
+  index: -1
+weapon_sword
+  rotate: false
+  xy: 248, 142
+  size: 135, 51
+  orig: 135, 51
+  offset: 0, 0
+  index: -1
+weapon_sword2
+  rotate: false
+  xy: 296, 563
+  size: 57, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+weapon_sword2_swung
+  rotate: false
+  xy: 357, 416
+  size: 24, 96
+  orig: 24, 96
+  offset: 0, 0
+  index: -1
+weapon_sword_raised
+  rotate: false
+  xy: 109, 742
+  size: 41, 171
+  orig: 41, 171
+  offset: 0, 0
+  index: -1

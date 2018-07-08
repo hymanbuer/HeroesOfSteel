@@ -1,0 +1,711 @@
+monster_beasts.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+dwolf_chest
+  rotate: false
+  xy: 900, 2
+  size: 116, 127
+  orig: 116, 127
+  offset: 0, 0
+  index: -1
+dwolf_head
+  rotate: false
+  xy: 723, 429
+  size: 86, 100
+  orig: 86, 100
+  offset: 0, 0
+  index: -1
+dwolf_head_attack
+  rotate: false
+  xy: 811, 518
+  size: 77, 93
+  orig: 77, 93
+  offset: 0, 0
+  index: -1
+dwolf_hips
+  rotate: false
+  xy: 801, 613
+  size: 58, 85
+  orig: 58, 85
+  offset: 0, 0
+  index: -1
+gliz_backclaw_left
+  rotate: false
+  xy: 572, 594
+  size: 37, 96
+  orig: 37, 96
+  offset: 0, 0
+  index: -1
+gliz_backclaw_right
+  rotate: false
+  xy: 853, 227
+  size: 37, 96
+  orig: 37, 96
+  offset: 0, 0
+  index: -1
+gliz_backfoot_left
+  rotate: false
+  xy: 460, 612
+  size: 34, 63
+  orig: 34, 63
+  offset: 0, 0
+  index: -1
+gliz_backfoot_right
+  rotate: false
+  xy: 460, 547
+  size: 34, 63
+  orig: 34, 63
+  offset: 0, 0
+  index: -1
+gliz_backleg_left
+  rotate: false
+  xy: 987, 315
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+gliz_backleg_right
+  rotate: false
+  xy: 987, 253
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+gliz_chest
+  rotate: false
+  xy: 335, 517
+  size: 61, 103
+  orig: 61, 103
+  offset: 0, 0
+  index: -1
+gliz_foreleg_left
+  rotate: false
+  xy: 789, 760
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+gliz_foreleg_right
+  rotate: false
+  xy: 811, 481
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+gliz_head
+  rotate: false
+  xy: 887, 630
+  size: 56, 98
+  orig: 56, 98
+  offset: 0, 0
+  index: -1
+gliz_head_attack
+  rotate: false
+  xy: 235, 424
+  size: 68, 117
+  orig: 68, 117
+  offset: 0, 0
+  index: -1
+gliz_hips
+  rotate: false
+  xy: 572, 536
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+gliz_tail2
+  rotate: false
+  xy: 851, 325
+  size: 39, 55
+  orig: 39, 55
+  offset: 0, 0
+  index: -1
+gliz_tail3
+  rotate: false
+  xy: 824, 760
+  size: 28, 52
+  orig: 28, 52
+  offset: 0, 0
+  index: -1
+grat_backclaw_left
+  rotate: false
+  xy: 457, 264
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+grat_backclaw_right
+  rotate: false
+  xy: 457, 210
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+grat_backleg_left
+  rotate: false
+  xy: 931, 744
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+grat_backleg_right
+  rotate: false
+  xy: 842, 719
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+grat_chest
+  rotate: false
+  xy: 148, 260
+  size: 101, 96
+  orig: 101, 96
+  offset: 0, 0
+  index: -1
+grat_foreclaw_left
+  rotate: false
+  xy: 457, 264
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+grat_foreclaw_right
+  rotate: false
+  xy: 457, 210
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+grat_foreleg_left
+  rotate: false
+  xy: 931, 785
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: -1
+grat_foreleg_right
+  rotate: false
+  xy: 457, 168
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: -1
+grat_head
+  rotate: false
+  xy: 892, 253
+  size: 93, 114
+  orig: 93, 114
+  offset: 0, 0
+  index: -1
+grat_head_attack
+  rotate: false
+  xy: 421, 440
+  size: 75, 105
+  orig: 75, 105
+  offset: 0, 0
+  index: -1
+grat_hips
+  rotate: false
+  xy: 763, 2
+  size: 135, 101
+  orig: 135, 101
+  offset: 0, 0
+  index: -1
+grat_tail
+  rotate: false
+  xy: 624, 432
+  size: 74, 38
+  orig: 74, 38
+  offset: 0, 0
+  index: -1
+grat_tail_switch
+  rotate: false
+  xy: 425, 400
+  size: 74, 38
+  orig: 74, 38
+  offset: 0, 0
+  index: -1
+hellhund_head
+  rotate: false
+  xy: 892, 452
+  size: 87, 81
+  orig: 87, 81
+  offset: 0, 0
+  index: -1
+hellhund_head_attack
+  rotate: false
+  xy: 148, 358
+  size: 85, 116
+  orig: 85, 116
+  offset: 0, 0
+  index: -1
+hog_chest
+  rotate: false
+  xy: 625, 194
+  size: 112, 101
+  orig: 112, 101
+  offset: 0, 0
+  index: -1
+hog_front_fore_left
+  rotate: false
+  xy: 597, 372
+  size: 24, 54
+  orig: 24, 54
+  offset: 0, 0
+  index: -1
+hog_front_fore_right
+  rotate: false
+  xy: 597, 316
+  size: 24, 54
+  orig: 24, 54
+  offset: 0, 0
+  index: -1
+hog_head
+  rotate: false
+  xy: 625, 297
+  size: 96, 133
+  orig: 96, 133
+  offset: 0, 0
+  index: -1
+hog_hips
+  rotate: false
+  xy: 624, 472
+  size: 72, 81
+  orig: 72, 81
+  offset: 0, 0
+  index: -1
+hund_back_fore_left
+  rotate: false
+  xy: 819, 372
+  size: 30, 46
+  orig: 30, 46
+  offset: 0, 0
+  index: -1
+hund_back_fore_right
+  rotate: false
+  xy: 819, 324
+  size: 30, 46
+  orig: 30, 46
+  offset: 0, 0
+  index: -1
+hund_back_thigh_left
+  rotate: false
+  xy: 760, 584
+  size: 39, 51
+  orig: 39, 51
+  offset: 0, 0
+  index: -1
+hund_back_thigh_right
+  rotate: false
+  xy: 760, 531
+  size: 39, 51
+  orig: 39, 51
+  offset: 0, 0
+  index: -1
+hund_chest
+  rotate: false
+  xy: 739, 227
+  size: 112, 95
+  orig: 112, 95
+  offset: 0, 0
+  index: -1
+hund_front_fore_left
+  rotate: false
+  xy: 861, 666
+  size: 24, 51
+  orig: 24, 51
+  offset: 0, 0
+  index: -1
+hund_front_fore_right
+  rotate: false
+  xy: 861, 613
+  size: 24, 51
+  orig: 24, 51
+  offset: 0, 0
+  index: -1
+hund_front_thigh_left
+  rotate: false
+  xy: 975, 725
+  size: 34, 46
+  orig: 34, 46
+  offset: 0, 0
+  index: -1
+hund_front_thigh_right
+  rotate: false
+  xy: 975, 677
+  size: 34, 46
+  orig: 34, 46
+  offset: 0, 0
+  index: -1
+hund_head
+  rotate: false
+  xy: 892, 369
+  size: 87, 81
+  orig: 87, 81
+  offset: 0, 0
+  index: -1
+hund_head_attack
+  rotate: false
+  xy: 339, 329
+  size: 84, 89
+  orig: 84, 89
+  offset: 0, 0
+  index: -1
+hund_hips
+  rotate: false
+  xy: 498, 516
+  size: 72, 78
+  orig: 72, 78
+  offset: 0, 0
+  index: -1
+icewolf_back_fore_left
+  rotate: false
+  xy: 305, 540
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+icewolf_back_fore_right
+  rotate: false
+  xy: 305, 482
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+icewolf_back_thigh_left
+  rotate: false
+  xy: 583, 482
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+icewolf_back_thigh_right
+  rotate: false
+  xy: 583, 428
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+icewolf_chest
+  rotate: false
+  xy: 507, 194
+  size: 116, 120
+  orig: 116, 120
+  offset: 0, 0
+  index: -1
+icewolf_front_fore_left
+  rotate: false
+  xy: 425, 329
+  size: 28, 59
+  orig: 28, 59
+  offset: 0, 0
+  index: -1
+icewolf_front_fore_right
+  rotate: false
+  xy: 819, 420
+  size: 28, 59
+  orig: 28, 59
+  offset: 0, 0
+  index: -1
+icewolf_front_thigh_left
+  rotate: false
+  xy: 854, 790
+  size: 24, 50
+  orig: 24, 50
+  offset: 0, 0
+  index: -1
+icewolf_head
+  rotate: false
+  xy: 251, 329
+  size: 86, 93
+  orig: 86, 93
+  offset: 0, 0
+  index: -1
+icewolf_head_attack
+  rotate: false
+  xy: 339, 420
+  size: 80, 95
+  orig: 80, 95
+  offset: 0, 0
+  index: -1
+icewolf_hips
+  rotate: false
+  xy: 496, 596
+  size: 58, 85
+  orig: 58, 85
+  offset: 0, 0
+  index: -1
+icewolf_tail
+  rotate: false
+  xy: 978, 541
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+icewolf_tail2
+  rotate: false
+  xy: 981, 459
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+tail_crest
+  rotate: false
+  xy: 492, 153
+  size: 13, 49
+  orig: 13, 49
+  offset: 0, 0
+  index: -1
+tail_crest_flipped
+  rotate: false
+  xy: 492, 102
+  size: 13, 49
+  orig: 13, 49
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 517, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+werewolf_bicep_left
+  rotate: false
+  xy: 967, 773
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+werewolf_bicep_right
+  rotate: false
+  xy: 878, 730
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+werewolf_chest
+  rotate: false
+  xy: 2, 349
+  size: 144, 87
+  orig: 144, 87
+  offset: 0, 0
+  index: -1
+werewolf_hand_left
+  rotate: false
+  xy: 730, 697
+  size: 57, 112
+  orig: 57, 112
+  offset: 0, 0
+  index: -1
+werewolf_hand_right
+  rotate: false
+  xy: 671, 692
+  size: 57, 112
+  orig: 57, 112
+  offset: 0, 0
+  index: -1
+werewolf_head
+  rotate: false
+  xy: 723, 324
+  size: 94, 103
+  orig: 94, 103
+  offset: 0, 0
+  index: -1
+werewolf_tail
+  rotate: false
+  xy: 849, 436
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+wolf_back_fore_left
+  rotate: false
+  xy: 305, 424
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+wolf_back_fore_right
+  rotate: false
+  xy: 305, 424
+  size: 28, 56
+  orig: 28, 56
+  offset: 0, 0
+  index: -1
+wolf_back_thigh_left
+  rotate: false
+  xy: 978, 623
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+wolf_back_thigh_right
+  rotate: false
+  xy: 851, 382
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+wolf_chest
+  rotate: false
+  xy: 893, 131
+  size: 116, 120
+  orig: 116, 120
+  offset: 0, 0
+  index: -1
+wolf_front_fore_left
+  rotate: false
+  xy: 945, 687
+  size: 28, 55
+  orig: 28, 55
+  offset: 0, 0
+  index: -1
+wolf_front_fore_right
+  rotate: false
+  xy: 945, 630
+  size: 28, 55
+  orig: 28, 55
+  offset: 0, 0
+  index: -1
+wolf_front_thigh_left
+  rotate: false
+  xy: 789, 795
+  size: 24, 50
+  orig: 24, 50
+  offset: 0, 0
+  index: -1
+wolf_front_thigh_right
+  rotate: false
+  xy: 789, 795
+  size: 24, 50
+  orig: 24, 50
+  offset: 0, 0
+  index: -1
+wolf_head
+  rotate: false
+  xy: 890, 535
+  size: 86, 93
+  orig: 86, 93
+  offset: 0, 0
+  index: -1
+wolf_head_attack
+  rotate: false
+  xy: 501, 421
+  size: 80, 93
+  orig: 80, 93
+  offset: 0, 0
+  index: -1
+wolf_hips
+  rotate: false
+  xy: 611, 634
+  size: 58, 85
+  orig: 58, 85
+  offset: 0, 0
+  index: -1
+wolf_tail
+  rotate: false
+  xy: 981, 377
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+wolf_tail2
+  rotate: false
+  xy: 457, 318
+  size: 41, 80
+  orig: 41, 80
+  offset: 0, 0
+  index: -1
+wolfken_bicep_left
+  rotate: false
+  xy: 789, 700
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+wolfken_bicep_right
+  rotate: false
+  xy: 748, 637
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+wolfken_chest
+  rotate: false
+  xy: 763, 105
+  size: 128, 120
+  orig: 128, 120
+  offset: 0, 0
+  index: -1
+wolfken_front_fore_left
+  rotate: false
+  xy: 698, 531
+  size: 60, 80
+  orig: 60, 80
+  offset: 0, 0
+  index: -1
+wolfken_front_fore_right
+  rotate: false
+  xy: 398, 547
+  size: 60, 80
+  orig: 60, 80
+  offset: 0, 0
+  index: -1
+wolfken_head
+  rotate: false
+  xy: 501, 316
+  size: 94, 103
+  orig: 94, 103
+  offset: 0, 0
+  index: -1
+wolfken_shaman_chest
+  rotate: false
+  xy: 2, 260
+  size: 144, 87
+  orig: 144, 87
+  offset: 0, 0
+  index: -1
+wolfken_shaman_hand_left
+  rotate: false
+  xy: 686, 613
+  size: 60, 77
+  orig: 60, 77
+  offset: 0, 0
+  index: -1
+wolfken_shaman_hand_right
+  rotate: false
+  xy: 624, 555
+  size: 60, 77
+  orig: 60, 77
+  offset: 0, 0
+  index: -1
+wolfken_shaman_head
+  rotate: false
+  xy: 260, 168
+  size: 195, 159
+  orig: 195, 159
+  offset: 0, 0
+  index: -1
+wolfken_shaman_staff
+  rotate: false
+  xy: 260, 102
+  size: 230, 64
+  orig: 230, 64
+  offset: 0, 0
+  index: -1
+wolfken_shaman_staff_glowing
+  rotate: false
+  xy: 260, 2
+  size: 255, 98
+  orig: 255, 98
+  offset: 0, 0
+  index: -1

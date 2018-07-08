@@ -1,0 +1,851 @@
+monster_human_ninja.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bloodlace_breasts
+  rotate: false
+  xy: 628, 478
+  size: 95, 46
+  orig: 95, 46
+  offset: 0, 0
+  index: -1
+evesse_bicep_left
+  rotate: false
+  xy: 643, 857
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+rav_flame_8b
+  rotate: false
+  xy: 292, 910
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+ryethin_cape
+  rotate: false
+  xy: 491, 109
+  size: 173, 250
+  orig: 173, 250
+  offset: 0, 0
+  index: -1
+druid_cape
+  rotate: false
+  xy: 711, 852
+  size: 107, 98
+  orig: 107, 98
+  offset: 0, 0
+  index: -1
+rav_flame_5b
+  rotate: false
+  xy: 482, 459
+  size: 144, 94
+  orig: 144, 94
+  offset: 0, 0
+  index: -1
+metal_fleg_right2
+  rotate: false
+  xy: 843, 669
+  size: 49, 21
+  orig: 49, 21
+  offset: 0, 0
+  index: -1
+ryethin_right_foot
+  rotate: false
+  xy: 238, 964
+  size: 40, 83
+  orig: 40, 83
+  offset: 0, 0
+  index: -1
+metal_lleg_left2
+  rotate: false
+  xy: 140, 895
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+ravenna_sword
+  rotate: false
+  xy: 248, 2
+  size: 241, 107
+  orig: 241, 107
+  offset: 0, 0
+  index: -1
+bloodlace_forearm_left
+  rotate: false
+  xy: 670, 942
+  size: 33, 59
+  orig: 33, 59
+  offset: 0, 0
+  index: -1
+ravenna_head
+  rotate: false
+  xy: 666, 109
+  size: 62, 111
+  orig: 62, 111
+  offset: 0, 0
+  index: -1
+barnett_torso
+  rotate: false
+  xy: 248, 232
+  size: 161, 98
+  orig: 161, 98
+  offset: 0, 0
+  index: -1
+ravenna_train
+  rotate: false
+  xy: 730, 126
+  size: 173, 250
+  orig: 173, 250
+  offset: 0, 0
+  index: -1
+ravenna_claw
+  rotate: false
+  xy: 223, 643
+  size: 141, 55
+  orig: 141, 55
+  offset: 0, 0
+  index: -1
+druid_cape_winter
+  rotate: false
+  xy: 602, 757
+  size: 107, 98
+  orig: 107, 98
+  offset: 0, 0
+  index: -1
+ryethin_left_thigh
+  rotate: false
+  xy: 188, 964
+  size: 48, 89
+  orig: 48, 89
+  offset: 0, 0
+  index: -1
+crone_chest
+  rotate: false
+  xy: 720, 627
+  size: 121, 76
+  orig: 121, 76
+  offset: 0, 0
+  index: -1
+crone_fake_head
+  rotate: false
+  xy: 165, 194
+  size: 81, 88
+  orig: 81, 88
+  offset: 0, 0
+  index: -1
+evesse_right_foot
+  rotate: false
+  xy: 141, 785
+  size: 50, 64
+  orig: 50, 64
+  offset: 0, 0
+  index: -1
+rave_flame_3a
+  rotate: false
+  xy: 877, 909
+  size: 102, 81
+  orig: 102, 81
+  offset: 0, 0
+  index: -1
+druid_left_thigh
+  rotate: false
+  xy: 602, 857
+  size: 39, 81
+  orig: 39, 81
+  offset: 0, 0
+  index: -1
+ryethin_left_forearm
+  rotate: false
+  xy: 820, 887
+  size: 55, 84
+  orig: 55, 84
+  offset: 0, 0
+  index: -1
+tevensa_arm_casting
+  rotate: false
+  xy: 894, 457
+  size: 125, 152
+  orig: 125, 152
+  offset: 0, 0
+  index: -1
+cult_head_norm
+  rotate: false
+  xy: 2, 827
+  size: 97, 112
+  orig: 97, 112
+  offset: 0, 0
+  index: -1
+evesse_left_foot
+  rotate: false
+  xy: 303, 844
+  size: 50, 64
+  orig: 50, 64
+  offset: 0, 0
+  index: -1
+evesse_cape
+  rotate: false
+  xy: 371, 556
+  size: 107, 98
+  orig: 107, 98
+  offset: 0, 0
+  index: -1
+bloodlace_torso
+  rotate: false
+  xy: 894, 611
+  size: 125, 59
+  orig: 125, 59
+  offset: 0, 0
+  index: -1
+conduit_blade
+  rotate: false
+  xy: 228, 464
+  size: 144, 76
+  orig: 144, 76
+  offset: 0, 0
+  index: -1
+right_hand
+  rotate: false
+  xy: 627, 1003
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+conduit_cast
+  rotate: false
+  xy: 725, 378
+  size: 167, 163
+  orig: 167, 163
+  offset: 0, 0
+  index: -1
+rav_flame_5a
+  rotate: false
+  xy: 394, 384
+  size: 86, 87
+  orig: 86, 87
+  offset: 0, 0
+  index: -1
+evesse_torso
+  rotate: false
+  xy: 715, 705
+  size: 120, 72
+  orig: 120, 72
+  offset: 0, 0
+  index: -1
+tevensa_chest
+  rotate: false
+  xy: 480, 708
+  size: 120, 72
+  orig: 120, 72
+  offset: 0, 0
+  index: -1
+rav_flame_2b
+  rotate: false
+  xy: 628, 602
+  size: 90, 61
+  orig: 90, 61
+  offset: 0, 0
+  index: -1
+ryethin_head
+  rotate: false
+  xy: 358, 780
+  size: 98, 112
+  orig: 98, 112
+  offset: 0, 0
+  index: -1
+agent_blade
+  rotate: false
+  xy: 482, 555
+  size: 144, 76
+  orig: 144, 76
+  offset: 0, 0
+  index: -1
+evesse_bicep_right
+  rotate: false
+  xy: 557, 914
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+conduit_head
+  rotate: false
+  xy: 458, 782
+  size: 97, 95
+  orig: 97, 95
+  offset: 0, 0
+  index: -1
+bloodlace_forearm_right
+  rotate: false
+  xy: 635, 942
+  size: 33, 59
+  orig: 33, 59
+  offset: 0, 0
+  index: -1
+druid_shoulder_right
+  rotate: false
+  xy: 739, 952
+  size: 29, 40
+  orig: 29, 40
+  offset: 0, 0
+  index: -1
+cult_casting
+  rotate: false
+  xy: 236, 332
+  size: 156, 130
+  orig: 156, 130
+  offset: 0, 0
+  index: -1
+bloodlace_right_foot
+  rotate: false
+  xy: 602, 633
+  size: 24, 50
+  orig: 24, 50
+  offset: 0, 0
+  index: -1
+evesse_forearm_left
+  rotate: false
+  xy: 859, 606
+  size: 33, 61
+  orig: 33, 61
+  offset: 0, 0
+  index: -1
+conduit_chest
+  rotate: false
+  xy: 2, 194
+  size: 161, 98
+  orig: 161, 98
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+evesse_hair
+  rotate: false
+  xy: 905, 333
+  size: 112, 122
+  orig: 112, 122
+  offset: 0, 0
+  index: -1
+cult_right_handblades
+  rotate: false
+  xy: 200, 700
+  size: 101, 73
+  orig: 101, 73
+  offset: 0, 0
+  index: -1
+ravenna_bicep
+  rotate: false
+  xy: 557, 957
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+druid_shoulder_left
+  rotate: false
+  xy: 770, 952
+  size: 29, 40
+  orig: 29, 40
+  offset: 0, 0
+  index: -1
+bloodlace_skirt1
+  rotate: false
+  xy: 557, 848
+  size: 43, 64
+  orig: 43, 64
+  offset: 0, 0
+  index: -1
+ryethin_right_thigh
+  rotate: false
+  xy: 292, 950
+  size: 48, 89
+  orig: 48, 89
+  offset: 0, 0
+  index: -1
+thigh_left_scaled
+  rotate: false
+  xy: 303, 772
+  size: 53, 70
+  orig: 53, 70
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 143, 1010
+  size: 40, 83
+  orig: 40, 83
+  offset: 0, 0
+  index: -1
+laranda_torso
+  rotate: false
+  xy: 905, 154
+  size: 115, 70
+  orig: 115, 70
+  offset: 0, 0
+  index: -1
+druid_underhair
+  rotate: false
+  xy: 366, 656
+  size: 112, 122
+  orig: 112, 122
+  offset: 0, 0
+  index: -1
+cult_left_handblades
+  rotate: false
+  xy: 200, 775
+  size: 101, 73
+  orig: 101, 73
+  offset: 0, 0
+  index: -1
+bloodlace_skirt2
+  rotate: false
+  xy: 557, 782
+  size: 43, 64
+  orig: 43, 64
+  offset: 0, 0
+  index: -1
+evesse_forearm_right
+  rotate: false
+  xy: 859, 543
+  size: 33, 61
+  orig: 33, 61
+  offset: 0, 0
+  index: -1
+rav_flame_2a
+  rotate: false
+  xy: 628, 526
+  size: 91, 74
+  orig: 91, 74
+  offset: 0, 0
+  index: -1
+bloodlace_left_foot
+  rotate: false
+  xy: 995, 821
+  size: 24, 50
+  orig: 24, 50
+  offset: 0, 0
+  index: -1
+crone_fake_chest
+  rotate: false
+  xy: 480, 633
+  size: 120, 73
+  orig: 120, 73
+  offset: 0, 0
+  index: -1
+metal_fleg_right1
+  rotate: false
+  xy: 843, 669
+  size: 49, 21
+  orig: 49, 21
+  offset: 0, 0
+  index: -1
+rav_flame_7b
+  rotate: false
+  xy: 2, 649
+  size: 139, 97
+  orig: 139, 97
+  offset: 0, 0
+  index: -1
+ravenna_chest
+  rotate: false
+  xy: 894, 747
+  size: 119, 72
+  orig: 119, 72
+  offset: 0, 0
+  index: -1
+bloodlace_left_leg
+  rotate: false
+  xy: 981, 986
+  size: 41, 75
+  orig: 41, 75
+  offset: 0, 0
+  index: -1
+cult_host_torso
+  rotate: false
+  xy: 248, 111
+  size: 161, 119
+  orig: 161, 119
+  offset: 0, 0
+  index: -1
+rav_flame_4b
+  rotate: false
+  xy: 482, 361
+  size: 145, 96
+  orig: 145, 96
+  offset: 0, 0
+  index: -1
+metal_lleg_right1
+  rotate: false
+  xy: 140, 851
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+cult_right_foot
+  rotate: false
+  xy: 593, 982
+  size: 32, 61
+  orig: 32, 61
+  offset: 0, 0
+  index: -1
+weapon_staff
+  rotate: false
+  xy: 928, 2
+  size: 94, 150
+  orig: 94, 150
+  offset: 0, 0
+  index: -1
+left_hand
+  rotate: false
+  xy: 660, 1003
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+agent_chest
+  rotate: false
+  xy: 2, 294
+  size: 161, 98
+  orig: 161, 98
+  offset: 0, 0
+  index: -1
+metal_fleg_left1
+  rotate: false
+  xy: 843, 692
+  size: 49, 21
+  orig: 49, 21
+  offset: 0, 0
+  index: -1
+druid_head
+  rotate: false
+  xy: 165, 284
+  size: 69, 88
+  orig: 69, 88
+  offset: 0, 0
+  index: -1
+thigh_right_scaled
+  rotate: false
+  xy: 303, 700
+  size: 53, 70
+  orig: 53, 70
+  offset: 0, 0
+  index: -1
+bloodlace_bicep_right
+  rotate: false
+  xy: 643, 900
+  size: 37, 40
+  orig: 37, 40
+  offset: 0, 0
+  index: -1
+bloodlace_bicep_left
+  rotate: false
+  xy: 596, 940
+  size: 37, 40
+  orig: 37, 40
+  offset: 0, 0
+  index: -1
+druid_right_thigh
+  rotate: false
+  xy: 44, 1055
+  size: 39, 81
+  orig: 39, 81
+  offset: 0, 0
+  index: -1
+barnett_forearm_right
+  rotate: false
+  xy: 154, 551
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+barnett_bicep_right
+  rotate: false
+  xy: 629, 361
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+tyrae_chest
+  rotate: false
+  xy: 894, 672
+  size: 120, 73
+  orig: 120, 73
+  offset: 0, 0
+  index: -1
+evesse_right_leg
+  rotate: false
+  xy: 666, 312
+  size: 57, 81
+  orig: 57, 81
+  offset: 0, 0
+  index: -1
+ryethin_left_bicep
+  rotate: false
+  xy: 101, 827
+  size: 37, 54
+  orig: 37, 54
+  offset: 0, 0
+  index: -1
+evesse_left_leg
+  rotate: false
+  xy: 665, 395
+  size: 57, 81
+  orig: 57, 81
+  offset: 0, 0
+  index: -1
+evesse_head
+  rotate: false
+  xy: 666, 222
+  size: 60, 88
+  orig: 60, 88
+  offset: 0, 0
+  index: -1
+rav_flame_7a
+  rotate: false
+  xy: 101, 939
+  size: 85, 69
+  orig: 85, 69
+  offset: 0, 0
+  index: -1
+barnett_bicep_left
+  rotate: false
+  xy: 629, 419
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+cult_casting_light
+  rotate: false
+  xy: 2, 514
+  size: 150, 133
+  orig: 150, 133
+  offset: 0, 0
+  index: -1
+rav_flame_4a
+  rotate: false
+  xy: 374, 473
+  size: 106, 81
+  orig: 106, 81
+  offset: 0, 0
+  index: -1
+ryethin_torso
+  rotate: false
+  xy: 721, 543
+  size: 136, 82
+  orig: 136, 82
+  offset: 0, 0
+  index: -1
+metal_lleg_right2
+  rotate: false
+  xy: 140, 851
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+cult_head_yellow
+  rotate: false
+  xy: 193, 850
+  size: 97, 112
+  orig: 97, 112
+  offset: 0, 0
+  index: -1
+template_male_head
+  rotate: false
+  xy: 159, 461
+  size: 67, 88
+  orig: 67, 88
+  offset: 0, 0
+  index: -1
+ryethin_right_forearm
+  rotate: false
+  xy: 833, 801
+  size: 55, 84
+  orig: 55, 84
+  offset: 0, 0
+  index: -1
+metal_lleg_left1
+  rotate: false
+  xy: 140, 895
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+bloodlace_right_leg
+  rotate: false
+  xy: 981, 909
+  size: 41, 75
+  orig: 41, 75
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 2, 1055
+  size: 40, 83
+  orig: 40, 83
+  offset: 0, 0
+  index: -1
+barnett_forearm_left
+  rotate: false
+  xy: 154, 625
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+cult_left_foot
+  rotate: false
+  xy: 705, 952
+  size: 32, 61
+  orig: 32, 61
+  offset: 0, 0
+  index: -1
+druid_chest
+  rotate: false
+  xy: 711, 779
+  size: 120, 71
+  orig: 120, 71
+  offset: 0, 0
+  index: -1
+ryethin_left_foot
+  rotate: false
+  xy: 101, 1010
+  size: 40, 83
+  orig: 40, 83
+  offset: 0, 0
+  index: -1
+rav_flame_1b
+  rotate: false
+  xy: 2, 394
+  size: 155, 118
+  orig: 155, 118
+  offset: 0, 0
+  index: -1
+agent_head
+  rotate: false
+  xy: 458, 879
+  size: 97, 95
+  orig: 97, 95
+  offset: 0, 0
+  index: -1
+tevensa_arm_right
+  rotate: false
+  xy: 143, 699
+  size: 55, 84
+  orig: 55, 84
+  offset: 0, 0
+  index: -1
+rav_flame_6b
+  rotate: false
+  xy: 228, 542
+  size: 141, 99
+  orig: 141, 99
+  offset: 0, 0
+  index: -1
+tevensa_head
+  rotate: false
+  xy: 734, 2
+  size: 192, 122
+  orig: 192, 122
+  offset: 0, 0
+  index: -1
+rav_flame_3b
+  rotate: false
+  xy: 602, 685
+  size: 111, 70
+  orig: 111, 70
+  offset: 0, 0
+  index: -1
+cult_head
+  rotate: false
+  xy: 2, 941
+  size: 97, 112
+  orig: 97, 112
+  offset: 0, 0
+  index: -1
+laranda_head
+  rotate: false
+  xy: 411, 204
+  size: 75, 88
+  orig: 75, 88
+  offset: 0, 0
+  index: -1
+ravenna_sword_drawn
+  rotate: false
+  xy: 491, 2
+  size: 241, 105
+  orig: 241, 105
+  offset: 0, 0
+  index: -1
+tevensa_arm_left
+  rotate: false
+  xy: 837, 715
+  size: 55, 84
+  orig: 55, 84
+  offset: 0, 0
+  index: -1
+cult_weapon_lavablade_right
+  rotate: false
+  xy: 2, 748
+  size: 137, 77
+  orig: 137, 77
+  offset: 0, 0
+  index: -1
+metal_fleg_left2
+  rotate: false
+  xy: 843, 692
+  size: 49, 21
+  orig: 49, 21
+  offset: 0, 0
+  index: -1
+tyrae_head
+  rotate: false
+  xy: 411, 294
+  size: 69, 88
+  orig: 69, 88
+  offset: 0, 0
+  index: -1
+crone_head
+  rotate: false
+  xy: 165, 374
+  size: 69, 85
+  orig: 69, 85
+  offset: 0, 0
+  index: -1
+ryethin_ight_bicep
+  rotate: false
+  xy: 101, 883
+  size: 37, 54
+  orig: 37, 54
+  offset: 0, 0
+  index: -1
+bloodlace_casting
+  rotate: false
+  xy: 890, 821
+  size: 103, 86
+  orig: 103, 86
+  offset: 0, 0
+  index: -1
+rav_flame_1a
+  rotate: false
+  xy: 905, 226
+  size: 113, 105
+  orig: 113, 105
+  offset: 0, 0
+  index: -1
+bloodlace_head
+  rotate: false
+  xy: 411, 111
+  size: 77, 91
+  orig: 77, 91
+  offset: 0, 0
+  index: -1
+rav_flame_6a
+  rotate: false
+  xy: 355, 894
+  size: 84, 68
+  orig: 84, 68
+  offset: 0, 0
+  index: -1

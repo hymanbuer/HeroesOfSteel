@@ -1,0 +1,186 @@
+char_rogue.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+breasts
+  rotate: false
+  xy: 198, 492
+  size: 113, 49
+  orig: 113, 49
+  offset: 0, 0
+  index: -1
+casting_left_forearm
+  rotate: false
+  xy: 404, 346
+  size: 101, 126
+  orig: 101, 126
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 196, 543
+  size: 100, 90
+  orig: 100, 90
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 178, 260
+  size: 62, 63
+  orig: 62, 63
+  offset: 0, 0
+  index: -1
+left_bicep_extended
+  rotate: false
+  xy: 51, 868
+  size: 47, 89
+  orig: 47, 89
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 313, 533
+  size: 54, 93
+  orig: 54, 93
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 318, 430
+  size: 56, 101
+  orig: 56, 101
+  offset: 0, 0
+  index: -1
+left_forearm_bladed
+  rotate: false
+  xy: 140, 428
+  size: 56, 101
+  orig: 56, 101
+  offset: 0, 0
+  index: -1
+left_leg_back
+  rotate: false
+  xy: 2, 727
+  size: 49, 139
+  orig: 49, 139
+  offset: 0, 0
+  index: -1
+left_shoulder_extended
+  rotate: false
+  xy: 2, 868
+  size: 47, 89
+  orig: 47, 89
+  offset: 0, 0
+  index: -1
+left_thigh
+  rotate: false
+  xy: 2, 647
+  size: 53, 78
+  orig: 53, 78
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 140, 531
+  size: 54, 93
+  orig: 54, 93
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: false
+  xy: 178, 325
+  size: 56, 101
+  orig: 56, 101
+  offset: 0, 0
+  index: -1
+right_leg_back
+  rotate: false
+  xy: 57, 647
+  size: 49, 139
+  orig: 49, 139
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 140, 626
+  size: 53, 78
+  orig: 53, 78
+  offset: 0, 0
+  index: -1
+straps
+  rotate: false
+  xy: 376, 474
+  size: 101, 63
+  orig: 101, 63
+  offset: 0, 0
+  index: -1
+tile_arrow
+  rotate: false
+  xy: 236, 389
+  size: 160, 39
+  orig: 160, 39
+  offset: 0, 0
+  index: -1
+torso_heavy
+  rotate: false
+  xy: 198, 430
+  size: 118, 60
+  orig: 118, 60
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_blade
+  rotate: false
+  xy: 477, 194
+  size: 23, 150
+  orig: 23, 150
+  offset: 0, 0
+  index: 1
+weapon_bow_drawn
+  rotate: false
+  xy: 2, 389
+  size: 136, 132
+  orig: 136, 132
+  offset: 0, 0
+  index: -1
+weapon_bow_extended
+  rotate: false
+  xy: 2, 523
+  size: 136, 122
+  orig: 136, 122
+  offset: 0, 0
+  index: -1
+weapon_sword_left_casting
+  rotate: false
+  xy: 2, 260
+  size: 174, 127
+  orig: 174, 127
+  offset: 0, 0
+  index: -1
+weapon_sword_right
+  rotate: false
+  xy: 242, 273
+  size: 160, 114
+  orig: 160, 114
+  offset: 0, 0
+  index: -1
+weapon_sword_right_swung
+  rotate: false
+  xy: 260, 194
+  size: 215, 77
+  orig: 215, 77
+  offset: 0, 0
+  index: -1

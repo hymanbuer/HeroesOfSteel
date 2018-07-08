@@ -1,0 +1,1029 @@
+{
+"bones": [
+	{ "name": "root" },
+	{ "name": "BIg Gear", "parent": "root", "x": -458.19, "y": 0.36 },
+	{ "name": "Bar Container", "parent": "root", "x": -202.49, "y": 0.99 },
+	{ "name": "Progress Color", "parent": "root", "x": -357.49, "y": 1.99 },
+	{ "name": "Sliding Highlight", "parent": "root", "x": -363.49, "y": 1.99 },
+	{ "name": "Small Gear", "parent": "root", "x": -517.19, "y": 56.36 }
+],
+"slots": [
+	{ "name": "ui_progress_big_gear", "bone": "BIg Gear", "attachment": "ui_progress_big_gear" },
+	{ "name": "ui_progress_small_gear", "bone": "Small Gear", "attachment": "ui_progress_small_gear" },
+	{ "name": "ui_progress_bar", "bone": "Progress Color", "attachment": "ui_progress_bar" },
+	{ "name": "ui_progress_bar_tick", "bone": "Sliding Highlight", "attachment": "ui_progress_bar_tick" },
+	{ "name": "ui_hud_bar_container_full", "bone": "Bar Container", "attachment": "ui_hud_bar_container_full" }
+],
+"skins": {
+	"default": {
+		"ui_hud_bar_container_full": {
+			"ui_hud_bar_container_full": { "width": 362, "height": 38 }
+		},
+		"ui_progress_bar": {
+			"ui_progress_bar": { "width": 16, "height": 16 }
+		},
+		"ui_progress_bar_tick": {
+			"ui_progress_bar_tick": { "x": -0.5, "width": 16, "height": 16 }
+		},
+		"ui_progress_big_gear": {
+			"ui_progress_big_gear": { "y": -0.99, "width": 127, "height": 127 }
+		},
+		"ui_progress_small_gear": {
+			"ui_progress_small_gear": { "x": -0.27, "y": -0.09, "width": 58, "height": 58 }
+		}
+	}
+},
+"animations": {
+	"0 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0.19, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 0.19, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.924, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 0.924, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1.1333, "x": 9.9, "y": 0 },
+					{ "time": 1.5, "x": 0, "y": 0 },
+					{ "time": 2.6333, "x": 9.9, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 1.1666, "name": null },
+					{ "time": 1.5, "name": "ui_progress_bar_tick" },
+					{ "time": 2.6625, "name": null }
+				]
+			}
+		}
+	},
+	"10 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 18, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 18, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2.336, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 2.336, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1.1666, "x": 40.79, "y": 0.63 },
+					{ "time": 1.5, "x": 0, "y": 0 },
+					{ "time": 2.6666, "x": 40.79, "y": 0.63 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 1.1666, "name": null },
+					{ "time": 1.5, "name": "ui_progress_bar_tick" },
+					{ "time": 2.6625, "name": null }
+				]
+			}
+		}
+	},
+	"100 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 159.82, "y": -0.36, "curve": "stepped" },
+					{ "time": 3, "x": 159.82, "y": -0.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 20.253, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 20.253, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 307.91, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"20 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 38.98, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 38.98, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4.93, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 4.93, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 79.59, "y": -1.27 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"30 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 56.16, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 56.16, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 6.933, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 6.933, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 112.66, "y": 0.63 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"40 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 65.06, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 65.06, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 8.93, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 8.93, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 137.46, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"50 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 82.87, "y": -1.63, "curve": "stepped" },
+					{ "time": 3, "x": 82.87, "y": -1.63 }
+				],
+				"scale": [
+					{ "time": 0, "x": 10.93, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 10.93, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 173.08, "y": 0.63 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"60 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 98.77, "y": 0.9, "curve": "stepped" },
+					{ "time": 3, "x": 98.77, "y": 0.9 }
+				],
+				"scale": [
+					{ "time": 0, "x": 12.29, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 12.29, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 201.7, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"70 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 114.03, "y": -0.36, "curve": "stepped" },
+					{ "time": 3, "x": 114.03, "y": -0.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 14.29, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 14.29, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 229.05, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"80 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 130.57, "y": -1, "curve": "stepped" },
+					{ "time": 3, "x": 130.57, "y": -1 }
+				],
+				"scale": [
+					{ "time": 0, "x": 16.29, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 16.29, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 264.66, "y": 0 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	},
+	"90 Percent": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 }
+				]
+			},
+			"BIg Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.5, "angle": 180 },
+					{ "time": 3, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			},
+			"Bar Container": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"Progress Color": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 142.01, "y": -1.63, "curve": "stepped" },
+					{ "time": 3, "x": 142.01, "y": -1.63 }
+				],
+				"scale": [
+					{ "time": 0, "x": 18.29, "y": 0.99, "curve": "stepped" },
+					{ "time": 3, "x": 18.29, "y": 0.99 }
+				]
+			},
+			"Sliding Highlight": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 2.9666, "x": 290.1, "y": -0.63 },
+					{ "time": 3, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 3, "x": 1, "y": 1 }
+				]
+			},
+			"Small Gear": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -180 },
+					{ "time": 0.9666, "angle": 12 },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.5, "angle": -180 },
+					{ "time": 1.9666, "angle": 12 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": -180 },
+					{ "time": 2.9666, "angle": 12 },
+					{ "time": 3, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 3, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"slots": {
+			"ui_progress_bar_tick": {
+				"attachment": [
+					{ "time": 2.9666, "name": null }
+				]
+			}
+		}
+	}
+}
+}

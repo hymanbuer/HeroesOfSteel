@@ -1,0 +1,102 @@
+monster_sea.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+crab_chest
+  rotate: false
+  xy: 238, 2
+  size: 234, 141
+  orig: 234, 141
+  offset: 0, 0
+  index: -1
+crab_claw_arm
+  rotate: false
+  xy: 2, 382
+  size: 120, 65
+  orig: 120, 65
+  offset: 0, 0
+  index: -1
+crab_claw_pincer
+  rotate: false
+  xy: 106, 210
+  size: 116, 63
+  orig: 116, 63
+  offset: 0, 0
+  index: -1
+crab_claw_small
+  rotate: false
+  xy: 2, 230
+  size: 102, 83
+  orig: 102, 83
+  offset: 0, 0
+  index: -1
+crab_leg_long
+  rotate: false
+  xy: 166, 439
+  size: 162, 56
+  orig: 162, 56
+  offset: 0, 0
+  index: -1
+crab_leg_short
+  rotate: false
+  xy: 178, 311
+  size: 86, 34
+  orig: 86, 34
+  offset: 0, 0
+  index: -1
+crab_shoulder
+  rotate: false
+  xy: 124, 375
+  size: 52, 62
+  orig: 52, 62
+  offset: 0, 0
+  index: -1
+crabblue_chest
+  rotate: false
+  xy: 2, 2
+  size: 234, 141
+  orig: 234, 141
+  offset: 0, 0
+  index: -1
+crabblue_claw_arm
+  rotate: false
+  xy: 2, 315
+  size: 120, 65
+  orig: 120, 65
+  offset: 0, 0
+  index: -1
+crabblue_claw_pincer
+  rotate: false
+  xy: 106, 145
+  size: 116, 63
+  orig: 116, 63
+  offset: 0, 0
+  index: -1
+crabblue_claw_small
+  rotate: false
+  xy: 2, 145
+  size: 102, 83
+  orig: 102, 83
+  offset: 0, 0
+  index: -1
+crabblue_leg_long
+  rotate: false
+  xy: 2, 449
+  size: 162, 56
+  orig: 162, 56
+  offset: 0, 0
+  index: -1
+crabblue_leg_short
+  rotate: false
+  xy: 106, 275
+  size: 86, 34
+  orig: 86, 34
+  offset: 0, 0
+  index: -1
+crabblue_shoulder
+  rotate: false
+  xy: 124, 311
+  size: 52, 62
+  orig: 52, 62
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,165 @@
+char_sorcerer.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+head_white
+  rotate: false
+  xy: 391, 531
+  size: 117, 124
+  orig: 117, 124
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 2, 463
+  size: 44, 90
+  orig: 44, 90
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_sword_stabbed
+  rotate: false
+  xy: 342, 485
+  size: 47, 198
+  orig: 47, 198
+  offset: 0, 0
+  index: -1
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 423, 194
+  size: 79, 80
+  orig: 79, 80
+  offset: 0, 0
+  index: -1
+right_bicep
+  rotate: false
+  xy: 342, 369
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 48, 463
+  size: 41, 79
+  orig: 41, 79
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 391, 657
+  size: 117, 124
+  orig: 117, 124
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 91, 480
+  size: 41, 79
+  orig: 41, 79
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 260, 194
+  size: 161, 87
+  orig: 161, 87
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 157, 260
+  size: 89, 46
+  orig: 89, 46
+  offset: 0, 0
+  index: -1
+left_thigh
+  rotate: false
+  xy: 423, 276
+  size: 79, 80
+  orig: 79, 80
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 260
+  size: 153, 78
+  orig: 153, 78
+  offset: 0, 0
+  index: -1
+weapon_spell
+  rotate: false
+  xy: 220, 369
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+weapon_spell_slash2
+  rotate: false
+  xy: 157, 308
+  size: 61, 78
+  orig: 61, 78
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: false
+  xy: 132, 388
+  size: 44, 90
+  orig: 44, 90
+  offset: 0, 0
+  index: -1
+waist
+  rotate: false
+  xy: 2, 340
+  size: 128, 121
+  orig: 128, 121
+  offset: 0, 0
+  index: -1
+weapon_spell_slash
+  rotate: false
+  xy: 157, 308
+  size: 61, 78
+  orig: 61, 78
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 342, 427
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 248, 283
+  size: 144, 84
+  orig: 144, 84
+  offset: 0, 0
+  index: -1
+weapon_spell_slash3
+  rotate: false
+  xy: 157, 308
+  size: 61, 78
+  orig: 61, 78
+  offset: 0, 0
+  index: -1
+weapon_sword_carried
+  rotate: false
+  xy: 394, 358
+  size: 114, 171
+  orig: 114, 171
+  offset: 0, 0
+  index: -1

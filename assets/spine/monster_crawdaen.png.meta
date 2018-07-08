@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "599326e6-dd6d-4ff9-b4a4-4ba1f40b4dbe",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "monster_crawdaen": {
+      "ver": "1.0.3",
+      "uuid": "8b80e907-a2c1-4d0c-a00a-d38843ebe7d1",
+      "rawTextureUuid": "599326e6-dd6d-4ff9-b4a4-4ba1f40b4dbe",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 6.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 505,
+      "height": 495,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

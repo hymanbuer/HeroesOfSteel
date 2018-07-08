@@ -1,0 +1,795 @@
+monster_skeleton.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+thigh_left
+  rotate: false
+  xy: 345, 1058
+  size: 26, 63
+  orig: 26, 63
+  offset: 0, 0
+  index: -1
+ballista_tower_draw
+  rotate: false
+  xy: 469, 2
+  size: 189, 59
+  orig: 189, 59
+  offset: 0, 0
+  index: -1
+ghoul_foot_right
+  rotate: false
+  xy: 712, 887
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+spectral_caster
+  rotate: false
+  xy: 112, 1077
+  size: 82, 60
+  orig: 82, 60
+  offset: 0, 0
+  index: -1
+forearm_left
+  rotate: false
+  xy: 977, 985
+  size: 36, 49
+  orig: 36, 49
+  offset: 0, 0
+  index: -1
+ghoul_bicep_left
+  rotate: false
+  xy: 264, 1142
+  size: 59, 37
+  orig: 59, 37
+  offset: 0, 0
+  index: -1
+tower_ballista_arm_left
+  rotate: false
+  xy: 594, 836
+  size: 116, 99
+  orig: 116, 99
+  offset: 0, 0
+  index: -1
+tower_ballista_top
+  rotate: false
+  xy: 469, 463
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+wraith_sword
+  rotate: false
+  xy: 952, 576
+  size: 68, 166
+  orig: 68, 166
+  offset: 0, 0
+  index: -1
+diamond
+  rotate: false
+  xy: 325, 1123
+  size: 45, 131
+  orig: 45, 131
+  offset: 0, 0
+  index: -1
+thigh_right
+  rotate: false
+  xy: 345, 993
+  size: 26, 63
+  orig: 26, 63
+  offset: 0, 0
+  index: -1
+necro_casting
+  rotate: false
+  xy: 248, 287
+  size: 171, 141
+  orig: 171, 141
+  offset: 0, 0
+  index: -1
+necro_foot_left
+  rotate: false
+  xy: 212, 391
+  size: 34, 60
+  orig: 34, 60
+  offset: 0, 0
+  index: -1
+mummy_bicep_right
+  rotate: false
+  xy: 977, 956
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+head_warrior
+  rotate: false
+  xy: 141, 1225
+  size: 51, 64
+  orig: 51, 64
+  offset: 0, 0
+  index: -1
+box_top
+  rotate: false
+  xy: 146, 657
+  size: 96, 98
+  orig: 96, 98
+  offset: 0, 0
+  index: -1
+mummy_forearm_left
+  rotate: false
+  xy: 174, 470
+  size: 72, 58
+  orig: 72, 58
+  offset: 0, 0
+  index: -1
+tower_bonespike
+  rotate: false
+  xy: 96, 1285
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+mummyblue_leg_left
+  rotate: false
+  xy: 253, 1181
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+ghoul_forearm_left
+  rotate: false
+  xy: 895, 951
+  size: 39, 73
+  orig: 39, 73
+  offset: 0, 0
+  index: -1
+mummy_foot_left
+  rotate: false
+  xy: 712, 929
+  size: 34, 60
+  orig: 34, 60
+  offset: 0, 0
+  index: -1
+hand_left
+  rotate: false
+  xy: 345, 968
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+tower_ballista_arrow
+  rotate: false
+  xy: 863, 717
+  size: 82, 190
+  orig: 82, 190
+  offset: 0, 0
+  index: -1
+weapon_sword
+  rotate: false
+  xy: 958, 263
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+spectral_wing_boss
+  rotate: false
+  xy: 140, 832
+  size: 89, 168
+  orig: 89, 168
+  offset: 0, 0
+  index: -1
+tower_base
+  rotate: false
+  xy: 2, 419
+  size: 170, 154
+  orig: 170, 154
+  offset: 0, 0
+  index: -1
+ghoul_foot_left
+  rotate: false
+  xy: 758, 887
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+spectre_torso_lord
+  rotate: false
+  xy: 660, 2
+  size: 172, 193
+  orig: 172, 193
+  offset: 0, 0
+  index: -1
+wraith_thigh_left
+  rotate: false
+  xy: 83, 1139
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+mummygold_torso
+  rotate: false
+  xy: 735, 677
+  size: 126, 68
+  orig: 126, 68
+  offset: 0, 0
+  index: -1
+ghoul_bicep_right
+  rotate: false
+  xy: 264, 1103
+  size: 59, 37
+  orig: 59, 37
+  offset: 0, 0
+  index: -1
+ellista_wingshoulder
+  rotate: false
+  xy: 391, 647
+  size: 75, 92
+  orig: 75, 92
+  offset: 0, 0
+  index: -1
+necro_head_lord
+  rotate: false
+  xy: 958, 321
+  size: 63, 90
+  orig: 63, 90
+  offset: 0, 0
+  index: -1
+mummy_forearm_right
+  rotate: false
+  xy: 141, 757
+  size: 92, 73
+  orig: 92, 73
+  offset: 0, 0
+  index: -1
+ghoul_thigh_right
+  rotate: false
+  xy: 850, 909
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+necro_bicep_right
+  rotate: false
+  xy: 849, 971
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+ghoul_head
+  rotate: false
+  xy: 397, 507
+  size: 70, 94
+  orig: 70, 94
+  offset: 0, 0
+  index: -1
+bicep_right
+  rotate: false
+  xy: 2, 1262
+  size: 45, 64
+  orig: 45, 64
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+weapon_bow
+  rotate: false
+  xy: 421, 344
+  size: 46, 161
+  orig: 46, 161
+  offset: 0, 0
+  index: -1
+necro_thigh_left
+  rotate: false
+  xy: 83, 1212
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+spectre_arm_right
+  rotate: false
+  xy: 2, 1328
+  size: 44, 46
+  orig: 44, 46
+  offset: 0, 0
+  index: -1
+mummy_foot_right
+  rotate: false
+  xy: 974, 1036
+  size: 34, 60
+  orig: 34, 60
+  offset: 0, 0
+  index: -1
+spectral_boss_head
+  rotate: false
+  xy: 373, 1028
+  size: 112, 138
+  orig: 112, 138
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 231, 894
+  size: 113, 67
+  orig: 113, 67
+  offset: 0, 0
+  index: -1
+necro_head
+  rotate: false
+  xy: 958, 484
+  size: 59, 90
+  orig: 59, 90
+  offset: 0, 0
+  index: -1
+wraith_torso
+  rotate: false
+  xy: 469, 389
+  size: 146, 72
+  orig: 146, 72
+  offset: 0, 0
+  index: -1
+ghoul_claws_left
+  rotate: false
+  xy: 141, 1139
+  size: 52, 84
+  orig: 52, 84
+  offset: 0, 0
+  index: -1
+ellista_head
+  rotate: false
+  xy: 895, 909
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+spectre_arm_left
+  rotate: false
+  xy: 141, 1291
+  size: 44, 46
+  orig: 44, 46
+  offset: 0, 0
+  index: -1
+necro_arm_right
+  rotate: false
+  xy: 112, 1002
+  size: 89, 73
+  orig: 89, 73
+  offset: 0, 0
+  index: -1
+ghoul_thigh_left
+  rotate: false
+  xy: 804, 915
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+torso_bowrat
+  rotate: false
+  xy: 235, 815
+  size: 113, 77
+  orig: 113, 77
+  offset: 0, 0
+  index: -1
+wraith_cloak
+  rotate: false
+  xy: 2, 789
+  size: 136, 120
+  orig: 136, 120
+  offset: 0, 0
+  index: -1
+mummy_cape
+  rotate: false
+  xy: 469, 607
+  size: 136, 132
+  orig: 136, 132
+  offset: 0, 0
+  index: -1
+chest_archer_elite
+  rotate: false
+  xy: 2, 716
+  size: 137, 71
+  orig: 137, 71
+  offset: 0, 0
+  index: -1
+spectral_wing_shoulder
+  rotate: false
+  xy: 494, 926
+  size: 89, 109
+  orig: 89, 109
+  offset: 0, 0
+  index: -1
+spectral_wing_top
+  rotate: false
+  xy: 2, 1125
+  size: 79, 103
+  orig: 79, 103
+  offset: 0, 0
+  index: -1
+ghoul_chest
+  rotate: false
+  xy: 618, 346
+  size: 146, 134
+  orig: 146, 134
+  offset: 0, 0
+  index: -1
+necro_casting2
+  rotate: false
+  xy: 2, 911
+  size: 109, 88
+  orig: 109, 88
+  offset: 0, 0
+  index: -1
+bicep_left
+  rotate: false
+  xy: 49, 1285
+  size: 45, 64
+  orig: 45, 64
+  offset: 0, 0
+  index: -1
+weapon_vrotta
+  rotate: false
+  xy: 248, 205
+  size: 172, 80
+  orig: 172, 80
+  offset: 0, 0
+  index: -1
+mummy_leg_left
+  rotate: false
+  xy: 194, 1248
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+weapon_bow_shooting
+  rotate: false
+  xy: 2, 653
+  size: 142, 61
+  orig: 142, 61
+  offset: 0, 0
+  index: -1
+mummy_torso
+  rotate: false
+  xy: 735, 817
+  size: 126, 68
+  orig: 126, 68
+  offset: 0, 0
+  index: -1
+df_ring
+  rotate: false
+  xy: 751, 547
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+spectre_head_lord
+  rotate: false
+  xy: 380, 888
+  size: 112, 138
+  orig: 112, 138
+  offset: 0, 0
+  index: -1
+ellista_wingtip
+  rotate: false
+  xy: 501, 849
+  size: 90, 75
+  orig: 90, 75
+  offset: 0, 0
+  index: -1
+tower_puff
+  rotate: false
+  xy: 252, 1254
+  size: 48, 53
+  orig: 48, 53
+  offset: 0, 0
+  index: -1
+necro_hand_left
+  rotate: false
+  xy: 881, 566
+  size: 69, 58
+  orig: 69, 58
+  offset: 0, 0
+  index: -1
+df_shine
+  rotate: false
+  xy: 248, 2
+  size: 219, 201
+  orig: 219, 201
+  offset: 0, 0
+  index: -1
+necro_torso
+  rotate: false
+  xy: 2, 575
+  size: 147, 76
+  orig: 147, 76
+  offset: 0, 0
+  index: -1
+tower_skull
+  rotate: false
+  xy: 936, 1014
+  size: 36, 46
+  orig: 36, 46
+  offset: 0, 0
+  index: -1
+foot_right
+  rotate: false
+  xy: 350, 815
+  size: 28, 62
+  orig: 28, 62
+  offset: 0, 0
+  index: -1
+necro_bicep_left
+  rotate: false
+  xy: 936, 956
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+waist
+  rotate: false
+  xy: 174, 530
+  size: 71, 74
+  orig: 71, 74
+  offset: 0, 0
+  index: -1
+mummyblue_torso
+  rotate: false
+  xy: 735, 747
+  size: 126, 68
+  orig: 126, 68
+  offset: 0, 0
+  index: -1
+ghoul_kinghead
+  rotate: false
+  xy: 501, 741
+  size: 91, 106
+  orig: 91, 106
+  offset: 0, 0
+  index: -1
+foot_left
+  rotate: false
+  xy: 350, 879
+  size: 28, 62
+  orig: 28, 62
+  offset: 0, 0
+  index: -1
+chest_elite
+  rotate: false
+  xy: 766, 346
+  size: 137, 65
+  orig: 137, 65
+  offset: 0, 0
+  index: -1
+mummygold_cape
+  rotate: false
+  xy: 766, 413
+  size: 136, 132
+  orig: 136, 132
+  offset: 0, 0
+  index: -1
+mummygold_leg_left
+  rotate: false
+  xy: 195, 1175
+  size: 56, 71
+  orig: 56, 71
+  offset: 0, 0
+  index: -1
+spectre_torso2
+  rotate: false
+  xy: 834, 2
+  size: 172, 193
+  orig: 172, 193
+  offset: 0, 0
+  index: -1
+df_text
+  rotate: false
+  xy: 247, 561
+  size: 142, 120
+  orig: 142, 120
+  offset: 0, 0
+  index: -1
+shield
+  rotate: false
+  xy: 151, 606
+  size: 94, 49
+  orig: 94, 49
+  offset: 0, 0
+  index: -1
+hand_right
+  rotate: false
+  xy: 346, 943
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+spectre_torso
+  rotate: false
+  xy: 469, 63
+  size: 172, 193
+  orig: 172, 193
+  offset: 0, 0
+  index: -1
+weapon_spear
+  rotate: false
+  xy: 947, 744
+  size: 66, 210
+  orig: 66, 210
+  offset: 0, 0
+  index: -1
+sprite_arrow_undeadmagic
+  rotate: false
+  xy: 958, 197
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+spectral_boss_spear
+  rotate: false
+  xy: 905, 346
+  size: 51, 218
+  orig: 51, 218
+  offset: 0, 0
+  index: -1
+spectre_head
+  rotate: false
+  xy: 231, 963
+  size: 112, 138
+  orig: 112, 138
+  offset: 0, 0
+  index: -1
+df_foci
+  rotate: false
+  xy: 643, 197
+  size: 165, 147
+  orig: 165, 147
+  offset: 0, 0
+  index: -1
+ellista_chest
+  rotate: false
+  xy: 391, 603
+  size: 76, 42
+  orig: 76, 42
+  offset: 0, 0
+  index: -1
+spectre_claw_right
+  rotate: false
+  xy: 469, 258
+  size: 147, 129
+  orig: 147, 129
+  offset: 0, 0
+  index: -1
+necro_cloak
+  rotate: false
+  xy: 244, 683
+  size: 136, 130
+  orig: 136, 130
+  offset: 0, 0
+  index: -1
+mummy_head
+  rotate: false
+  xy: 881, 626
+  size: 68, 89
+  orig: 68, 89
+  offset: 0, 0
+  index: -1
+necro_arm_right_lord
+  rotate: false
+  xy: 2, 1001
+  size: 108, 75
+  orig: 108, 75
+  offset: 0, 0
+  index: -1
+head_elite
+  rotate: false
+  xy: 958, 413
+  size: 63, 69
+  orig: 63, 69
+  offset: 0, 0
+  index: -1
+box_cannon
+  rotate: false
+  xy: 2, 1230
+  size: 48, 30
+  orig: 48, 30
+  offset: 0, 0
+  index: -1
+wraith_head
+  rotate: false
+  xy: 196, 1103
+  size: 66, 70
+  orig: 66, 70
+  offset: 0, 0
+  index: -1
+wraith_sword2
+  rotate: false
+  xy: 607, 616
+  size: 126, 218
+  orig: 126, 218
+  offset: 0, 0
+  index: -1
+ellista_hand
+  rotate: false
+  xy: 804, 887
+  size: 44, 26
+  orig: 44, 26
+  offset: 0, 0
+  index: -1
+haga_head
+  rotate: false
+  xy: 382, 741
+  size: 117, 145
+  orig: 117, 145
+  offset: 0, 0
+  index: -1
+tower_top
+  rotate: false
+  xy: 810, 197
+  size: 146, 147
+  orig: 146, 147
+  offset: 0, 0
+  index: -1
+mummy_bicep_left
+  rotate: false
+  xy: 936, 985
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+ellista_feathers
+  rotate: false
+  xy: 2, 1078
+  size: 82, 45
+  orig: 82, 45
+  offset: 0, 0
+  index: -1
+haga_chest
+  rotate: false
+  xy: 2, 194
+  size: 208, 223
+  orig: 208, 223
+  offset: 0, 0
+  index: -1
+mummyblue_cape
+  rotate: false
+  xy: 613, 482
+  size: 136, 132
+  orig: 136, 132
+  offset: 0, 0
+  index: -1
+spectre_claw_left
+  rotate: false
+  xy: 248, 430
+  size: 147, 129
+  orig: 147, 129
+  offset: 0, 0
+  index: -1
+spectral_blade
+  rotate: false
+  xy: 422, 205
+  size: 45, 137
+  orig: 45, 137
+  offset: 0, 0
+  index: -1
+arrow
+  rotate: false
+  xy: 212, 194
+  size: 34, 133
+  orig: 34, 133
+  offset: 0, 0
+  index: -1
+forearm_right
+  rotate: false
+  xy: 174, 419
+  size: 36, 49
+  orig: 36, 49
+  offset: 0, 0
+  index: -1
+necro_foot_right
+  rotate: false
+  xy: 212, 329
+  size: 34, 60
+  orig: 34, 60
+  offset: 0, 0
+  index: -1

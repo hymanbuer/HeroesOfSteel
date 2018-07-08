@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "4e36c51b-fe1a-47d0-93f8-5dacfc3df585",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "monster_ratkin": {
+      "ver": "1.0.3",
+      "uuid": "6bace1fd-a20c-42ec-bf80-f6bdfb258505",
+      "rawTextureUuid": "4e36c51b-fe1a-47d0-93f8-5dacfc3df585",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 7.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 508,
+      "height": 1005,
+      "rawWidth": 512,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

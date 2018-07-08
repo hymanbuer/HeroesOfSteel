@@ -1,0 +1,144 @@
+monster_human_females.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+braeys_head
+  rotate: false
+  xy: 389, 286
+  size: 93, 89
+  orig: 93, 89
+  offset: 0, 0
+  index: -1
+braeys_torso
+  rotate: false
+  xy: 260, 262
+  size: 127, 74
+  orig: 127, 74
+  offset: 0, 0
+  index: -1
+breasts
+  rotate: false
+  xy: 53, 344
+  size: 79, 38
+  orig: 79, 38
+  offset: 0, 0
+  index: -1
+cora_head
+  rotate: false
+  xy: 53, 419
+  size: 71, 87
+  orig: 71, 87
+  offset: 0, 0
+  index: -1
+cora_torso
+  rotate: false
+  xy: 260, 194
+  size: 135, 66
+  orig: 135, 66
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 302, 338
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1
+left_bicep_extended
+  rotate: false
+  xy: 2, 419
+  size: 49, 89
+  orig: 49, 89
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 227, 338
+  size: 34, 74
+  orig: 34, 74
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 175, 419
+  size: 47, 74
+  orig: 47, 74
+  offset: 0, 0
+  index: -1
+left_shoulder_extended
+  rotate: false
+  xy: 263, 338
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1
+left_thigh
+  rotate: false
+  xy: 260, 414
+  size: 48, 70
+  orig: 48, 70
+  offset: 0, 0
+  index: -1
+miranna_head
+  rotate: false
+  xy: 397, 194
+  size: 105, 90
+  orig: 105, 90
+  offset: 0, 0
+  index: -1
+miranna_torso
+  rotate: false
+  xy: 2, 260
+  size: 130, 82
+  orig: 130, 82
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 224, 419
+  size: 34, 74
+  orig: 34, 74
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: false
+  xy: 126, 419
+  size: 47, 74
+  orig: 47, 74
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 2, 344
+  size: 48, 70
+  orig: 48, 70
+  offset: 0, 0
+  index: -1
+strom_head
+  rotate: false
+  xy: 134, 325
+  size: 91, 92
+  orig: 91, 92
+  offset: 0, 0
+  index: -1
+torso_heavy
+  rotate: false
+  xy: 134, 260
+  size: 124, 63
+  orig: 124, 63
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f1461595-9843-48bd-9206-844d3fe164b5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "part_cleric_piety_ward": {
+      "ver": "1.0.3",
+      "uuid": "10a7bb52-fdd1-4938-a3a0-d85d9f9998df",
+      "rawTextureUuid": "f1461595-9843-48bd-9206-844d3fe164b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 63,
+      "height": 64,
+      "rawWidth": 64,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

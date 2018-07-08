@@ -1,0 +1,844 @@
+monster_human.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+kallas_sword_sheathed
+  rotate: true
+  xy: 439, 730
+  size: 33, 142
+  orig: 33, 142
+  offset: 0, 0
+  index: -1
+cortias_head
+  rotate: true
+  xy: 148, 831
+  size: 93, 94
+  orig: 93, 94
+  offset: 0, 0
+  index: -1
+kallas_right_bicep
+  rotate: true
+  xy: 138, 1075
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+kallassian_chest
+  rotate: false
+  xy: 179, 293
+  size: 165, 102
+  orig: 165, 102
+  offset: 0, 0
+  index: -1
+koda_forearm_left
+  rotate: false
+  xy: 777, 748
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+gholla_chest
+  rotate: false
+  xy: 853, 338
+  size: 168, 90
+  orig: 168, 90
+  offset: 0, 0
+  index: -1
+head_wounded
+  rotate: true
+  xy: 672, 748
+  size: 80, 103
+  orig: 80, 103
+  offset: 0, 0
+  index: -1
+slaver_right_forearm
+  rotate: true
+  xy: 909, 913
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+barnett_head
+  rotate: false
+  xy: 244, 924
+  size: 72, 91
+  orig: 72, 91
+  offset: 0, 0
+  index: -1
+smith_head
+  rotate: false
+  xy: 917, 666
+  size: 61, 78
+  orig: 61, 78
+  offset: 0, 0
+  index: -1
+soldier_head
+  rotate: true
+  xy: 2, 868
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+barnett_torso
+  rotate: false
+  xy: 2, 392
+  size: 165, 102
+  orig: 165, 102
+  offset: 0, 0
+  index: -1
+cortias_chain_hand
+  rotate: false
+  xy: 612, 573
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+wounded_chest2
+  rotate: false
+  xy: 461, 440
+  size: 164, 106
+  orig: 164, 106
+  offset: 0, 0
+  index: -1
+kallas_morolis_head
+  rotate: true
+  xy: 318, 872
+  size: 80, 92
+  orig: 80, 92
+  offset: 0, 0
+  index: -1
+fierhold_reeve
+  rotate: false
+  xy: 681, 94
+  size: 201, 110
+  orig: 201, 110
+  offset: 0, 0
+  index: -1
+smith_left_hand
+  rotate: false
+  xy: 647, 327
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+kallas_left_forearm
+  rotate: true
+  xy: 916, 780
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+tazzer_chest
+  rotate: false
+  xy: 680, 206
+  size: 179, 107
+  orig: 179, 107
+  offset: 0, 0
+  index: -1
+soldier_left_forearm
+  rotate: true
+  xy: 967, 905
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+cortias_bicep_left
+  rotate: true
+  xy: 626, 932
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+slaver_left_forearm
+  rotate: true
+  xy: 965, 936
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+slaver_flame_blade
+  rotate: true
+  xy: 443, 676
+  size: 52, 152
+  orig: 52, 152
+  offset: 0, 0
+  index: -1
+weapon_sword
+  rotate: true
+  xy: 443, 636
+  size: 38, 159
+  orig: 38, 159
+  offset: 0, 0
+  index: -1
+cortias_longsword
+  rotate: false
+  xy: 346, 369
+  size: 113, 145
+  orig: 113, 145
+  offset: 0, 0
+  index: -1
+slaver_right_hand
+  rotate: true
+  xy: 909, 944
+  size: 32, 53
+  orig: 32, 53
+  offset: 0, 0
+  index: -1
+weapon_spell
+  rotate: false
+  xy: 680, 315
+  size: 171, 141
+  orig: 171, 141
+  offset: 0, 0
+  index: -1
+cortias_2h_hammer
+  rotate: false
+  xy: 246, 87
+  size: 192, 84
+  orig: 192, 84
+  offset: 0, 0
+  index: -1
+cortias_chain_chunk
+  rotate: false
+  xy: 655, 217
+  size: 23, 54
+  orig: 23, 54
+  offset: 0, 0
+  index: -1
+cortias_chain_link
+  rotate: false
+  xy: 655, 149
+  size: 23, 66
+  orig: 23, 66
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 242, 169
+  orig: 242, 169
+  offset: 0, 0
+  index: -1
+smith_right_hand
+  rotate: false
+  xy: 647, 273
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+template_male_right_bicep
+  rotate: true
+  xy: 234, 1017
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+head_grayhair
+  rotate: true
+  xy: 811, 913
+  size: 76, 96
+  orig: 76, 96
+  offset: 0, 0
+  index: -1
+slaver_weapon_sword
+  rotate: true
+  xy: 473, 149
+  size: 90, 180
+  orig: 90, 180
+  offset: 0, 0
+  index: -1
+template_male_left_forearm
+  rotate: true
+  xy: 968, 874
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+thigh_left_scaled
+  rotate: false
+  xy: 975, 798
+  size: 45, 74
+  orig: 45, 74
+  offset: 0, 0
+  index: -1
+braeys_pwalker
+  rotate: true
+  xy: 361, 280
+  size: 87, 109
+  orig: 87, 109
+  offset: 0, 0
+  index: -1
+wounded_chest3
+  rotate: false
+  xy: 2, 496
+  size: 164, 108
+  orig: 164, 108
+  offset: 0, 0
+  index: -1
+kallas_right_forearm
+  rotate: false
+  xy: 777, 807
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+template_male_right_left
+  rotate: false
+  xy: 95, 868
+  size: 45, 74
+  orig: 45, 74
+  offset: 0, 0
+  index: -1
+rfs_head
+  rotate: true
+  xy: 811, 666
+  size: 85, 104
+  orig: 85, 104
+  offset: 0, 0
+  index: -1
+gholla_head
+  rotate: true
+  xy: 2, 944
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+wounded_sheet
+  rotate: false
+  xy: 473, 2
+  size: 214, 68
+  orig: 214, 68
+  offset: 0, 0
+  index: -1
+cortias_2javs
+  rotate: true
+  xy: 2, 173
+  size: 86, 179
+  orig: 86, 179
+  offset: 0, 0
+  index: -1
+slaver_chest
+  rotate: false
+  xy: 473, 241
+  size: 172, 95
+  orig: 172, 95
+  offset: 0, 0
+  index: -1
+kallas_left_bicep
+  rotate: false
+  xy: 93, 1098
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+soldier_right_bicep
+  rotate: false
+  xy: 980, 642
+  size: 42, 76
+  orig: 42, 76
+  offset: 0, 0
+  index: -1
+cortias_forearm_right
+  rotate: false
+  xy: 644, 381
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+koda_torso
+  rotate: false
+  xy: 168, 575
+  size: 162, 88
+  orig: 162, 88
+  offset: 0, 0
+  index: -1
+kallas_right_hand
+  rotate: true
+  xy: 909, 978
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+cortias_torso
+  rotate: false
+  xy: 853, 430
+  size: 166, 104
+  orig: 166, 104
+  offset: 0, 0
+  index: -1
+thigh_right_scaled
+  rotate: false
+  xy: 627, 497
+  size: 45, 74
+  orig: 45, 74
+  offset: 0, 0
+  index: -1
+freeport_arm
+  rotate: false
+  xy: 503, 873
+  size: 43, 76
+  orig: 43, 76
+  offset: 0, 0
+  index: -1
+braeys_morgan_head
+  rotate: true
+  xy: 332, 614
+  size: 87, 109
+  orig: 87, 109
+  offset: 0, 0
+  index: -1
+heavy_head
+  rotate: true
+  xy: 142, 926
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+tazzer_head
+  rotate: true
+  xy: 412, 939
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+slaver_right_bicep
+  rotate: false
+  xy: 495, 951
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+freeport_chest
+  rotate: false
+  xy: 2, 696
+  size: 161, 86
+  orig: 161, 86
+  offset: 0, 0
+  index: -1
+koda_head_valent
+  rotate: true
+  xy: 811, 835
+  size: 76, 98
+  orig: 76, 98
+  offset: 0, 0
+  index: -1
+soldier_chest
+  rotate: false
+  xy: 2, 606
+  size: 161, 88
+  orig: 161, 88
+  offset: 0, 0
+  index: -1
+template_male_left_hand
+  rotate: false
+  xy: 440, 142
+  size: 31, 53
+  orig: 31, 53
+  offset: 0, 0
+  index: -1
+braeys_elias_head
+  rotate: true
+  xy: 364, 197
+  size: 81, 107
+  orig: 81, 107
+  offset: 0, 0
+  index: -1
+barnett_bicep_left
+  rotate: false
+  xy: 704, 932
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+soldier_right_forearm
+  rotate: true
+  xy: 911, 882
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+cortias_2h
+  rotate: false
+  xy: 744, 976
+  size: 33, 31
+  orig: 33, 31
+  offset: 0, 0
+  index: -1
+cortias_bicep_right
+  rotate: true
+  xy: 2, 1162
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+koda_bicep_left_red
+  rotate: true
+  xy: 234, 1057
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+deserter_chest
+  rotate: false
+  xy: 861, 245
+  size: 161, 91
+  orig: 161, 91
+  offset: 0, 0
+  index: -1
+rfs_chest
+  rotate: false
+  xy: 449, 548
+  size: 161, 86
+  orig: 161, 86
+  offset: 0, 0
+  index: -1
+heavy_chest
+  rotate: false
+  xy: 165, 665
+  size: 161, 86
+  orig: 161, 86
+  offset: 0, 0
+  index: -1
+fierhold_head
+  rotate: true
+  xy: 318, 954
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+template_male_head
+  rotate: false
+  xy: 604, 650
+  size: 67, 88
+  orig: 67, 88
+  offset: 0, 0
+  index: -1
+rfs_left_bicep
+  rotate: false
+  xy: 93, 1020
+  size: 43, 76
+  orig: 43, 76
+  offset: 0, 0
+  index: -1
+weapon_spear
+  rotate: true
+  xy: 246, 2
+  size: 83, 225
+  orig: 83, 225
+  offset: 0, 0
+  index: -1
+kallas_coat
+  rotate: false
+  xy: 169, 486
+  size: 165, 87
+  orig: 165, 87
+  offset: 0, 0
+  index: -1
+braeys_vlotgar_head
+  rotate: true
+  xy: 328, 703
+  size: 81, 109
+  orig: 81, 109
+  offset: 0, 0
+  index: -1
+koda_forearm_left_red
+  rotate: true
+  xy: 917, 746
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+slaver_leader_head
+  rotate: true
+  xy: 142, 1002
+  size: 71, 90
+  orig: 71, 90
+  offset: 0, 0
+  index: -1
+soldier_possessed_head
+  rotate: true
+  xy: 336, 516
+  size: 96, 111
+  orig: 96, 111
+  offset: 0, 0
+  index: -1
+weapon_sword_carried_right
+  rotate: true
+  xy: 673, 656
+  size: 90, 136
+  orig: 90, 136
+  offset: 0, 0
+  index: -1
+smith_chest
+  rotate: false
+  xy: 2, 784
+  size: 144, 82
+  orig: 144, 82
+  offset: 0, 0
+  index: -1
+braeys_vlotgar_chest
+  rotate: false
+  xy: 680, 458
+  size: 166, 104
+  orig: 166, 104
+  offset: 0, 0
+  index: -1
+slaver_shield
+  rotate: false
+  xy: 884, 134
+  size: 138, 109
+  orig: 138, 109
+  offset: 0, 0
+  index: -1
+barnett_forearm_left
+  rotate: true
+  xy: 916, 814
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+baron_head
+  rotate: true
+  xy: 2, 1020
+  size: 74, 89
+  orig: 74, 89
+  offset: 0, 0
+  index: -1
+pwalker_sword
+  rotate: true
+  xy: 689, 2
+  size: 90, 206
+  orig: 90, 206
+  offset: 0, 0
+  index: -1
+wounded_chest
+  rotate: false
+  xy: 169, 397
+  size: 165, 87
+  orig: 165, 87
+  offset: 0, 0
+  index: -1
+deserter_shield
+  rotate: true
+  xy: 412, 873
+  size: 64, 89
+  orig: 64, 89
+  offset: 0, 0
+  index: -1
+koda_head
+  rotate: true
+  xy: 571, 850
+  size: 80, 99
+  orig: 80, 99
+  offset: 0, 0
+  index: -1
+template_male_left_foot
+  rotate: false
+  xy: 774, 921
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+koda_torso_valent
+  rotate: false
+  xy: 674, 564
+  size: 164, 90
+  orig: 164, 90
+  offset: 0, 0
+  index: -1
+template_male_right_foot
+  rotate: false
+  xy: 774, 866
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+kallas_left_hand
+  rotate: true
+  xy: 963, 1001
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+kallas_head
+  rotate: false
+  xy: 583, 740
+  size: 87, 108
+  orig: 87, 108
+  offset: 0, 0
+  index: -1
+braeys_head1
+  rotate: true
+  xy: 318, 786
+  size: 84, 108
+  orig: 84, 108
+  offset: 0, 0
+  index: -1
+head_bearded
+  rotate: true
+  xy: 811, 753
+  size: 80, 103
+  orig: 80, 103
+  offset: 0, 0
+  index: -1
+cortias_sheathe
+  rotate: true
+  xy: 183, 248
+  size: 43, 176
+  orig: 43, 176
+  offset: 0, 0
+  index: -1
+cortias_forearm_left
+  rotate: false
+  xy: 644, 439
+  size: 34, 56
+  orig: 34, 56
+  offset: 0, 0
+  index: -1
+template_male_right_hand
+  rotate: false
+  xy: 440, 87
+  size: 31, 53
+  orig: 31, 53
+  offset: 0, 0
+  index: -1
+slaver_left_hand
+  rotate: true
+  xy: 964, 967
+  size: 32, 53
+  orig: 32, 53
+  offset: 0, 0
+  index: -1
+shield_wood
+  rotate: true
+  xy: 2, 1096
+  size: 64, 89
+  orig: 64, 89
+  offset: 0, 0
+  index: -1
+weapon_arrow
+  rotate: true
+  xy: 840, 642
+  size: 22, 138
+  orig: 22, 138
+  offset: 0, 0
+  index: -1
+slaver_weapon_sword_swung
+  rotate: true
+  xy: 473, 72
+  size: 75, 206
+  orig: 75, 206
+  offset: 0, 0
+  index: -1
+template_male_left_leg
+  rotate: false
+  xy: 95, 944
+  size: 45, 74
+  orig: 45, 74
+  offset: 0, 0
+  index: -1
+cortias_chain_tip
+  rotate: true
+  xy: 911, 850
+  size: 30, 55
+  orig: 30, 55
+  offset: 0, 0
+  index: -1
+archer_resting
+  rotate: false
+  xy: 439, 765
+  size: 130, 106
+  orig: 130, 106
+  offset: 0, 0
+  index: -1
+template_male_left_bicep
+  rotate: true
+  xy: 548, 932
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+braeys_chest
+  rotate: false
+  xy: 472, 338
+  size: 170, 100
+  orig: 170, 100
+  offset: 0, 0
+  index: -1
+cortias_javUP
+  rotate: true
+  xy: 183, 200
+  size: 46, 176
+  orig: 46, 176
+  offset: 0, 0
+  index: -1
+slaver_left_bicep
+  rotate: true
+  xy: 401, 1012
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+koda_left_bicep
+  rotate: true
+  xy: 312, 1027
+  size: 38, 76
+  orig: 38, 76
+  offset: 0, 0
+  index: -1
+baron_torso
+  rotate: false
+  xy: 848, 536
+  size: 166, 104
+  orig: 166, 104
+  offset: 0, 0
+  index: -1
+cortias_javelin
+  rotate: true
+  xy: 183, 173
+  size: 25, 179
+  orig: 25, 179
+  offset: 0, 0
+  index: -1
+cortias_sword
+  rotate: true
+  xy: 2, 261
+  size: 129, 175
+  orig: 129, 175
+  offset: 0, 0
+  index: -1
+gear_item_cortias_sword
+  rotate: false
+  xy: 672, 830
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+kallas_claemoss_head
+  rotate: false
+  xy: 244, 831
+  size: 72, 91
+  orig: 72, 91
+  offset: 0, 0
+  index: -1
+soldier_left_bicep
+  rotate: false
+  xy: 980, 720
+  size: 42, 76
+  orig: 42, 76
+  offset: 0, 0
+  index: -1
+archer_drawn
+  rotate: true
+  xy: 897, 2
+  size: 130, 122
+  orig: 130, 122
+  offset: 0, 0
+  index: -1
+slaver_flame_swung
+  rotate: true
+  xy: 165, 753
+  size: 76, 151
+  orig: 76, 151
+  offset: 0, 0
+  index: -1

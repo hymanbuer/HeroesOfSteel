@@ -1,0 +1,46 @@
+monster_floater.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+drake_ice_chest
+  rotate: false
+  xy: 286, 2
+  size: 139, 306
+  orig: 139, 306
+  offset: 0, 0
+  index: -1
+drake_claws
+  rotate: false
+  xy: 427, 196
+  size: 53, 192
+  orig: 53, 192
+  offset: 0, 0
+  index: -1
+drake_ice_wing
+  rotate: false
+  xy: 144, 2
+  size: 140, 317
+  orig: 140, 317
+  offset: 0, 0
+  index: -1
+drake_chest
+  rotate: false
+  xy: 286, 310
+  size: 138, 306
+  orig: 138, 306
+  offset: 0, 0
+  index: -1
+drake_wing
+  rotate: false
+  xy: 2, 2
+  size: 140, 317
+  orig: 140, 317
+  offset: 0, 0
+  index: -1
+drake_ice_claws
+  rotate: false
+  xy: 427, 2
+  size: 53, 192
+  orig: 53, 192
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,165 @@
+char_cleric.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+breasts
+  rotate: false
+  xy: 127, 320
+  size: 109, 45
+  orig: 109, 45
+  offset: 0, 0
+  index: -1
+cloak
+  rotate: false
+  xy: 260, 194
+  size: 131, 76
+  orig: 131, 76
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 226, 382
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+left_bicep
+  rotate: false
+  xy: 91, 450
+  size: 34, 62
+  orig: 34, 62
+  offset: 0, 0
+  index: -1
+left_foot
+  rotate: false
+  xy: 127, 435
+  size: 54, 93
+  orig: 54, 93
+  offset: 0, 0
+  index: -1
+left_forearm
+  rotate: false
+  xy: 2, 534
+  size: 50, 62
+  orig: 50, 62
+  offset: 0, 0
+  index: -1
+left_hand
+  rotate: false
+  xy: 183, 435
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+left_thigh
+  rotate: false
+  xy: 449, 448
+  size: 60, 95
+  orig: 60, 95
+  offset: 0, 0
+  index: -1
+lighting
+  rotate: false
+  xy: 251, 272
+  size: 119, 108
+  orig: 119, 108
+  offset: 0, 0
+  index: -1
+right_bicep
+  rotate: false
+  xy: 91, 386
+  size: 34, 62
+  orig: 34, 62
+  offset: 0, 0
+  index: -1
+right_foot
+  rotate: false
+  xy: 449, 545
+  size: 54, 93
+  orig: 54, 93
+  offset: 0, 0
+  index: -1
+right_forearm
+  rotate: false
+  xy: 216, 475
+  size: 50, 62
+  orig: 50, 62
+  offset: 0, 0
+  index: -1
+right_hand
+  rotate: false
+  xy: 91, 514
+  size: 31, 52
+  orig: 31, 52
+  offset: 0, 0
+  index: -1
+right_hand_shield
+  rotate: false
+  xy: 302, 382
+  size: 64, 121
+  orig: 64, 121
+  offset: 0, 0
+  index: -1
+right_thigh
+  rotate: false
+  xy: 449, 351
+  size: 60, 95
+  orig: 60, 95
+  offset: 0, 0
+  index: -1
+torso_heavy
+  rotate: false
+  xy: 127, 260
+  size: 122, 58
+  orig: 122, 58
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+waist
+  rotate: false
+  xy: 127, 367
+  size: 97, 66
+  orig: 97, 66
+  offset: 0, 0
+  index: -1
+weapon_hammer_backswing
+  rotate: false
+  xy: 372, 351
+  size: 75, 196
+  orig: 75, 196
+  offset: 0, 0
+  index: -1
+weapon_hammer_extended
+  rotate: false
+  xy: 2, 386
+  size: 87, 146
+  orig: 87, 146
+  offset: 0, 0
+  index: -1
+weapon_spell
+  rotate: false
+  xy: 2, 260
+  size: 123, 124
+  orig: 123, 124
+  offset: 0, 0
+  index: -1
+weapon_staff
+  rotate: false
+  xy: 393, 194
+  size: 109, 155
+  orig: 109, 155
+  offset: 0, 0
+  index: -1

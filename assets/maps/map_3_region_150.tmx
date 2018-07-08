@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<map height="90" nextobjectid="64" orientation="orthogonal" renderorder="right-down" tileheight="64" tilewidth="64" version="1.0" width="140">
+  <tileset firstgid="1" name="system" tileheight="64" tilewidth="64">
+  <image height="1024" source="system.png" width="1024"/>
+ </tileset>
+  <tileset firstgid="257" name="background3" tileheight="64" tilewidth="64">
+  <image height="1024" source="background3.png" width="1024"/>
+  <terraintypes>
+   <terrain name="Brick" tile="-1"/>
+   <terrain name="Walls" tile="-1"/>
+   <terrain name="Cavern" tile="-1"/>
+   <terrain name="Raised Level" tile="-1"/>
+   <terrain name="Grass" tile="-1"/>
+   <terrain name="Water" tile="-1"/>
+   <terrain name="Cliff" tile="-1"/>
+   <terrain name="Lava" tile="-1"/>
+   <terrain name="Snow" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain=",,,1"/>
+  <tile id="1" terrain=",,1,1"/>
+  <tile id="2" terrain=",,1,"/>
+  <tile id="3" terrain=",,,2"/>
+  <tile id="4" terrain=",,2,2"/>
+  <tile id="5" terrain=",,2,"/>
+  <tile id="6" terrain=",,,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="7" terrain=",,6,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="8" terrain=",,6,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="9" terrain="1,1,1,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="10" terrain="1,1,3,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="11" terrain="1,1,3,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="16" terrain=",1,,1"/>
+  <tile id="17" terrain="1,1,1,1">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="18" terrain="1,,1,"/>
+  <tile id="19" terrain=",2,,2"/>
+  <tile id="20">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="21" terrain="2,,2,"/>
+  <tile id="22" terrain=",6,,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="24" terrain="6,,6,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="25" terrain="1,3,1,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="27" terrain="3,1,3,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="32" terrain=",1,,"/>
+  <tile id="33" terrain="1,1,,"/>
+  <tile id="34" terrain="1,,,"/>
+  <tile id="35" terrain=",2,,"/>
+  <tile id="36" terrain="2,2,,"/>
+  <tile id="37" terrain="2,,,"/>
+  <tile id="38" terrain=",6,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="39" terrain="6,6,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="40" terrain="6,,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="41" terrain="1,3,1,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="42" terrain="3,3,1,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="43" terrain="3,1,1,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="46">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="48" terrain="1,1,1,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="49" terrain="1,1,,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="51" terrain="2,2,2,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="52" terrain="2,2,,2">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="54" terrain=",6,6,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="55" terrain="6,,6,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="56" terrain="8,8,8,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="57" terrain="3,3,3,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="58" terrain="3,3,1,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="59" terrain=",0,0,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="60" terrain="0,,0,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="64" terrain="1,,1,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="65" terrain=",1,1,1">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="67" terrain="2,,2,2">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="68" terrain=",2,2,2">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="70" terrain="6,6,,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="71" terrain="6,6,6,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="72" terrain="8,,8,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="73" terrain="3,1,3,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="74" terrain="1,3,3,3">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="75" terrain="0,0,,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="76" terrain="0,0,0,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="80" terrain=",,,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="81" terrain=",,4,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="82" terrain=",,4,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="83" terrain=",,,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="84" terrain=",,5,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="85" terrain=",,5,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="88" terrain=",8,,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="89" terrain=",,8,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="90" terrain=",,,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="91" terrain=",,0,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="92" terrain=",,0,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="96" terrain=",4,,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="97" terrain="4,4,4,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="98" terrain="4,,4,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="99" terrain=",5,,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="100" terrain="5,5,5,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="101" terrain="5,,5,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="104" terrain=",,8,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="105" terrain="8,8,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="106" terrain=",0,,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="107" terrain="0,0,0,0">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="108" terrain="0,,0,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="112" terrain=",4,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="113" terrain="4,4,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="114" terrain="4,,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="115" terrain=",5,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="116" terrain="5,5,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="117" terrain="5,,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="121" terrain="8,,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="122" terrain=",0,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="123" terrain="0,0,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="124" terrain="0,,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="128" terrain="4,4,4,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="129" terrain="4,4,,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="134">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="137" terrain=",,,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="138" terrain=",,7,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="139" terrain=",,7,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="140" terrain=",,,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="144" terrain="4,,4,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="145" terrain=",4,4,4">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="148" terrain="5,5,5,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="149" terrain="5,5,,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="153" terrain=",7,,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="154" terrain="7,7,7,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="155" terrain="7,,7,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="156" terrain=",8,,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="157" terrain="8,8,,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="158" terrain=",8,8,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="159" terrain="8,,8,8">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="160">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="161">
+   <properties>
+    <property name="d" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="f" value="1"/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="164" terrain="5,,5,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="165" terrain=",5,5,5">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="169" terrain=",7,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="170" terrain="7,7,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="171" terrain="7,,,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="175" terrain="8,8,8,">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="177">
+   <properties>
+    <property name="d" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="d" value="2"/>
+    <property name="l" value="1"/>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="182" terrain="7,7,7,">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="183" terrain="7,7,,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="191">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="d" value="1"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="198" terrain="7,,7,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="199" terrain=",7,7,7">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="m" value=""/>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="m" value=""/>
+    <property name="t" value="1"/>
+    <property name="tt" value="3"/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+    <property name="t" value=""/>
+    <property name="tt" value="3"/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="d" value="1"/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+    <property name="t" value="1"/>
+    <property name="tt" value="1"/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+    <property name="t" value="2"/>
+    <property name="tt" value="1"/>
+   </properties>
+  </tile>
+  <tile id="223" terrain="2,2,2,2">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="d" value="1"/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="m" value=""/>
+    <property name="t" value="1"/>
+    <property name="tt" value="2"/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+    <property name="t" value="2"/>
+    <property name="tt" value="2"/>
+   </properties>
+  </tile>
+  <tile id="239" terrain="3,3,3,3">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="d" value="1"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="244">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="248">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="249">
+   <properties>
+    <property name="s" value=""/>
+   </properties>
+  </tile>
+  <tile id="250">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="252">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+  <tile id="253">
+   <properties>
+    <property name="m" value=""/>
+    <property name="t" value="1"/>
+    <property name="tt" value="1"/>
+   </properties>
+  </tile>
+  <tile id="254">
+   <properties>
+    <property name="f" value=""/>
+    <property name="m" value=""/>
+    <property name="t" value="2"/>
+    <property name="tt" value="1"/>
+   </properties>
+  </tile>
+  <tile id="255" terrain="6,6,6,6">
+   <properties>
+    <property name="m" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+  <tileset firstgid="513" name="foreground3" tileheight="64" tilewidth="64">
+  <image height="1024" source="foreground3.png" width="1024"/>
+  <tile id="122">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="3"/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="3"/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="3"/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="1"/>
+   </properties>
+  </tile>
+  <tile id="243">
+   <properties>
+    <property name="c" value="2"/>
+    <property name="l" value="3"/>
+   </properties>
+  </tile>
+  <tile id="251">
+   <properties>
+    <property name="c" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+  <layer height="90" name="Background" width="140">
+  <data compression="zlib" encoding="base64">
+   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
+  </data>
+ </layer>
+  <layer height="90" name="Foreground" width="140">
+  <data compression="zlib" encoding="base64">
+   eJzt3cFNwzAUgOGok3QURmGIDoDUzpADp55yYIpKXDnBAghGYAFcQUVJm8QGP79nv/+TekCtVMd+if1e3NB15fSr7nYIr4JfCWFhPPdhXPfa7QC4vrTnY6XdAuA6YjOfB/oSAAAAzg2r7rUPL+125ESNxpYwHuswHmvtdgAAuu5doBb2IlxfYx5BihzxQswB8Egij5ZeIwCQ03P+upa6F3NoPF42o+Pbsk81mZd6fYiNbjeKl/D3frMQM6FvDn95r7TQlhvtNpx4nqf6mZiYei8mjnLHWm8oXk7z1FLceI6rc3MxlvIZ6+5H4z0+B5bWNynrHy/zoCe1nAOW1hFTqB3pGcdHLXENHcSHXaxhkSJHDe+ZmEsisT8H0zYh79o5yr0eK44vK7nK1lG81Ex7Lco9IaSIuSdUoxzP8ZmrkfKcIAASrKw5UQepNSd1FOA68izEONX6Ws2zpHncp0KtDwDqRX3QPo9ri1oxVnlxfWob5wsgi2soIMfrHGbluK20A3Gm5qPYcQyfuxNoVnFa+yes/9Yld/uGs3ixfuxztPbsWntezXgMJdtn7dhj8bvgH7WOYUmlr4s1X4dR/pwq+X3EZpqS/WVxz3GL84vkM74Ln8uHct/mFzUYACWxTkOKFtdpAOxhbsJJTG5kaW4iduuivb/LUuzCJ4t1YdhFXRiApvH/0fCM+0df6Ic4/+kn7XzJI+2awtv39x/zBHIF+6zUFI55ArkCAAC6yI/awlr8En0yjbX4JfoEANrFuhcAAJ+4bw3AmycjewHwm+R8RL67THtPlSXEy7KSe6o+Aey/vPI=
+  </data>
+ </layer>
+  <layer height="90" name="Effects" width="140">
+  <data compression="zlib" encoding="base64">
+   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
+  </data>
+ </layer>
+  <layer height="90" name="Collision" width="140">
+  <data compression="zlib" encoding="base64">
+   eJztwSEBAAAAAiD9f9oVNqABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgaJzwAC
+  </data>
+ </layer>
+  <layer height="90" name="Blocks" width="140">
+  <data compression="zlib" encoding="base64">
+   eJztwSEBAAAAAiD9f9oVNqABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgaJzwAC
+  </data>
+ </layer>
+  <layer height="90" name="Fog" width="140">
+  <data compression="zlib" encoding="base64">
+   eJztwSEBAAAAAiD9f9oVNqABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgaJzwAC
+  </data>
+ </layer>
+  <layer height="90" name="Rooms" width="140">
+  <data compression="zlib" encoding="base64">
+   eJztwSEBAAAAAiD9f9oVNqABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXgaJzwAC
+  </data>
+ </layer>
+  <objectgroup name="Blocks">
+  <object height="192" id="1" name="2405" width="192" x="320" y="5248"/>
+  <object height="192" id="2" name="2406" width="192" x="8384" y="320"/>
+  <object height="64" id="3" name="2407" width="448" x="768" y="4800"/>
+  <object height="256" id="4" name="2407" width="64" x="1408" y="4864"/>
+  <object height="64" id="5" name="2408" width="768" x="960" y="3008"/>
+  <object height="512" id="6" name="2409" width="64" x="896" y="768"/>
+  <object height="1216" id="7" name="2410" width="64" x="3136" y="1856"/>
+  <object height="1792" id="8" name="2411" width="64" x="6400" y="1536"/>
+  <object height="64" id="9" name="2412" width="64" x="3776" y="1664"/>
+  <object height="64" id="10" name="2413" width="64" x="5632" y="1344"/>
+  <object height="64" id="11" name="2414" width="640" x="8192" y="1088"/>
+  <object height="64" id="12" name="2415" width="1472" x="7232" y="2944"/>
+  <object height="128" id="13" name="2417" width="640" x="1728" y="320"/>
+  <object height="64" id="14" name="35" width="64" x="6976" y="4352"/>
+  <object height="64" id="15" name="35" width="64" x="2496" y="128"/>
+  <object height="128" id="16" name="2432" width="64" x="2816" y="2496"/>
+  <object height="192" id="17" name="2432" width="64" x="2880" y="2112"/>
+  <object height="128" id="18" name="2435" width="64" x="6784" y="2368"/>
+  <object height="128" id="19" name="2440" width="64" x="7232" y="5632"/>
+  <object height="128" id="20" name="2435" width="64" x="6720" y="1792"/>
+ </objectgroup>
+  <objectgroup name="Rooms">
+  <object height="128" id="21" name="1" width="128" x="4416" y="4416">
+   <properties>
+    <property name="group" value="185"/>
+   </properties>
+  </object>
+  <object height="128" id="22" name="2" width="128" x="3520" y="5504">
+   <properties>
+    <property name="group" value="185"/>
+   </properties>
+  </object>
+  <object height="128" id="23" name="3" width="128" x="7232" y="192">
+   <properties>
+    <property name="group" value="185"/>
+   </properties>
+  </object>
+  <object height="128" id="24" name="4" width="128" x="960" y="1536">
+   <properties>
+    <property name="group" value="185"/>
+   </properties>
+  </object>
+  <object height="192" id="25" name="5" width="256" x="4544" y="768">
+   <properties>
+    <property name="group" value="248"/>
+   </properties>
+  </object>
+  <object height="128" id="26" name="6" width="128" x="3456" y="1088">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="384" id="27" name="7" width="640" x="640" y="4032">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="245"/>
+    <property name="state" value="1323"/>
+   </properties>
+  </object>
+  <object height="576" id="28" name="8" width="576" x="1728" y="4352">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="244"/>
+    <property name="state" value="1323"/>
+   </properties>
+  </object>
+  <object height="384" id="29" name="9" width="768" x="512" y="2240">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="245"/>
+    <property name="state" value="1324"/>
+   </properties>
+  </object>
+  <object height="448" id="30" name="10" width="896" x="384" y="3520">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="244"/>
+    <property name="state" value="1324"/>
+   </properties>
+  </object>
+  <object height="384" id="31" name="11" width="768" x="192" y="1792">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="246"/>
+    <property name="state" value="1323"/>
+   </properties>
+  </object>
+  <object height="704" id="32" name="12" width="384" x="1664" y="832">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="243"/>
+    <property name="state" value="1325"/>
+   </properties>
+  </object>
+  <object height="448" id="33" name="13" width="512" x="256" y="1472">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="243"/>
+    <property name="state" value="1325"/>
+   </properties>
+  </object>
+  <object height="128" id="34" name="14" width="192" x="1920" y="256">
+   <properties>
+    <property name="group" value="249"/>
+   </properties>
+  </object>
+  <object height="128" id="35" name="15" width="192" x="192" y="192">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="640" id="36" name="16" width="512" x="2944" y="4992">
+   <properties>
+    <property name="group" value="246"/>
+   </properties>
+  </object>
+  <object height="640" id="37" name="17" width="512" x="3392" y="4352">
+   <properties>
+    <property name="group" value="243"/>
+   </properties>
+  </object>
+  <object height="896" id="38" name="18" width="512" x="2048" y="2560">
+   <properties>
+    <property name="group" value="245"/>
+   </properties>
+  </object>
+  <object height="128" id="39" name="19" width="128" x="1792" y="3392">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="960" id="40" name="20" width="256" x="3712" y="320">
+   <properties>
+    <property name="group" value="243"/>
+   </properties>
+  </object>
+  <object height="640" id="41" name="21" width="512" x="4032" y="448">
+   <properties>
+    <property name="group" value="246"/>
+   </properties>
+  </object>
+  <object height="320" id="42" name="22" width="320" x="3968" y="2944">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1326"/>
+   </properties>
+  </object>
+  <object height="320" id="43" name="23" width="320" x="3776" y="1728">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1326"/>
+   </properties>
+  </object>
+  <object height="320" id="44" name="24" width="320" x="3456" y="3200">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1326"/>
+   </properties>
+  </object>
+  <object height="512" id="45" name="25" width="320" x="3904" y="2176">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="245"/>
+    <property name="state" value="1326"/>
+   </properties>
+  </object>
+  <object height="384" id="46" name="26" width="640" x="8128" y="256">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="245"/>
+    <property name="state" value="1328"/>
+   </properties>
+  </object>
+  <object height="576" id="47" name="27" width="576" x="7680" y="1536">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="244"/>
+    <property name="state" value="1329"/>
+   </properties>
+  </object>
+  <object height="512" id="48" name="28" width="640" x="6016" y="576">
+   <properties>
+    <property name="group" value="246"/>
+   </properties>
+  </object>
+  <object height="192" id="49" name="29" width="320" x="6848" y="768">
+   <properties>
+    <property name="group" value="250"/>
+   </properties>
+  </object>
+  <object height="448" id="50" name="30" width="1088" x="7616" y="2048">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="244"/>
+    <property name="state" value="1328"/>
+   </properties>
+  </object>
+  <object height="448" id="51" name="31" width="1280" x="7424" y="3392">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="244"/>
+    <property name="state" value="1329"/>
+   </properties>
+  </object>
+  <object height="384" id="52" name="32" width="576" x="5248" y="4096">
+   <properties>
+    <property name="group" value="243"/>
+   </properties>
+  </object>
+  <object height="384" id="53" name="33" width="576" x="6976" y="4800">
+   <properties>
+    <property name="group" value="243"/>
+   </properties>
+  </object>
+  <object height="192" id="54" name="34" width="320" x="5568" y="5120">
+   <properties>
+    <property name="group" value="250"/>
+   </properties>
+  </object>
+  <object height="320" id="55" name="35" width="320" x="5248" y="1728">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1327"/>
+   </properties>
+  </object>
+  <object height="512" id="56" name="36" width="320" x="5376" y="2560">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="245"/>
+    <property name="state" value="1327"/>
+   </properties>
+  </object>
+  <object height="256" id="57" name="37" width="320" x="5888" y="1472">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1327"/>
+   </properties>
+  </object>
+  <object height="320" id="58" name="38" width="320" x="5504" y="3200">
+   <properties>
+    <property name="block" value="1"/>
+    <property name="group" value="252"/>
+    <property name="state" value="1327"/>
+   </properties>
+  </object>
+  <object height="128" id="59" name="39" width="128" x="6528" y="1536">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="128" id="60" name="40" width="128" x="7168" y="1792">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="128" id="61" name="41" width="128" x="2368" y="1792">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="128" id="62" name="42" width="128" x="1472" y="2368">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+  <object height="128" id="63" name="43" width="128" x="8640" y="4480">
+   <properties>
+    <property name="group" value="242"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

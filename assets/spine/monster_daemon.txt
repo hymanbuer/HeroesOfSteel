@@ -1,0 +1,39 @@
+monster_daemon.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+shade_chest
+  rotate: false
+  xy: 2, 194
+  size: 188, 126
+  orig: 188, 126
+  offset: 0, 0
+  index: -1
+shade_head
+  rotate: false
+  xy: 192, 194
+  size: 51, 16
+  orig: 51, 16
+  offset: 0, 0
+  index: -1
+shade_splash1
+  rotate: false
+  xy: 2, 322
+  size: 145, 107
+  orig: 145, 107
+  offset: 0, 0
+  index: -1
+shade_splash2
+  rotate: false
+  xy: 2, 322
+  size: 145, 107
+  orig: 145, 107
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1

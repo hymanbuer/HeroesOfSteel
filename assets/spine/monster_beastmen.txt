@@ -1,0 +1,249 @@
+monster_beastmen.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+beastman_bull_ass
+  rotate: false
+  xy: 244, 486
+  size: 141, 56
+  orig: 141, 56
+  offset: 0, 0
+  index: -1
+beastman_bull_thigh_left
+  rotate: false
+  xy: 377, 586
+  size: 75, 102
+  orig: 75, 102
+  offset: 0, 0
+  index: -1
+beastman_bull_thigh_right
+  rotate: false
+  xy: 182, 260
+  size: 75, 102
+  orig: 75, 102
+  offset: 0, 0
+  index: -1
+boxmodel
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+head_savage
+  rotate: false
+  xy: 161, 364
+  size: 95, 109
+  orig: 95, 109
+  offset: 0, 0
+  index: -1
+heavy_chest
+  rotate: false
+  xy: 260, 194
+  size: 193, 112
+  orig: 193, 112
+  offset: 0, 0
+  index: -1
+heavy_head
+  rotate: false
+  xy: 2, 690
+  size: 115, 146
+  orig: 115, 146
+  offset: 0, 0
+  index: -1
+javeliner_chest
+  rotate: false
+  xy: 2, 358
+  size: 157, 92
+  orig: 157, 92
+  offset: 0, 0
+  index: -1
+javeliner_head
+  rotate: false
+  xy: 244, 544
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+javeliner_right_arm
+  rotate: false
+  xy: 234, 809
+  size: 114, 211
+  orig: 114, 211
+  offset: 0, 0
+  index: -1
+javeliner_weapon_flying
+  rotate: false
+  xy: 413, 308
+  size: 39, 216
+  orig: 39, 216
+  offset: 0, 0
+  index: -1
+javeliner_weapon_up
+  rotate: false
+  xy: 455, 194
+  size: 53, 214
+  orig: 53, 214
+  offset: 0, 0
+  index: -1
+orc_bicep_left
+  rotate: false
+  xy: 454, 624
+  size: 52, 58
+  orig: 52, 58
+  offset: 0, 0
+  index: -1
+orc_bicep_right
+  rotate: false
+  xy: 387, 526
+  size: 52, 58
+  orig: 52, 58
+  offset: 0, 0
+  index: -1
+orc_chest_bare
+  rotate: false
+  xy: 258, 397
+  size: 152, 87
+  orig: 152, 87
+  offset: 0, 0
+  index: -1
+orc_foot_left
+  rotate: false
+  xy: 82, 902
+  size: 34, 62
+  orig: 34, 62
+  offset: 0, 0
+  index: -1
+orc_foot_right
+  rotate: false
+  xy: 82, 838
+  size: 34, 62
+  orig: 34, 62
+  offset: 0, 0
+  index: -1
+orc_forearm_left
+  rotate: false
+  xy: 42, 975
+  size: 38, 46
+  orig: 38, 46
+  offset: 0, 0
+  index: -1
+orc_forearm_right
+  rotate: false
+  xy: 2, 975
+  size: 38, 46
+  orig: 38, 46
+  offset: 0, 0
+  index: -1
+orc_hand_left
+  rotate: false
+  xy: 117, 975
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+orc_hand_right
+  rotate: false
+  xy: 82, 966
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+orc_thigh_left
+  rotate: false
+  xy: 434, 773
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+orc_thigh_right
+  rotate: false
+  xy: 454, 684
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+shield_wood
+  rotate: false
+  xy: 360, 690
+  size: 72, 91
+  orig: 72, 91
+  offset: 0, 0
+  index: -1
+soldier_chest
+  rotate: false
+  xy: 259, 308
+  size: 152, 87
+  orig: 152, 87
+  offset: 0, 0
+  index: -1
+soldier_head
+  rotate: false
+  xy: 2, 571
+  size: 145, 117
+  orig: 145, 117
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 260, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+warlord_chest
+  rotate: false
+  xy: 2, 260
+  size: 178, 96
+  orig: 178, 96
+  offset: 0, 0
+  index: -1
+warlord_head
+  rotate: false
+  xy: 2, 452
+  size: 145, 117
+  orig: 145, 117
+  offset: 0, 0
+  index: -1
+warlord_shield
+  rotate: false
+  xy: 149, 475
+  size: 93, 123
+  orig: 93, 123
+  offset: 0, 0
+  index: -1
+warlord_sword
+  rotate: false
+  xy: 234, 663
+  size: 124, 144
+  orig: 124, 144
+  offset: 0, 0
+  index: -1
+weapon_ax_left
+  rotate: false
+  xy: 350, 862
+  size: 111, 144
+  orig: 111, 144
+  offset: 0, 0
+  index: -1
+weapon_ax_right
+  rotate: false
+  xy: 119, 829
+  size: 111, 144
+  orig: 111, 144
+  offset: 0, 0
+  index: -1
+weapon_javelin_held
+  rotate: false
+  xy: 454, 410
+  size: 56, 212
+  orig: 56, 212
+  offset: 0, 0
+  index: -1
+weapon_spear
+  rotate: false
+  xy: 149, 600
+  size: 83, 227
+  orig: 83, 227
+  offset: 0, 0
+  index: -1

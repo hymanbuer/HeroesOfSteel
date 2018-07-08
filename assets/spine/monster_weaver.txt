@@ -1,0 +1,46 @@
+monster_weaver.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+adbo
+  rotate: false
+  xy: 2, 151
+  size: 121, 113
+  orig: 121, 113
+  offset: 0, 0
+  index: -1
+butt
+  rotate: false
+  xy: 2, 2
+  size: 190, 147
+  orig: 190, 147
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 154, 175
+  size: 85, 79
+  orig: 85, 79
+  offset: 0, 0
+  index: -1
+leg_inner
+  rotate: false
+  xy: 194, 2
+  size: 58, 37
+  orig: 58, 37
+  offset: 0, 0
+  index: -1
+leg_outer
+  rotate: false
+  xy: 194, 41
+  size: 54, 132
+  orig: 54, 132
+  offset: 0, 0
+  index: -1
+mandible
+  rotate: false
+  xy: 125, 151
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1

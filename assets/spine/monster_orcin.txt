@@ -1,0 +1,760 @@
+monster_orcin.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+shaman_elite_head
+  rotate: false
+  xy: 2, 583
+  size: 93, 90
+  orig: 93, 90
+  offset: 0, 0
+  index: -1
+troll_forearm_left
+  rotate: false
+  xy: 749, 770
+  size: 23, 55
+  orig: 23, 55
+  offset: 0, 0
+  index: -1
+shaman_spell_attack
+  rotate: false
+  xy: 820, 485
+  size: 132, 134
+  orig: 132, 134
+  offset: 0, 0
+  index: -1
+thorn_arm_left
+  rotate: false
+  xy: 236, 915
+  size: 60, 95
+  orig: 60, 95
+  offset: 0, 0
+  index: -1
+shaman_left_forearm
+  rotate: false
+  xy: 206, 870
+  size: 27, 42
+  orig: 27, 42
+  offset: 0, 0
+  index: -1
+earth_left_left
+  rotate: false
+  xy: 619, 840
+  size: 60, 64
+  orig: 60, 64
+  offset: 0, 0
+  index: -1
+berserk_head
+  rotate: false
+  xy: 548, 915
+  size: 61, 78
+  orig: 61, 78
+  offset: 0, 0
+  index: -1
+shaman_left_bicep
+  rotate: false
+  xy: 548, 566
+  size: 43, 58
+  orig: 43, 58
+  offset: 0, 0
+  index: -1
+soldier_head
+  rotate: false
+  xy: 357, 638
+  size: 72, 78
+  orig: 72, 78
+  offset: 0, 0
+  index: -1
+troll_hand_left
+  rotate: false
+  xy: 681, 893
+  size: 45, 56
+  orig: 45, 56
+  offset: 0, 0
+  index: -1
+shaman_elite_staff
+  rotate: false
+  xy: 438, 466
+  size: 108, 187
+  orig: 108, 187
+  offset: 0, 0
+  index: -1
+troll_bicep_left
+  rotate: false
+  xy: 779, 648
+  size: 36, 78
+  orig: 36, 78
+  offset: 0, 0
+  index: -1
+ice_left_hand
+  rotate: false
+  xy: 540, 691
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+javeliner_head
+  rotate: false
+  xy: 954, 612
+  size: 68, 73
+  orig: 68, 73
+  offset: 0, 0
+  index: -1
+fhund_head
+  rotate: false
+  xy: 2, 718
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+sword_ravager
+  rotate: false
+  xy: 158, 421
+  size: 88, 132
+  orig: 88, 132
+  offset: 0, 0
+  index: -1
+troll_thigh_left
+  rotate: false
+  xy: 554, 417
+  size: 37, 87
+  orig: 37, 87
+  offset: 0, 0
+  index: -1
+fhund_foot
+  rotate: false
+  xy: 102, 491
+  size: 52, 69
+  orig: 52, 69
+  offset: 0, 0
+  index: -1
+javeliner_chest
+  rotate: false
+  xy: 440, 92
+  size: 168, 98
+  orig: 168, 98
+  offset: 0, 0
+  index: -1
+bone_hand_left
+  rotate: false
+  xy: 473, 833
+  size: 82, 80
+  orig: 82, 80
+  offset: 0, 0
+  index: -1
+troll_thigh_right
+  rotate: false
+  xy: 985, 205
+  size: 37, 87
+  orig: 37, 87
+  offset: 0, 0
+  index: -1
+berserk_right_bicep
+  rotate: false
+  xy: 102, 682
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+heavy_axe_single
+  rotate: false
+  xy: 248, 2
+  size: 213, 88
+  orig: 213, 88
+  offset: 0, 0
+  index: -1
+thorn_chest
+  rotate: false
+  xy: 440, 192
+  size: 152, 131
+  orig: 152, 131
+  offset: 0, 0
+  index: -1
+trollice_hand_right
+  rotate: false
+  xy: 604, 776
+  size: 45, 56
+  orig: 45, 56
+  offset: 0, 0
+  index: -1
+shaman_head
+  rotate: false
+  xy: 380, 241
+  size: 58, 88
+  orig: 58, 88
+  offset: 0, 0
+  index: -1
+berserk_right_hand
+  rotate: false
+  xy: 611, 915
+  size: 45, 78
+  orig: 45, 78
+  offset: 0, 0
+  index: -1
+shield_ice
+  rotate: false
+  xy: 350, 718
+  size: 64, 89
+  orig: 64, 89
+  offset: 0, 0
+  index: -1
+shaman_right_thigh
+  rotate: false
+  xy: 298, 933
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+under_shadow
+  rotate: false
+  xy: 2, 2
+  size: 244, 190
+  orig: 244, 190
+  offset: 0, 0
+  index: -1
+warlord_head
+  rotate: false
+  xy: 248, 325
+  size: 130, 78
+  orig: 130, 78
+  offset: 0, 0
+  index: -1
+earth_head
+  rotate: false
+  xy: 673, 488
+  size: 107, 108
+  orig: 107, 108
+  offset: 0, 0
+  index: -1
+orc_hand_right
+  rotate: false
+  xy: 206, 740
+  size: 34, 31
+  orig: 34, 31
+  offset: 0, 0
+  index: -1
+trollwar_head
+  rotate: false
+  xy: 833, 207
+  size: 148, 107
+  orig: 148, 107
+  offset: 0, 0
+  index: -1
+earth_left_hand
+  rotate: false
+  xy: 298, 870
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+bone_chest
+  rotate: false
+  xy: 248, 92
+  size: 190, 147
+  orig: 190, 147
+  offset: 0, 0
+  index: -1
+trollice_head
+  rotate: false
+  xy: 2, 915
+  size: 83, 102
+  orig: 83, 102
+  offset: 0, 0
+  index: -1
+warlord_sword
+  rotate: false
+  xy: 440, 325
+  size: 112, 139
+  orig: 112, 139
+  offset: 0, 0
+  index: -1
+trollice_torso
+  rotate: false
+  xy: 676, 209
+  size: 146, 94
+  orig: 146, 94
+  offset: 0, 0
+  index: -1
+fhund_hand
+  rotate: false
+  xy: 610, 92
+  size: 65, 90
+  orig: 65, 90
+  offset: 0, 0
+  index: -1
+shaman_right_hand
+  rotate: false
+  xy: 357, 555
+  size: 76, 81
+  orig: 76, 81
+  offset: 0, 0
+  index: -1
+orc_hand_left
+  rotate: false
+  xy: 206, 773
+  size: 34, 31
+  orig: 34, 31
+  offset: 0, 0
+  index: -1
+fhund_thigh
+  rotate: false
+  xy: 172, 915
+  size: 62, 99
+  orig: 62, 99
+  offset: 0, 0
+  index: -1
+shaman_left_thigh
+  rotate: false
+  xy: 407, 915
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+ice_left_leg
+  rotate: false
+  xy: 557, 840
+  size: 60, 64
+  orig: 60, 64
+  offset: 0, 0
+  index: -1
+shaman_staff_ice
+  rotate: false
+  xy: 594, 275
+  size: 79, 176
+  orig: 79, 176
+  offset: 0, 0
+  index: -1
+trollwar_torso
+  rotate: false
+  xy: 2, 293
+  size: 154, 97
+  orig: 154, 97
+  offset: 0, 0
+  index: -1
+troll_torso
+  rotate: false
+  xy: 675, 305
+  size: 146, 92
+  orig: 146, 92
+  offset: 0, 0
+  index: -1
+head_ravager
+  rotate: false
+  xy: 925, 687
+  size: 97, 114
+  orig: 97, 114
+  offset: 0, 0
+  index: -1
+bone_left_leg
+  rotate: false
+  xy: 543, 754
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+berserk_forearm_right
+  rotate: false
+  xy: 554, 371
+  size: 38, 44
+  orig: 38, 44
+  offset: 0, 0
+  index: -1
+shaman_chest
+  rotate: false
+  xy: 820, 405
+  size: 140, 78
+  orig: 140, 78
+  offset: 0, 0
+  index: -1
+troll_head
+  rotate: false
+  xy: 87, 915
+  size: 83, 102
+  orig: 83, 102
+  offset: 0, 0
+  index: -1
+orc_forearm_right
+  rotate: false
+  xy: 983, 294
+  size: 38, 44
+  orig: 38, 44
+  offset: 0, 0
+  index: -1
+bone_arm_left
+  rotate: false
+  xy: 35, 840
+  size: 60, 70
+  orig: 60, 70
+  offset: 0, 0
+  index: -1
+thorn_head
+  rotate: false
+  xy: 248, 405
+  size: 107, 146
+  orig: 107, 146
+  offset: 0, 0
+  index: -1
+troll_foot_left
+  rotate: false
+  xy: 744, 887
+  size: 61, 56
+  orig: 61, 56
+  offset: 0, 0
+  index: -1
+javeliner_right_arm
+  rotate: false
+  xy: 247, 682
+  size: 101, 186
+  orig: 101, 186
+  offset: 0, 0
+  index: -1
+heavy_head
+  rotate: false
+  xy: 673, 598
+  size: 104, 113
+  orig: 104, 113
+  offset: 0, 0
+  index: -1
+thorn_hand_left
+  rotate: false
+  xy: 102, 765
+  size: 102, 146
+  orig: 102, 146
+  offset: 0, 0
+  index: -1
+trollice_foot_right
+  rotate: false
+  xy: 681, 835
+  size: 61, 56
+  orig: 61, 56
+  offset: 0, 0
+  index: -1
+trollice_thigh_right
+  rotate: false
+  xy: 985, 116
+  size: 37, 87
+  orig: 37, 87
+  offset: 0, 0
+  index: -1
+soldier_chest
+  rotate: false
+  xy: 833, 116
+  size: 150, 89
+  orig: 150, 89
+  offset: 0, 0
+  index: -1
+heavy_left_hand
+  rotate: false
+  xy: 749, 827
+  size: 63, 58
+  orig: 63, 58
+  offset: 0, 0
+  index: -1
+shaman_right_bicep
+  rotate: false
+  xy: 548, 506
+  size: 43, 58
+  orig: 43, 58
+  offset: 0, 0
+  index: -1
+orc_thigh_right
+  rotate: false
+  xy: 454, 915
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+orc_foot_left
+  rotate: false
+  xy: 774, 728
+  size: 42, 63
+  orig: 42, 63
+  offset: 0, 0
+  index: -1
+fhund_bicep
+  rotate: false
+  xy: 604, 721
+  size: 48, 53
+  orig: 48, 53
+  offset: 0, 0
+  index: -1
+heavy_chest
+  rotate: false
+  xy: 675, 399
+  size: 143, 87
+  orig: 143, 87
+  offset: 0, 0
+  index: -1
+fhund_blade
+  rotate: false
+  xy: 820, 621
+  size: 103, 217
+  orig: 103, 217
+  offset: 0, 0
+  index: -1
+head_savage
+  rotate: false
+  xy: 954, 528
+  size: 68, 82
+  orig: 68, 82
+  offset: 0, 0
+  index: -1
+shaman_elite_head_thorn
+  rotate: false
+  xy: 925, 803
+  size: 94, 110
+  orig: 94, 110
+  offset: 0, 0
+  index: -1
+shaman_elite_head_ice
+  rotate: false
+  xy: 2, 491
+  size: 93, 90
+  orig: 93, 90
+  offset: 0, 0
+  index: -1
+ice_head
+  rotate: false
+  xy: 431, 655
+  size: 107, 108
+  orig: 107, 108
+  offset: 0, 0
+  index: -1
+shaman_elite_staff_ice
+  rotate: false
+  xy: 156, 555
+  size: 89, 183
+  orig: 89, 183
+  offset: 0, 0
+  index: -1
+orc_thigh_left
+  rotate: false
+  xy: 501, 915
+  size: 45, 87
+  orig: 45, 87
+  offset: 0, 0
+  index: -1
+weapon_spear
+  rotate: false
+  xy: 159, 194
+  size: 87, 225
+  orig: 87, 225
+  offset: 0, 0
+  index: -1
+orc_forearm_left
+  rotate: false
+  xy: 554, 325
+  size: 38, 44
+  orig: 38, 44
+  offset: 0, 0
+  index: -1
+trollice_bicep_right
+  rotate: false
+  xy: 782, 488
+  size: 36, 78
+  orig: 36, 78
+  offset: 0, 0
+  index: -1
+ice_chest
+  rotate: false
+  xy: 2, 392
+  size: 154, 97
+  orig: 154, 97
+  offset: 0, 0
+  index: -1
+heavy_axe
+  rotate: false
+  xy: 463, 2
+  size: 213, 88
+  orig: 213, 88
+  offset: 0, 0
+  index: -1
+berserk_chest
+  rotate: false
+  xy: 877, 2
+  size: 143, 112
+  orig: 143, 112
+  offset: 0, 0
+  index: -1
+orc_bicep_left
+  rotate: false
+  xy: 102, 622
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+troll_foot_right
+  rotate: false
+  xy: 814, 840
+  size: 61, 56
+  orig: 61, 56
+  offset: 0, 0
+  index: -1
+shaman_staff
+  rotate: false
+  xy: 593, 453
+  size: 78, 175
+  orig: 78, 175
+  offset: 0, 0
+  index: -1
+soldier_shield
+  rotate: false
+  xy: 610, 184
+  size: 64, 89
+  orig: 64, 89
+  offset: 0, 0
+  index: -1
+troll_forearm_right
+  rotate: false
+  xy: 749, 713
+  size: 23, 55
+  orig: 23, 55
+  offset: 0, 0
+  index: -1
+weapon_javelin_held
+  rotate: false
+  xy: 968, 340
+  size: 54, 186
+  orig: 54, 186
+  offset: 0, 0
+  index: -1
+orc_chest_bare
+  rotate: false
+  xy: 823, 316
+  size: 143, 87
+  orig: 143, 87
+  offset: 0, 0
+  index: -1
+orc_foot_right
+  rotate: false
+  xy: 548, 626
+  size: 42, 63
+  orig: 42, 63
+  offset: 0, 0
+  index: -1
+fhund_forearm
+  rotate: false
+  xy: 2, 840
+  size: 31, 72
+  orig: 31, 72
+  offset: 0, 0
+  index: -1
+javeliner_weapon_up
+  rotate: false
+  xy: 350, 809
+  size: 55, 207
+  orig: 55, 207
+  offset: 0, 0
+  index: -1
+troll_hand_right
+  rotate: false
+  xy: 877, 840
+  size: 45, 56
+  orig: 45, 56
+  offset: 0, 0
+  index: -1
+shield_wood
+  rotate: false
+  xy: 592, 630
+  size: 64, 89
+  orig: 64, 89
+  offset: 0, 0
+  index: -1
+earth_chest
+  rotate: false
+  xy: 2, 194
+  size: 155, 97
+  orig: 155, 97
+  offset: 0, 0
+  index: -1
+orc_bicep_right
+  rotate: false
+  xy: 102, 562
+  size: 51, 58
+  orig: 51, 58
+  offset: 0, 0
+  index: -1
+bone_head
+  rotate: false
+  xy: 248, 553
+  size: 107, 127
+  orig: 107, 127
+  offset: 0, 0
+  index: -1
+warlord_head2
+  rotate: false
+  xy: 248, 241
+  size: 130, 82
+  orig: 130, 82
+  offset: 0, 0
+  index: -1
+troll_bicep_right
+  rotate: false
+  xy: 782, 568
+  size: 36, 78
+  orig: 36, 78
+  offset: 0, 0
+  index: -1
+trollice_forearm_right
+  rotate: false
+  xy: 206, 806
+  size: 23, 55
+  orig: 23, 55
+  offset: 0, 0
+  index: -1
+warlord_chest
+  rotate: false
+  xy: 677, 116
+  size: 154, 91
+  orig: 154, 91
+  offset: 0, 0
+  index: -1
+thorn_thigh
+  rotate: false
+  xy: 482, 765
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+fhund_chest
+  rotate: false
+  xy: 678, 2
+  size: 197, 112
+  orig: 197, 112
+  offset: 0, 0
+  index: -1
+javeliner_weapon_flying
+  rotate: false
+  xy: 380, 331
+  size: 56, 222
+  orig: 56, 222
+  offset: 0, 0
+  index: -1
+shaman_right_forearm
+  rotate: false
+  xy: 925, 621
+  size: 27, 42
+  orig: 27, 42
+  offset: 0, 0
+  index: -1
+ice_left_arm
+  rotate: false
+  xy: 407, 840
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+earth_left_arm
+  rotate: false
+  xy: 416, 765
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+warlord_shield
+  rotate: false
+  xy: 658, 713
+  size: 89, 120
+  orig: 89, 120
+  offset: 0, 0
+  index: -1
