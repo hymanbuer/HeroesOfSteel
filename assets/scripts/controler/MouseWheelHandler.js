@@ -1,5 +1,7 @@
 
 const {MOUSE_WHEEL_STEP} = require('ControlerConfig');
+const Dispatcher = require('ComponentEventDispatcher');
+const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
@@ -14,7 +16,6 @@ cc.Class({
 
     onMouseWheel (event) {
         const step = event.getScrollY() > 0 ? MOUSE_WHEEL_STEP : -MOUSE_WHEEL_STEP
-        // this.inputComp.scaleWorld(step);
-        cc.log('MouseWhellHandler: scale world', step);
+        Dispatcher.dispatch(InputEvent.SCALE_WORLD, step);
     },
 });

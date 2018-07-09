@@ -1,5 +1,7 @@
 
 const {DRAG_SCALE_THRESHOLD_SQUARE} = require('ControlerConfig');
+const Dispatcher = require('ComponentEventDispatcher');
+const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
@@ -20,9 +22,8 @@ cc.Class({
 
         const delta = touches[0].getDelta();
         if (cc.pLengthSQ(delta) >= DRAG_SCALE_THRESHOLD_SQUARE) {
-            cc.log('DragGestureHandler: move world', cc.pNeg(delta));
-            // this.inputComp.moveWorld(cc.pNeg(delta));
             this.isTriggerMove = true;
+            Dispatcher.dispatch(InputEvent.MOVE_WORLD, cc.pNeg(delta));
         }
     },
 

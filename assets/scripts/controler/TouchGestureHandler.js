@@ -1,4 +1,7 @@
 
+const Dispatcher = require('ComponentEventDispatcher');
+const {InputEvent} = require('ComponentEventType');
+
 cc.Class({
     extends: cc.Component,
 
@@ -15,7 +18,6 @@ cc.Class({
         if (touches.length > 1) return;
 
         const location = touches[0].getLocation();
-        // this.inputComp.touchWorld(location);
-        cc.log('TouchGestureHandler: touch world', location);
+        Dispatcher.dispatch(InputEvent.TOUCH_WORLD, location);
     },
 });

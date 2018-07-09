@@ -20,10 +20,10 @@
         "__id__": 25
       },
       {
-        "__id__": 27
+        "__id__": 28
       },
       {
-        "__id__": 28
+        "__id__": 29
       }
     ],
     "_tag": -1,
@@ -837,6 +837,9 @@
     "_components": [
       {
         "__id__": 26
+      },
+      {
+        "__id__": 27
       }
     ],
     "_prefab": null,
@@ -890,6 +893,15 @@
       }
     ],
     "zoomRatio": 1
+  },
+  {
+    "__type__": "2fd37ueoclMOJTwOk49hJcu",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 25
+    },
+    "_enabled": true
   },
   {
     "__type__": "cc.Node",
@@ -948,14 +960,14 @@
     },
     "_children": [
       {
-        "__id__": 29
+        "__id__": 30
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 35
+        "__id__": 36
       }
     ],
     "_prefab": null,
@@ -1000,15 +1012,12 @@
     "_name": "input_handler",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 29
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
-      {
-        "__id__": 30
-      },
       {
         "__id__": 31
       },
@@ -1020,6 +1029,9 @@
       },
       {
         "__id__": 34
+      },
+      {
+        "__id__": 35
       }
     ],
     "_prefab": null,
@@ -1064,7 +1076,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 30
     },
     "_enabled": true,
     "isAlignOnce": true,
@@ -1090,7 +1102,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 30
     },
     "_enabled": true
   },
@@ -1099,7 +1111,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 30
     },
     "_enabled": true
   },
@@ -1108,7 +1120,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 30
     },
     "_enabled": true
   },
@@ -1117,7 +1129,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 30
     },
     "_enabled": true
   },
@@ -1126,7 +1138,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 29
     },
     "_enabled": true,
     "_designResolution": {

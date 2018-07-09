@@ -1,5 +1,7 @@
 
 const {DRAG_SCALE_THRESHOLD_SQUARE, TOUCH_SCALE_FACTOR} = require('ControlerConfig');
+const Dispatcher = require('ComponentEventDispatcher');
+const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
@@ -24,8 +26,7 @@ cc.Class({
         const currentDistanceSq = cc.pDistanceSQ(current1, current2);
         if (Math.abs(currentDistanceSq - previousDistanceSq) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             const step = (currentDistanceSq / previousDistanceSq - 1) * TOUCH_SCALE_FACTOR;
-            // this.inputComp.scaleWorld(step);
-            cc.log('ScaleGestureHandler: scale world', step);
+            Dispatcher.dispatch(InputEvent.SCALE_WORLD, step);
         }
     },
 });
