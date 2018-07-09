@@ -303,7 +303,7 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 40,
+    "_actualFontSize": 20,
     "_fontSize": 20,
     "_lineHeight": 40,
     "_enableWrapText": false,
@@ -436,12 +436,15 @@
     "_fitHeight": true
   },
   {
-    "__type__": "1a566bStz9N0rDwlAwh5/vC",
+    "__type__": "2144bIS83xLd6XRaRDGYb6Z",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 2
     },
-    "_enabled": true
+    "_enabled": true,
+    "text": {
+      "__id__": 4
+    }
   }
 ]

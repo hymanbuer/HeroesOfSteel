@@ -28,7 +28,6 @@ class ObjectEventDispatcher {
 
     once (type, callback, target) {
         checkArguments({type, callback, target});
-
     }
 
     on (type, callback, target) {
