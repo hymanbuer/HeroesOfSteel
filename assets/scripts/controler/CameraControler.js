@@ -21,29 +21,23 @@ cc.Class({
     },
 
     onEnable () {
-        Dispatcher.on(InputEvent.MOVE_WORLD, this.onMoveWorld, this);
-        Dispatcher.on(InputEvent.SCALE_WORLD, this.onScaleWorld, this);
-        Dispatcher.on(InputEvent.TOUCH_WORLD, this.onTouchWorld, this);
+        Dispatcher.on(InputEvent.DRAG_SCREEN, this.onMoveScreen, this);
+        Dispatcher.on(InputEvent.SCALE_SCREEN, this.onScaleScreen, this);
     },
 
     onDisable () {
-        Dispatcher.off(InputEvent.MOVE_WORLD, this.onMoveWorld, this);
-        Dispatcher.off(InputEvent.SCALE_WORLD, this.onScaleWorld, this);
-        Dispatcher.off(InputEvent.TOUCH_WORLD, this.onTouchWorld, this);
+        Dispatcher.off(InputEvent.DRAG_SCREEN, this.onMoveScreen, this);
+        Dispatcher.off(InputEvent.SCALE_SCREEN, this.onScaleScreen, this);
     },
 
-    onScaleWorld (_, step) {
+    onScaleScreen (_, step) {
         this.camera.zoomRatio += step;
         this.camera.zoomRatio = cc.clampf(this.camera.zoomRatio, MIN_ZOOM_RATIO, MAX_ZOOM_RATIO);
     },
 
-    onMoveWorld (_, delta) {
+    onMoveScreen (_, delta) {
         delta = cc.pMult(delta, 1 / this.camera.zoomRatio);
         this.camera.node.x += delta.x;
         this.camera.node.y += delta.y;
-    },
-
-    onTouchWorld (_, screenLocation) {
-        cc.log('onTouchWorld', screenLocation);
     },
 });

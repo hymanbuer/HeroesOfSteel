@@ -26,7 +26,7 @@ cc.Class({
         const currentDistanceSq = cc.pDistanceSQ(current1, current2);
         if (Math.abs(currentDistanceSq - previousDistanceSq) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             const step = (currentDistanceSq / previousDistanceSq - 1) * TOUCH_SCALE_FACTOR;
-            Dispatcher.dispatch(InputEvent.SCALE_WORLD, step);
+            Dispatcher.dispatch(InputEvent.SCALE_SCREEN, step);
         }
     },
 });

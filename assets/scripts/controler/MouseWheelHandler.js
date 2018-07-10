@@ -16,6 +16,6 @@ cc.Class({
 
     onMouseWheel (event) {
         const step = event.getScrollY() > 0 ? MOUSE_WHEEL_STEP : -MOUSE_WHEEL_STEP
-        Dispatcher.dispatch(InputEvent.SCALE_WORLD, step);
+        Dispatcher.dispatch(InputEvent.SCALE_SCREEN, step);
     },
 });

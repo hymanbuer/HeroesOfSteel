@@ -23,7 +23,7 @@ cc.Class({
         const delta = touches[0].getDelta();
         if (cc.pLengthSQ(delta) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             this.isTriggerMove = true;
-            Dispatcher.dispatch(InputEvent.MOVE_WORLD, cc.pNeg(delta));
+            Dispatcher.dispatch(InputEvent.DRAG_SCREEN, cc.pNeg(delta));
         }
     },
 

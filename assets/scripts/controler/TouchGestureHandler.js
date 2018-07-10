@@ -18,6 +18,6 @@ cc.Class({
         if (touches.length > 1) return;
 
         const location = touches[0].getLocation();
-        Dispatcher.dispatch(InputEvent.TOUCH_WORLD, location);
+        Dispatcher.dispatch(InputEvent.TOUCH_SCREEN, location);
     },
 });
