@@ -1,10 +1,12 @@
 
 const {DRAG_SCALE_THRESHOLD_SQUARE} = require('ControlerConfig');
-const Dispatcher = require('ComponentEventDispatcher');
-const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
+
+    properties: {
+        handlers: [cc.Component.EventHandler],
+    },
 
     onEnable () {
         this.node.on('touchmove', this.onTouchMove, this);
@@ -23,7 +25,7 @@ cc.Class({
         const delta = touches[0].getDelta();
         if (cc.pLengthSQ(delta) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             this.isTriggerMove = true;
-            Dispatcher.dispatch(InputEvent.DRAG_SCREEN, cc.pNeg(delta));
+            cc.Component.EventHandler.emitEvents(this.handlers, cc.pNeg(delta));
         }
     },
 

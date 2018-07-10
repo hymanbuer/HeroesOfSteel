@@ -2,6 +2,12 @@
 const IndexedPQ = require('IndexedPriorityQueue');
 
 class AStarSearch {
+    /**
+     * graph should has methods [getNeighbors, getCost]
+     * @param {Object} graph 
+     * @param {Number} maxSize 
+     * @param {Function} heuristic 
+     */
     constructor (graph, maxSize, heuristic) {
         this._graph = graph;
         this._hMap = new Map();

@@ -1,10 +1,12 @@
 
 const {MOUSE_WHEEL_STEP} = require('ControlerConfig');
-const Dispatcher = require('ComponentEventDispatcher');
-const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
+
+    properties: {
+        handlers: [cc.Component.EventHandler],
+    },
 
     onEnable () {
         this.node.on('mousewheel', this.onMouseWheel, this);
@@ -16,6 +18,6 @@ cc.Class({
 
     onMouseWheel (event) {
         const step = event.getScrollY() > 0 ? MOUSE_WHEEL_STEP : -MOUSE_WHEEL_STEP
-        Dispatcher.dispatch(InputEvent.SCALE_SCREEN, step);
+        cc.Component.EventHandler.emitEvents(this.handlers, step);
     },
 });

@@ -1,10 +1,12 @@
 
 const {DRAG_SCALE_THRESHOLD_SQUARE, TOUCH_SCALE_FACTOR} = require('ControlerConfig');
-const Dispatcher = require('ComponentEventDispatcher');
-const {InputEvent} = require('ComponentEventType');
 
 cc.Class({
     extends: cc.Component,
+
+    properties: {
+        handlers: [cc.Component.EventHandler],
+    },
 
     onEnable () {
         this.node.on('touchmove', this.onTouchMove, this);
@@ -26,7 +28,7 @@ cc.Class({
         const currentDistanceSq = cc.pDistanceSQ(current1, current2);
         if (Math.abs(currentDistanceSq - previousDistanceSq) >= DRAG_SCALE_THRESHOLD_SQUARE) {
             const step = (currentDistanceSq / previousDistanceSq - 1) * TOUCH_SCALE_FACTOR;
-            Dispatcher.dispatch(InputEvent.SCALE_SCREEN, step);
+            cc.Component.EventHandler.emitEvents(this.handlers, step);
         }
     },
 });
