@@ -29,6 +29,7 @@ class AStarSearch {
         this._pq.set(start);
         this._start = this._closest = start;
         this._target = target;
+        this._dirty.push(start)
         let closestH = this._hCost(start, target);
         let closestG = 0;
         while (this._pq.size > 0) {

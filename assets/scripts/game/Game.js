@@ -53,16 +53,32 @@ cc.Class({
         this.graph = new GridGraph(this.mapSize.height, this.mapSize.width, grids, true);
         const heuristic = GridGraph.createHeuristic(this.graph, GridGraph.HeuristicType.Diagonal);
         this.astar = new AStarSearch(this.graph, this.graph.maxSize, heuristic);
+
+        this.pos2grid = (pos) => {
+            const x = Math.floor((pos.x+0.5) / this.tileSize.width);
+            const y = (this.mapSize.height-1) - Math.floor((pos.y+0.5)/this.tileSize.height);
+            return cc.v2(x, y);
+        };
+
+        this.moveTo = (pos) => {
+            this.camera.x = this.player.x = pos.x;
+            this.camera.y = this.player.y = pos.y;
+        };
     },
 
 
     onTouchWorld (worldPos) {
-        // const pos = this.layerBackground.node.convertTouchToNodeSpaceAR(touch);
-        // const targetGridX = Math.floor((pos.x+0.5) / this.tileSize.width);
-        // const targetGridY = this.mapSize.height - Math.floor((pos.y+0.5) / this.tileSize.height);
-        // const target = this.graph.grid2index(targetGridX, targetGridY);
-        // cc.log(pos, targetGridX, targetGridY);
-        cc.log(worldPos);
-
+        const startGrid = this.pos2grid(this.player.getPosition());
+        const start = this.graph.grid2index(startGrid.x, startGrid.y);
+        const targetGrid = this.pos2grid(worldPos);
+        const target = this.graph.grid2index(targetGrid.x, targetGrid.y);
+        const beginTime = time();
+        const isFound = this.astar.search(start, target);
+        const endTime = time();
+        if (isFound) {
+            this.moveTo(worldPos);
+        }
+        cc.log(worldPos, startGrid, targetGrid);
+        cc.log(isFound, endTime-beginTime);
     },
 });
