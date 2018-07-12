@@ -60,12 +60,40 @@ cc.Class({
             return cc.v2(x, y);
         };
 
-        this.moveTo = (pos) => {
-            this.camera.x = this.player.x = pos.x;
-            this.camera.y = this.player.y = pos.y;
+        this.followPath = (path) => {
+            const actions = [];
+            cc.log('----- follow path -------');
+            for (const index of path) {
+                const grid = this.graph.index2grid(index);
+                const pos = this.getPositionAt(grid);
+                actions.push(cc.moveTo(0.2, pos));
+                cc.log(grid, pos);
+            }
+            this.player.runAction(cc.sequence(actions));
+            // this.camera.runAction(cc.follow(this.player));
         };
+
+        this.setTo = (pos) => {
+            // this.camera.x = this.player.x = pos.x;
+            // this.camera.y = this.player.y = pos.y;
+            this.player.x = pos.x;
+            this.player.y = pos.y;
+        };
+
+        this.getPositionAt = (grid) => {
+            const pos = this.layerBackground.getPositionAt(grid);
+            pos.x += this.tileSize.width/2.0;
+            pos.y += this.tileSize.height/2.0;
+            return pos;
+        }
     },
 
+    update (dt) {
+        if (this.player.getNumberOfRunningActions() > 0) {
+            this.camera.x = this.player.x;
+            this.camera.y = this.player.y;
+        }
+    },
 
     onTouchWorld (worldPos) {
         const startGrid = this.pos2grid(this.player.getPosition());
@@ -75,9 +103,11 @@ cc.Class({
         const beginTime = time();
         const isFound = this.astar.search(start, target);
         const endTime = time();
-        if (isFound) {
-            this.moveTo(worldPos);
-        }
+        // if (isFound) {
+            this.player.stopAllActions();
+            this.setTo(this.getPositionAt(startGrid));
+            this.followPath(this.astar.path);
+        // }
         cc.log(worldPos, startGrid, targetGrid);
         cc.log(isFound, endTime-beginTime);
     },

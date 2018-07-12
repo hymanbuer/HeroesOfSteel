@@ -25,7 +25,7 @@ cc.Class({
 
         cc.log('-------- get neighbors --------');
         graph.addNodeByGrid(2, 2);
-        cc.log(graph.getNeighbors(graph.grid2index(2, 2)));
+        cc.log(graph.getNodeNeighbors(graph.grid2index(2, 2)));
     },
 
     

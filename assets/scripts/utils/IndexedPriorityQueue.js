@@ -13,9 +13,8 @@ class IndexedPriorityQueue {
 
     get size () { return this._size; }
 
-    // index should be greater than zero
     set (index) {
-        if (index <= 0) return;
+        if (index < 0) throw new Error(`expected: index >= 0, but ${index}`);
 
         if (this.exist(index)) {    // update
             this._reorderUpwards(this._nodeHeap[index]);

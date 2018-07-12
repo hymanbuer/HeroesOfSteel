@@ -3,7 +3,7 @@ const IndexedPQ = require('IndexedPriorityQueue');
 
 class AStarSearch {
     /**
-     * graph should has methods [getNeighbors, getCost]
+     * graph should has methods [getNodeNeighbors, getEdgeCost]
      * @param {Object} graph 
      * @param {Number} maxSize 
      * @param {Function} heuristic 
@@ -30,6 +30,7 @@ class AStarSearch {
         this._start = this._closest = start;
         this._target = target;
         this._dirty.push(start)
+        this._visited[start] = true;
         let closestH = this._hCost(start, target);
         let closestG = 0;
         while (this._pq.size > 0) {
@@ -40,10 +41,10 @@ class AStarSearch {
             }
 
             this._closed[current] = true;
-            for (const next of this._graph.getNeighbors(current)) {
+            for (const next of this._graph.getNodeNeighbors(current)) {
                 if (this._closed[next]) continue;
 
-                const g = this._gCosts[current] + this._graph.getCost(current, next);
+                const g = this._gCosts[current] + this._graph.getEdgeCost(current, next);
                 if (!this._visited[next] || g < this._gCosts[next]) {
                     if (!this._visited[next]) this._dirty.push(next);
 
@@ -65,8 +66,8 @@ class AStarSearch {
         return false;
     }
 
-    path () {
-        if (this._start === 0 || this._closest === this._start)
+    get path () {
+        if (this._start < 0 || this._closest === this._start)
             return [];
 
         const path = [];
@@ -80,9 +81,9 @@ class AStarSearch {
     }
 
     clear () {
-        this._start = 0;
-        this._target = 0;
-        this._closest = 0;
+        this._start = -1;
+        this._target = -1;
+        this._closest = -1;
         for (const index of this._dirty) {
             this._gCosts[index] = 0;
             this._fCosts[index] = 0;

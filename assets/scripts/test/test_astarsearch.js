@@ -47,10 +47,11 @@ cc.Class({
                 cc.log('--- search: ', astar.search(start, target));
                 let fTime = performance ? performance.now() : new Date().getTime();
                 cc.log('--- time: ', (fTime-sTime).toFixed(2));
-                cc.log(astar.path());
-                cc.log('-------- ------ --------');
+                // cc.log(astar.path);
+                // cc.log('-------- ------ --------');
             }
             this._search = search;
+            this._search();
         } catch (error) {
             cc.log(error);
             cc.log(error.stack);

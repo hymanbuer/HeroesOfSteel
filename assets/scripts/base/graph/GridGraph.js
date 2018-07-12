@@ -84,11 +84,11 @@ class GridGraph {
     }
 
     grid2index (x, y) {
-        return y * this._maxColumns + x + 1;
+        return y * this._maxColumns + x;
     }
 
     index2grid (index) {
-        const x = --index % this._maxColumns;
+        const x = index % this._maxColumns;
         const y = Math.floor(index / this._maxColumns);
         return {x, y};
     }
@@ -114,12 +114,12 @@ class GridGraph {
         this._nodes[index] = null;
     }
 
-    getCost (from, to) {
+    getEdgeCost (from, to) {
         const [x1, y1, x2, y2] = indexes2grids(this, from, to); 
         return x1 !== x2 && y1 !== y2 ? Math.SQRT2 : 1;
     }
 
-    getNeighbors (index) {
+    getNodeNeighbors (index) {
         const node = this._nodes[index];
         if (node.neighbors)
             return node.neighbors;
