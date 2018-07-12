@@ -70,7 +70,6 @@ cc.Class({
                 cc.log(grid, pos);
             }
             this.player.runAction(cc.sequence(actions));
-            // this.camera.runAction(cc.follow(this.player));
         };
 
         this.setTo = (pos) => {
@@ -89,10 +88,10 @@ cc.Class({
     },
 
     update (dt) {
-        if (this.player.getNumberOfRunningActions() > 0) {
-            this.camera.x = this.player.x;
-            this.camera.y = this.player.y;
-        }
+        // if (this.player.getNumberOfRunningActions() > 0) {
+        //     this.camera.x = this.player.x;
+        //     this.camera.y = this.player.y;
+        // }
     },
 
     onTouchWorld (worldPos) {

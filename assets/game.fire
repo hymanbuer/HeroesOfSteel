@@ -973,7 +973,8 @@
     },
     "player": {
       "__id__": 10
-    }
+    },
+    "splash": null
   },
   {
     "__type__": "cc.Node",
