@@ -121,6 +121,8 @@ class GridGraph {
 
     getNodeNeighbors (index) {
         const node = this._nodes[index];
+        if (!node) return [];
+
         if (node.neighbors)
             return node.neighbors;
         else

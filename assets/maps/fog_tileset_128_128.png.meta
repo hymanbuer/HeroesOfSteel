@@ -5,7 +5,7 @@
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "fog_tileset": {
+    "fog_tileset_128_128": {
       "ver": "1.0.3",
       "uuid": "1825a2e7-c006-4a0d-ae4c-9923aff5653d",
       "rawTextureUuid": "5401a380-14b4-43c7-9710-cd7b03d1dff2",
