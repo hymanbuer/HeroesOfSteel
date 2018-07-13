@@ -1,4 +1,6 @@
 
+const UiHelper = require('UiHelper');
+
 cc.Class({
     extends: cc.Component,
 
@@ -7,17 +9,26 @@ cc.Class({
     },
 
     onLoad () {
-        cc.log(cc.isValid(this.sprite));
+        
     },
 
     start () {
-        cc.log(cc.isValid(this.sprite));
-        this.node.removeComponent(this.sprite);
-        cc.log(cc.isValid(this.sprite));
-        this.scheduleOnce(function () {
-            cc.log(cc.isValid(this.sprite));
-        }, 0);
+        
     },
+
+    show (_, path) {
+        const p = UiHelper.instance.showUi(path);
+        const self = this;
+        p.then(ui => {
+            cc.log(ui);
+            self.scheduleOnce(function () {
+                ui.destroy();
+            }, 3);
+        });
+        p.catch(err => {
+            cc.log(err);
+        });
+    }
 
     // update (dt) {},
 });
