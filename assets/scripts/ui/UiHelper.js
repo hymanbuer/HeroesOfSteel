@@ -22,7 +22,8 @@ const UiHelper = cc.Class({
     },
 
     showUi (uiPrefabPath) {
-        this._addMaskAndTips();
+        this._addMask();
+        this.scheduleOnce(this._addTips, 0.05);
         return this._loadPrefab(uiPrefabPath);
     },
 
@@ -51,10 +52,13 @@ const UiHelper = cc.Class({
         });
     },
 
-    _addMaskAndTips () {
+    _addMask () {
         this.uiMask = cc.instantiate(this.uiMaskPrefab);
-        this.loadingTips = cc.instantiate(this.loadingTipsPrefab);
         this.canvas.addChild(this.uiMask, Number.MAX_SAFE_INTEGER);
+    },
+
+    _addTips () {
+        this.loadingTips = cc.instantiate(this.loadingTipsPrefab);
         this.canvas.addChild(this.loadingTips, Number.MAX_SAFE_INTEGER);
     },
 
@@ -70,5 +74,6 @@ const UiHelper = cc.Class({
             this.loadingTips.destroy();
             this.loadingTips = null;
         }
+        this.unschedule(this._addTips);
     }
 });

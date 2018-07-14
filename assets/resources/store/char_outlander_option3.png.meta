@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c48db388-8fcd-42c5-ac60-cadce8e969e0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_outlander_option3": {
+      "ver": "1.0.3",
+      "uuid": "fb74dbb2-4f66-4d42-b960-861602ccf4d6",
+      "rawTextureUuid": "c48db388-8fcd-42c5-ac60-cadce8e969e0",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 100,
+      "height": 100,
+      "rawWidth": 100,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

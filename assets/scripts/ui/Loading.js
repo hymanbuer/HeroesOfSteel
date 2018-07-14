@@ -16,6 +16,7 @@ cc.Class({
 
     onLoad () {
         this.init();
+        this.node.on('touchend', this.onTouchEnd, this);
     },
 
     init (params = {}) {
@@ -31,5 +32,9 @@ cc.Class({
             const newEntry = this.progress.setAnimation(0, name, true);
             newEntry.trackTime = oldEntry.trackTime;
         }
+    },
+
+    onTouchEnd () {
+        this.node.destroy();
     }
 });
