@@ -47,8 +47,7 @@ cc.Class({
     _toggleSwitch (index) {
         const state = this.switchStates[index] = !this.switchStates[index];
         const config = switchConfigs[index];
-        const text = state ? config.on : config.off;
-        this.switchLabels[index].string = text;
+        this.switchLabels[index].string = state ? config.on : config.off;
     },
 
     _changeMusicVolume (step) {

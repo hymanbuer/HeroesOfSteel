@@ -29,27 +29,39 @@ const UiHelper = cc.Class({
 
     _loadPrefab(path) {
         const self = this;
-        return new Promise(function (resolve, reject) {
-            cc.loader.loadRes(path, cc.Prefab, function (err, uiPrefab) {
-                if (err) {
-                    self._removeMask();
-                    self._removeTips();
-                    return reject(err);
-                }
-                
-                const ui = cc.instantiate(uiPrefab);
-                self.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
-                self._removeTips();
+        const success = uiPrefab => {
+            const ui = cc.instantiate(uiPrefab);
+            self.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
+            self._removeTips();
 
-                const oldDestroy = ui.destroy;
-                ui.destroy = function () {
-                    self._removeMask();
-                    oldDestroy.call(ui, ...arguments);
-                };
+            const oldDestroy = ui.destroy;
+            ui.destroy = function () {
+                self._removeMask();
+                oldDestroy.call(ui, ...arguments);
+            };
 
+            return ui;
+        };
+
+        const uiPrefab = cc.loader.getRes(path, cc.Prefab);
+        if (uiPrefab)
+            return new Promise(function (resolve, reject) {
+                const ui = success(uiPrefab);
                 resolve(ui);
             });
-        });
+        else
+            return new Promise(function (resolve, reject) {
+                cc.loader.loadRes(path, cc.Prefab, function (err, uiPrefab) {
+                    if (err) {
+                        self._removeMask();
+                        self._removeTips();
+                        return reject(err);
+                    }
+                    
+                    const ui = success(uiPrefab);
+                    resolve(ui);
+                });
+            });
     },
 
     _addMask () {
