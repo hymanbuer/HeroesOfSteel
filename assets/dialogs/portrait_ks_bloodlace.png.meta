@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e8b010ef-f010-42ce-a54f-0de1d62a3e17",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_ks_bloodlace": {
+      "ver": "1.0.3",
+      "uuid": "6d763a72-2b3a-4401-a238-7e341b90bc39",
+      "rawTextureUuid": "e8b010ef-f010-42ce-a54f-0de1d62a3e17",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

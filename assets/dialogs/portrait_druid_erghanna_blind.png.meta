@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "16f125cc-fcfa-45bc-8cad-3888287b2098",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_druid_erghanna_blind": {
+      "ver": "1.0.3",
+      "uuid": "37d3b64c-9651-4458-8df9-0229156c241d",
+      "rawTextureUuid": "16f125cc-fcfa-45bc-8cad-3888287b2098",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

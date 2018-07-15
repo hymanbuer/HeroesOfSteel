@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "965f7371-7166-4c00-9502-1796775117ef",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_ks_robinson": {
+      "ver": "1.0.3",
+      "uuid": "4713d2fe-2ca8-4f5e-8e1a-767788cdf347",
+      "rawTextureUuid": "965f7371-7166-4c00-9502-1796775117ef",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

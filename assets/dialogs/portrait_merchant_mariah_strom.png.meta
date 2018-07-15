@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8c5a7a12-bf6b-49da-922d-79beb9691c48",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_merchant_mariah_strom": {
+      "ver": "1.0.3",
+      "uuid": "fbcf8aed-e472-4dc3-bc50-ae9164899a1f",
+      "rawTextureUuid": "8c5a7a12-bf6b-49da-922d-79beb9691c48",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

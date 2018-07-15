@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2c916451-53f8-4eef-96d8-a4638bd5d8d2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_braeys_vlotgar": {
+      "ver": "1.0.3",
+      "uuid": "2978f6d9-8b9c-4fb2-901d-a3f77ff0a109",
+      "rawTextureUuid": "2c916451-53f8-4eef-96d8-a4638bd5d8d2",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

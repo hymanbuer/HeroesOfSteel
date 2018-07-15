@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2952d11e-7354-4a69-a2ed-e62ac7843c2a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_god_vurnak": {
+      "ver": "1.0.3",
+      "uuid": "b4b74fc0-8556-444d-b025-fd5e577b20b2",
+      "rawTextureUuid": "2952d11e-7354-4a69-a2ed-e62ac7843c2a",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 588,
+      "height": 420,
+      "rawWidth": 588,
+      "rawHeight": 420,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

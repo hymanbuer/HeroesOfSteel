@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "497cc6ff-1584-4452-a80b-da3828184090",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_dark_orcin": {
+      "ver": "1.0.3",
+      "uuid": "aa461871-b7b7-4c42-8eee-a5c7a525c914",
+      "rawTextureUuid": "497cc6ff-1584-4452-a80b-da3828184090",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 400,
+      "height": 286,
+      "rawWidth": 400,
+      "rawHeight": 286,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

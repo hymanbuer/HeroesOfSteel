@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f6560f73-397c-49dc-ab57-ef02e18f407e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_baron_tazzer": {
+      "ver": "1.0.3",
+      "uuid": "8dad950e-57c3-4f81-9e3e-c8f0e9b6bfbb",
+      "rawTextureUuid": "f6560f73-397c-49dc-ab57-ef02e18f407e",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

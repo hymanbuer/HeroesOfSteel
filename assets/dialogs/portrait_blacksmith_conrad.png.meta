@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "04772c0f-f6a2-4cbc-b52f-ce16fd469ab5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_blacksmith_conrad": {
+      "ver": "1.0.3",
+      "uuid": "c09bd59c-a393-4c7f-9809-55e6edad6890",
+      "rawTextureUuid": "04772c0f-f6a2-4cbc-b52f-ce16fd469ab5",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

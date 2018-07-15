@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9b27c6aa-875d-4b98-b92b-34d6a12f2b44",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_arhaive_soldier1": {
+      "ver": "1.0.3",
+      "uuid": "6110906b-09f2-4eec-845c-ce640ecef7dc",
+      "rawTextureUuid": "9b27c6aa-875d-4b98-b92b-34d6a12f2b44",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

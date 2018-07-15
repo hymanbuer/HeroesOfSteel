@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "800da15c-dc42-473d-b237-66a46c9a8dc1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_reeve_rhaine": {
+      "ver": "1.0.3",
+      "uuid": "707499f9-6f93-4bd4-99ce-881b7076ed9b",
+      "rawTextureUuid": "800da15c-dc42-473d-b237-66a46c9a8dc1",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

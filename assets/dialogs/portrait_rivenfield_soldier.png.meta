@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8c11f63e-ab45-4033-9a27-b0b30a216228",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_rivenfield_soldier": {
+      "ver": "1.0.3",
+      "uuid": "22bd4bff-3a0c-472e-b900-77373abc6ba8",
+      "rawTextureUuid": "8c11f63e-ab45-4033-9a27-b0b30a216228",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

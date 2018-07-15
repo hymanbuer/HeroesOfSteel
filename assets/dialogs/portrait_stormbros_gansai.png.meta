@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "daf0fb73-6b1c-4bd5-a923-04ac1b10a1d5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_stormbros_gansai": {
+      "ver": "1.0.3",
+      "uuid": "948083db-410c-4b0a-9436-b76cc748b1b1",
+      "rawTextureUuid": "daf0fb73-6b1c-4bd5-a923-04ac1b10a1d5",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

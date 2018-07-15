@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "698b9114-0ce0-4513-ba20-bd27f76625ef",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_arhaive_captain_geraux": {
+      "ver": "1.0.3",
+      "uuid": "a06ed9f6-d069-4c38-a962-430e392abd16",
+      "rawTextureUuid": "698b9114-0ce0-4513-ba20-bd27f76625ef",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

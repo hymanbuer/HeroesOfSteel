@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "de52b599-feee-4b69-8750-7fad098b4576",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_arhaive_soldier_heavy1_possessed": {
+      "ver": "1.0.3",
+      "uuid": "50783699-ec43-41c7-8f6f-2d4aa70fb8d6",
+      "rawTextureUuid": "de52b599-feee-4b69-8750-7fad098b4576",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

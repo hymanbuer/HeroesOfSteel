@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "250fcace-8073-4280-8915-ec67aaba2d86",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_braeys_kea_blind": {
+      "ver": "1.0.3",
+      "uuid": "aa435469-272f-47ba-954e-992cbb26687f",
+      "rawTextureUuid": "250fcace-8073-4280-8915-ec67aaba2d86",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

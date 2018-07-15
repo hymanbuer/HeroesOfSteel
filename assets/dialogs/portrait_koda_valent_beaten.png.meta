@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "b2318bc1-f2b3-4cd9-8484-8e8ce80bfde9",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_koda_valent_beaten": {
+      "ver": "1.0.3",
+      "uuid": "474452ee-0c7d-4b78-a7db-a381161e2cfb",
+      "rawTextureUuid": "b2318bc1-f2b3-4cd9-8484-8e8ce80bfde9",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

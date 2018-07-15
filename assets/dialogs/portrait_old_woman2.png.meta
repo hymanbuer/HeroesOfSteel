@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "38e6bd59-585c-4807-9535-3ee746271f41",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_old_woman2": {
+      "ver": "1.0.3",
+      "uuid": "d7b1ee85-0d66-4700-9392-0e5a357e50ba",
+      "rawTextureUuid": "38e6bd59-585c-4807-9535-3ee746271f41",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

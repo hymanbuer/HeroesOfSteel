@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fa83cc97-98a9-420d-943f-a606f7e9140d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_god_ryethin": {
+      "ver": "1.0.3",
+      "uuid": "c7a246e0-c0e3-4813-9dc2-0157fbc0125a",
+      "rawTextureUuid": "fa83cc97-98a9-420d-943f-a606f7e9140d",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

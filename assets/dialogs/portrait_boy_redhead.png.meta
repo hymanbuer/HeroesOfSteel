@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "67922a34-47c3-47d0-a834-019941bee84a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_boy_redhead": {
+      "ver": "1.0.3",
+      "uuid": "b7726824-5b77-4ca4-90d6-57cd12c53ce4",
+      "rawTextureUuid": "67922a34-47c3-47d0-a834-019941bee84a",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "31d0794f-cd3f-4b4d-8889-cb1d653092c8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_god_ellista": {
+      "ver": "1.0.3",
+      "uuid": "7f169610-6d06-4b7a-860a-cd676fcb6b48",
+      "rawTextureUuid": "31d0794f-cd3f-4b4d-8889-cb1d653092c8",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 446,
+      "height": 440,
+      "rawWidth": 446,
+      "rawHeight": 440,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

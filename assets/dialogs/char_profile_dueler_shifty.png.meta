@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3886df6a-6101-4af1-8028-bf1651404bb7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_profile_dueler_shifty": {
+      "ver": "1.0.3",
+      "uuid": "4dfd5068-3a40-402a-b004-2db172de07fc",
+      "rawTextureUuid": "3886df6a-6101-4af1-8028-bf1651404bb7",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

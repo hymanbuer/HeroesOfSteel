@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a4f44da3-203b-4369-ab63-ef18c441883f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_knight_claemoss": {
+      "ver": "1.0.3",
+      "uuid": "ed451841-26af-4331-8782-e354a100b4dd",
+      "rawTextureUuid": "a4f44da3-203b-4369-ab63-ef18c441883f",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

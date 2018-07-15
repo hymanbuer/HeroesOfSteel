@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "b4d4bace-7c5e-41c9-8eec-d7fda5325b69",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_granthorn_smith": {
+      "ver": "1.0.3",
+      "uuid": "0233954d-3e99-4924-b083-2513c0f88ea6",
+      "rawTextureUuid": "b4d4bace-7c5e-41c9-8eec-d7fda5325b69",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

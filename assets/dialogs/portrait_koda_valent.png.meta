@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "4013cbda-051d-4cd1-90fc-5cc0a1ac35c1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_koda_valent": {
+      "ver": "1.0.3",
+      "uuid": "75bde4f8-123e-4866-934d-c79e37bcfb5d",
+      "rawTextureUuid": "4013cbda-051d-4cd1-90fc-5cc0a1ac35c1",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

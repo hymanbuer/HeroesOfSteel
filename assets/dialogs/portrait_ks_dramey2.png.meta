@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bf551034-589e-4a3d-b982-a9a7ca1fdf2c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_ks_dramey2": {
+      "ver": "1.0.3",
+      "uuid": "126e5207-f8dc-40d9-a6b0-fe2e3221a2e5",
+      "rawTextureUuid": "bf551034-589e-4a3d-b982-a9a7ca1fdf2c",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

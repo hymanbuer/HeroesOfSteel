@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fa92cab8-b80b-4854-9f08-6906f607ab93",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_profile_sorcerer_flames": {
+      "ver": "1.0.3",
+      "uuid": "3b383c60-7145-4d8c-966c-1f5c7ddab339",
+      "rawTextureUuid": "fa92cab8-b80b-4854-9f08-6906f607ab93",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

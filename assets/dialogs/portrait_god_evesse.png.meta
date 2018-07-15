@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "04135eef-b3c8-473e-b833-e19a8dc16fa5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_god_evesse": {
+      "ver": "1.0.3",
+      "uuid": "3e8bc86a-80bd-46f6-8ddf-4c138d099c8f",
+      "rawTextureUuid": "04135eef-b3c8-473e-b833-e19a8dc16fa5",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

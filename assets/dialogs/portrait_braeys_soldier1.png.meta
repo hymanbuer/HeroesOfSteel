@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ec633a26-453d-45b0-b1a7-20c19f167920",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_braeys_soldier1": {
+      "ver": "1.0.3",
+      "uuid": "cad52a35-5872-42c5-9909-18de30b11aed",
+      "rawTextureUuid": "ec633a26-453d-45b0-b1a7-20c19f167920",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "96d70f50-2a9d-4218-9734-2376729aea07",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_profile_rogue_HURT": {
+      "ver": "1.0.3",
+      "uuid": "d6e7dee5-87a4-40f8-a6a0-cb9f4186b326",
+      "rawTextureUuid": "96d70f50-2a9d-4218-9734-2376729aea07",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

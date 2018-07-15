@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "5af10410-6667-4e64-b70d-8655559bb570",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_profile_thief_eyes": {
+      "ver": "1.0.3",
+      "uuid": "91596a68-94f1-4ff4-ad18-7e2835f55056",
+      "rawTextureUuid": "5af10410-6667-4e64-b70d-8655559bb570",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

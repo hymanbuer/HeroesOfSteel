@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "05079e4e-d92b-4b2f-a168-e4400a75818e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_captain_barnett_giova": {
+      "ver": "1.0.3",
+      "uuid": "7bea42f0-d819-408b-81f9-622a00aeb9ec",
+      "rawTextureUuid": "05079e4e-d92b-4b2f-a168-e4400a75818e",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

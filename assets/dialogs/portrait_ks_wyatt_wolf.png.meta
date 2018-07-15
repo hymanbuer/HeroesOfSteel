@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "6b483655-bdf4-402f-8225-0b2be9bb5839",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_ks_wyatt_wolf": {
+      "ver": "1.0.3",
+      "uuid": "2d0aacdb-45be-466b-bb70-694134e7f6fe",
+      "rawTextureUuid": "6b483655-bdf4-402f-8225-0b2be9bb5839",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "5a392a70-bf74-48f8-a66f-83a1f5012239",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_seer_lord_blue": {
+      "ver": "1.0.3",
+      "uuid": "6f97aa2f-aa11-444b-a76d-a24d15da3768",
+      "rawTextureUuid": "5a392a70-bf74-48f8-a66f-83a1f5012239",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

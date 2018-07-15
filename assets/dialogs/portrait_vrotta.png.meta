@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3578664c-2904-4f4c-bf57-98e7e0fe0126",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_vrotta": {
+      "ver": "1.0.3",
+      "uuid": "d44d1303-b73c-4fc6-bcbd-dad520151741",
+      "rawTextureUuid": "3578664c-2904-4f4c-bf57-98e7e0fe0126",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

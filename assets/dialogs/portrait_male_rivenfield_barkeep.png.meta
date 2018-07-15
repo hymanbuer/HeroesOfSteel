@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "50d48da2-35bd-44b9-96dc-d56c17798ebe",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_male_rivenfield_barkeep": {
+      "ver": "1.0.3",
+      "uuid": "5e1f1ab6-fe86-4824-a355-0f978098704e",
+      "rawTextureUuid": "50d48da2-35bd-44b9-96dc-d56c17798ebe",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d73702c8-837a-408d-8531-102eb344630b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_braeys_morgan": {
+      "ver": "1.0.3",
+      "uuid": "297199ec-1c54-4a42-87b0-04697bd03a58",
+      "rawTextureUuid": "d73702c8-837a-408d-8531-102eb344630b",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

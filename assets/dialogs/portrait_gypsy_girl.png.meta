@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "dff97c76-0580-44e8-8ed2-ac0457603c50",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_gypsy_girl": {
+      "ver": "1.0.3",
+      "uuid": "68b904ee-6160-47c4-9920-16688fb9bf0f",
+      "rawTextureUuid": "dff97c76-0580-44e8-8ed2-ac0457603c50",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

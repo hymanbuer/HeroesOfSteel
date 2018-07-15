@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "9f7257c1-9b17-4d64-ab8e-8b88b609fdcf",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_profile_dueler_eyes": {
+      "ver": "1.0.3",
+      "uuid": "3170c773-43c1-4efa-8732-45f1eb5da806",
+      "rawTextureUuid": "9f7257c1-9b17-4d64-ab8e-8b88b609fdcf",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

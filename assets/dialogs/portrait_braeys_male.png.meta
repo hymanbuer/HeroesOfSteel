@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ee82c4d1-a978-4fa9-a785-60efe6c21156",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_braeys_male": {
+      "ver": "1.0.3",
+      "uuid": "ef261b9e-96f9-4b19-bd69-4899188fa9f1",
+      "rawTextureUuid": "ee82c4d1-a978-4fa9-a785-60efe6c21156",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

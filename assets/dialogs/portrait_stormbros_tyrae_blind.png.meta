@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "dba30ae4-69c7-455a-b599-87b1b1260c43",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "portrait_stormbros_tyrae_blind": {
+      "ver": "1.0.3",
+      "uuid": "18f92eac-acf5-48e4-aa5c-266c2d20b07c",
+      "rawTextureUuid": "dba30ae4-69c7-455a-b599-87b1b1260c43",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 350,
+      "height": 250,
+      "rawWidth": 350,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
