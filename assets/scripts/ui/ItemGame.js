@@ -23,7 +23,7 @@ cc.Class({
     },
 
     onClick () {
-        cc.log(`click game item <${this.title.string}>`);
+        cc.log(`click item <${this.title.string}>`);
         cc.sys.openURL(this.url);
     },
 });
