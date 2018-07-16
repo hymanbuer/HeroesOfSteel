@@ -6,6 +6,7 @@ cc.Class({
         profileName: cc.Label,
         tips: cc.Node,
         keys: cc.Node,
+        values: cc.Node,
     },
 
     init (name) {
@@ -19,18 +20,17 @@ cc.Class({
     },
 
     onEdit (event) {
-        const label = this._getKeyLabel(event.target);
+        const label = this.wordLabelMap.get(event.target);
         this._addChar(label.string);
     },
 
     onShift () {
         this.isLowerCase = !this.isLowerCase;
-        this.alterKeys.forEach(key => {
+        for (const label of this.wordLabelMap.values())
             if (this.isLowerCase)
-                key.string = key.string.toLowerCase();
+                label.string = label.string.toLowerCase();
             else
-                key.string = key.string.toUpperCase();
-        });
+                label.string = label.string.toUpperCase();
     },
 
     onDelete () {
@@ -59,12 +59,12 @@ cc.Class({
     // ----------------------------
 
     _initKeys () {
-        this.alterKeys = [];
+        this.wordLabelMap = new Map();
         this.isLowerCase = true;
         this.keys.children.forEach(line => line.children.forEach(key => {
             if (/shift/i.test(key.name)) {
                 key.on('click', this.onShift, this);
-                this._pushAlterKey(key);
+                this._mapWord(line, key);
             } else if (/del/i.test(key.name)) {
                 key.on('click', this.onDelete, this);
                 key.on('touchstart', this._onPressDel, this);
@@ -73,18 +73,16 @@ cc.Class({
                 key.on('click', this.onSpace, this);
             } else {
                 key.on('click', this.onEdit, this);
-                if (/[a-zA-Z]/i.test(key.name))
-                    this._pushAlterKey(key);
+                this._mapWord(line, key);
             }
         }));
     },
 
-    _pushAlterKey (key) {
-        this.alterKeys.push(this._getKeyLabel(key));
-    },
-
-    _getKeyLabel (key) {
-        return key.children[0].getComponent(cc.Label);
+    _mapWord (line, key) {
+        const path = `${line.name}/${key.name}`;
+        const value = cc.find(path, this.values);
+        const label = value.children[0].getComponent(cc.Label);
+        this.wordLabelMap.set(key, label);
     },
 
     _addChar (char) {

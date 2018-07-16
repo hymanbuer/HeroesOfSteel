@@ -1,5 +1,5 @@
 
-const UiHelper = require('UiHelper');
+
 
 cc.Class({
     extends: cc.Component,
@@ -13,10 +13,10 @@ cc.Class({
     },
 
     start () {
-
+        this.node.on('savename', this.onSaveName, this, true);
     },
 
-    onClick () {
-        UiHelper.instance.showUi('prefabs/main/ui_credits');
+    onSaveName (event) {
+        cc.log(event);
     }
 });

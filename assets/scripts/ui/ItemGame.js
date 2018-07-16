@@ -15,10 +15,9 @@ cc.Class({
         this.content.string = content;
         this.url = url;
 
-        const self = this;
-        self.icon.spriteFrame = null;
-        cc.loader.loadRes(icon, cc.SpriteFrame, function (err, spriteFrame) {
-            self.icon.spriteFrame = spriteFrame;
+        this.icon.spriteFrame = null;
+        cc.loader.loadRes(icon, cc.SpriteFrame, (err, spriteFrame) => {
+            this.icon.spriteFrame = spriteFrame;
         });
     },
 

@@ -16,18 +16,17 @@ cc.Class({
         this.price.string = `$${price}`;
         this.index = index;
 
-        const self = this;
-        self.icon.spriteFrame = null;
+        this.icon.spriteFrame = null;
         if (typeof icon === 'string') {
-            cc.loader.loadRes(icon, cc.SpriteFrame, function (err, spriteFrame) {
-                self.icon.spriteFrame = spriteFrame;
+            cc.loader.loadRes(icon, cc.SpriteFrame, (err, spriteFrame) => {
+                this.icon.spriteFrame = spriteFrame;
             });
         } else {
             const [atlasPath, spriteFrameName] = icon;
-            cc.loader.loadRes(atlasPath, cc.SpriteAtlas, function (err, atlas) {
+            cc.loader.loadRes(atlasPath, cc.SpriteAtlas, (err, atlas) => {
                 if (!err) {
                     const spriteFrame = atlas.getSpriteFrame(spriteFrameName);
-                    self.icon.spriteFrame = spriteFrame;
+                    this.icon.spriteFrame = spriteFrame;
                 }
             });
         }

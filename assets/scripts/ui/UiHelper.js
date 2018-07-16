@@ -22,21 +22,20 @@ const UiHelper = cc.Class({
     },
 
     showUi (uiPrefabPath) {
-        this._addMask();
+        const uiMask = this._addMask();
         this.scheduleOnce(this._addTips, 0.05);
-        return this._loadPrefab(uiPrefabPath);
+        return this._loadPrefab(uiPrefabPath, uiMask);
     },
 
-    _loadPrefab(path) {
-        const self = this;
+    _loadPrefab(path, uiMask) {
         const success = uiPrefab => {
             const ui = cc.instantiate(uiPrefab);
-            self.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
-            self._removeTips();
+            this.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
+            this._removeTips();
 
             const oldDestroy = ui.destroy;
-            ui.destroy = function () {
-                self._removeMask();
+            ui.destroy = () => {
+                uiMask.destroy();
                 oldDestroy.call(ui, ...arguments);
             };
 
@@ -45,16 +44,16 @@ const UiHelper = cc.Class({
 
         const uiPrefab = cc.loader.getRes(path, cc.Prefab);
         if (uiPrefab)
-            return new Promise(function (resolve, reject) {
+            return new Promise((resolve, reject) => {
                 const ui = success(uiPrefab);
                 resolve(ui);
             });
         else
-            return new Promise(function (resolve, reject) {
-                cc.loader.loadRes(path, cc.Prefab, function (err, uiPrefab) {
+            return new Promise((resolve, reject) => {
+                cc.loader.loadRes(path, cc.Prefab, (err, uiPrefab) => {
                     if (err) {
-                        self._removeMask();
-                        self._removeTips();
+                        uiMask.destroy();
+                        this._removeTips();
                         return reject(err);
                     }
                     
@@ -65,20 +64,14 @@ const UiHelper = cc.Class({
     },
 
     _addMask () {
-        this.uiMask = cc.instantiate(this.uiMaskPrefab);
-        this.canvas.addChild(this.uiMask, Number.MAX_SAFE_INTEGER);
+        const uiMask = cc.instantiate(this.uiMaskPrefab);
+        this.canvas.addChild(uiMask, Number.MAX_SAFE_INTEGER);
+        return uiMask;
     },
 
     _addTips () {
         this.loadingTips = cc.instantiate(this.loadingTipsPrefab);
         this.canvas.addChild(this.loadingTips, Number.MAX_SAFE_INTEGER);
-    },
-
-    _removeMask() {
-        if (cc.isValid(this.uiMask)) {
-            this.uiMask.destroy();
-            this.uiMask = null;
-        }
     },
 
     _removeTips() {
