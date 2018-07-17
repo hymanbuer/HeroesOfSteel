@@ -2,7 +2,7 @@
 const UiHelper = require('UiHelper');
 
 const menuMap = new Map();
-menuMap.set('play', 'prefabs/main/ui_name_editor');
+menuMap.set('play', 'prefabs/main/ui_create_profile');
 menuMap.set('store', 'prefabs/main/ui_store');
 menuMap.set('options', 'prefabs/main/ui_options');
 menuMap.set('credits', 'prefabs/main/ui_credits');

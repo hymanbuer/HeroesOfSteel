@@ -45,17 +45,6 @@ cc.Class({
         this._addChar(' ');
     },
 
-    onSave () {
-        const event = new cc.Event.EventCustom('savename', true);
-        event.detail = this.profileName.string;
-        this.node.dispatchEvent(event)
-        this.node.destroy();
-    },
-
-    onCancel () {
-        this.node.destroy();
-    },
-
     // ----------------------------
 
     _initKeys () {
@@ -94,6 +83,10 @@ cc.Class({
         const isEmpty = this.profileName.string.length === 0;
         this.profileName.node.active = !isEmpty;
         this.tips.active = isEmpty;
+
+        const event = new cc.Event.EventCustom('changename', true);
+        event.detail = this.profileName.string;
+        this.node.dispatchEvent(event)
     },
 
     _onPressDel () {
