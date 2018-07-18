@@ -7,6 +7,7 @@ cc.Class({
         title: cc.Label,
         content: cc.Label,
         price: cc.Label,
+        index: 0,
     },
 
     init (info, index) {

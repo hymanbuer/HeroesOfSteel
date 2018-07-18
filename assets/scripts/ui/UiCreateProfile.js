@@ -48,6 +48,8 @@ cc.Class({
 
         this.node.on('changename', this.onChangeName, this);
         this.node.on('clickitem', this.onClickItem, this);
+
+        cc.director.preloadScene('loading');
     },
 
     onClickBack () {
@@ -60,11 +62,11 @@ cc.Class({
     },
 
     onClickPlay () {
-        cc.log('onClickPlay');
+        cc.director.loadScene('loading');
     },
 
     onClickBoost () {
-        cc.log('onClickBoost');
+        cc.director.loadScene('loading');
     },
 
     onClickName () {
@@ -73,11 +75,7 @@ cc.Class({
     },
 
     onClickDifficulty () {
-        const node = this._showDetails('CHOOSE DIFFICULTY', this.difficultiesPrefab);
-        const items = cc.find('view/content', node);
-        items.children.forEach((item, i) => {
-            item.getComponent(ItemStore).index = i;
-        });
+        this._showDetails('CHOOSE DIFFICULTY', this.difficultiesPrefab);
     },
 
     onClickPortrait (_, index) {

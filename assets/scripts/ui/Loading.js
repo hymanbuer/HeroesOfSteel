@@ -1,4 +1,6 @@
 
+const UUID = require('UUID');
+
 function getAnimationNameByPercent(percent) {
     percent = cc.clampf(percent, 0, 100);
     percent = Math.floor(percent / 10);
@@ -15,8 +17,21 @@ cc.Class({
     },
 
     onLoad () {
+        cc.game.addPersistRootNode(this.node);
         this.init();
-        this.node.on('touchend', this.onTouchEnd, this);
+    },
+
+    start () {
+        const info = {uuid: UUID.GameScene, type: 'scene'};
+        const progress = (count, totalCount, _) => {
+            const percent = count / totalCount * 100
+            this.setPercent(percent);
+        };
+        const complete = (err, asset) => {
+            if (err) throw new Error(err);
+            this._runScene(asset.scene)
+        };
+        cc.loader.load(info, progress, complete);
     },
 
     init (params = {}) {
@@ -34,7 +49,16 @@ cc.Class({
         }
     },
 
-    onTouchEnd () {
+    _runScene (scene) {
+        cc.director.runScene(scene, () => {
+            const animation = this.getComponent(cc.Animation);
+            animation.play();
+            animation.on('finished', this._destroy, this);
+        });
+    },
+
+    _destroy () {
+        cc.game.removePersistRootNode(this.node);
         this.node.destroy();
-    }
+    },
 });
