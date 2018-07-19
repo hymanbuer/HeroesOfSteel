@@ -75,7 +75,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 18
+        "__id__": 19
+      },
+      {
+        "__id__": 20
       }
     ],
     "_prefab": null,
@@ -233,8 +236,8 @@
       }
     ],
     "_prefab": null,
-    "_id": "e4xs2C93dM8LGxqWY4l9LF",
-    "_opacity": 128,
+    "_id": "21CYlKkvVFI5ni8QXvWb8C",
+    "_opacity": 125,
     "_color": {
       "__type__": "cc.Color",
       "r": 0,
@@ -387,7 +390,7 @@
     },
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "playOnLoad": true,
+    "playOnLoad": false,
     "_autoRemoveOnFinish": false,
     "_totalParticles": 150,
     "_duration": -1,
@@ -462,7 +465,7 @@
     "_endRadiusVar": 0,
     "_rotatePerS": 0,
     "_rotatePerSVar": 0,
-    "_N$preview": true
+    "_N$preview": false
   },
   {
     "__type__": "cc.Node",
@@ -500,8 +503,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 816,
-      "height": 360
+      "width": 768,
+      "height": 64
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -528,8 +531,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 36,
-    "_fontSize": 36,
+    "_actualFontSize": 32,
+    "_fontSize": 32,
     "_lineHeight": 32,
     "_enableWrapText": true,
     "_N$file": {
@@ -537,8 +540,8 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "In those final hours, the ancient druids, an order known as the Dhrogas, led the survivors into the underdeep.",
-    "_N$horizontalAlign": 0,
+    "_N$string": "There was a time before out world was broken",
+    "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 1
@@ -551,11 +554,11 @@
       "__id__": 11
     },
     "_enabled": true,
-    "isAlignOnce": true,
+    "isAlignOnce": false,
     "_target": null,
     "_alignFlags": 40,
-    "_left": 72,
-    "_right": 72,
+    "_left": 96,
+    "_right": 96,
     "_top": 0,
     "_bottom": 0,
     "_verticalCenter": 0,
@@ -566,7 +569,7 @@
     "_isAbsBottom": true,
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
-    "_originalWidth": 75,
+    "_originalWidth": 1137,
     "_originalHeight": 0
   },
   {
@@ -587,7 +590,7 @@
         "__id__": 16
       },
       {
-        "__id__": 17
+        "__id__": 18
       }
     ],
     "_prefab": null,
@@ -680,7 +683,11 @@
     },
     "duration": 0.1,
     "zoomScale": 1.2,
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 17
+      }
+    ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
     "_N$normalColor": {
@@ -712,6 +719,15 @@
     "_N$target": {
       "__id__": 14
     }
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 2
+    },
+    "component": "SceneOpening",
+    "handler": "onClickSkip",
+    "customEventData": ""
   },
   {
     "__type__": "cc.Widget",
@@ -754,5 +770,20 @@
     },
     "_fitWidth": false,
     "_fitHeight": true
+  },
+  {
+    "__type__": "184fapJjv5Ie62TtNjGKZIW",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "text": {
+      "__id__": 12
+    },
+    "fire": {
+      "__id__": 10
+    }
   }
 ]

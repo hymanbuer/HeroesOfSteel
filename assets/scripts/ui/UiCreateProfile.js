@@ -48,8 +48,6 @@ cc.Class({
 
         this.node.on('changename', this.onChangeName, this);
         this.node.on('clickitem', this.onClickItem, this);
-
-        cc.director.preloadScene('loading');
     },
 
     onClickBack () {
@@ -62,11 +60,11 @@ cc.Class({
     },
 
     onClickPlay () {
-        cc.director.loadScene('loading');
+        cc.director.loadScene('opening');
     },
 
     onClickBoost () {
-        cc.director.loadScene('loading');
+        cc.director.loadScene('opening');
     },
 
     onClickName () {
