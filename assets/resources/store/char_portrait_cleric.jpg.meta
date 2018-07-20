@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f0b080e4-235f-49ac-a025-8e0896ec557e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "char_portrait_cleric": {
+      "ver": "1.0.3",
+      "uuid": "b630ed20-87ad-46ed-9f11-1dd44775f8ae",
+      "rawTextureUuid": "f0b080e4-235f-49ac-a025-8e0896ec557e",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 324,
+      "height": 512,
+      "rawWidth": 324,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

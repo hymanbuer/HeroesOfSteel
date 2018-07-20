@@ -12,6 +12,16 @@ const characterTiles = [
     'Fyona the Paladin',
     'Selen the Rogue',
 ];
+const portraitTiles = [
+    'Outlander',
+    'Wizard',
+    'Cleric',
+    'Thief',
+    'Dueler',
+    'Sorcerer',
+    'Paladin',
+    'Rogue',
+];
 const numCharacters = 8;
 const numSlots = 4;
 
@@ -34,6 +44,7 @@ cc.Class({
         portraits: [cc.Sprite],
         profileName: cc.Label,
         difficultyName: cc.Label,
+        portraitTiles: [cc.Label],
 
         nameEditorPrefab: cc.Prefab,
         difficultiesPrefab: cc.Prefab,
@@ -90,6 +101,7 @@ cc.Class({
 
         const id = this._heroSlots[index];
         this.portraits[index].spriteFrame = this.characterPortraits[id - 1];
+        this.portraitTiles[index].string = portraitTiles[id - 1];
     },
 
     onChangeName (event) {
