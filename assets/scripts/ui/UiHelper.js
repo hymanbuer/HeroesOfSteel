@@ -7,14 +7,15 @@ const UiHelper = cc.Class({
     },
 
     properties: {
-        canvas: cc.Node,
+        canvas: {
+            get () { return cc.director.getScene().getChildByName('Canvas'); }
+        },
         uiMaskPrefab: cc.Prefab,
         loadingTipsPrefab: cc.Prefab,
     },
 
     onLoad () {
         UiHelper.instance = this;
-        this.canvas = cc.director.getScene().getChildByName('Canvas');
     },
 
     onDestroy () {
