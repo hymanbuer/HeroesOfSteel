@@ -149,10 +149,6 @@ cc.Class({
         this.fogLightedPoints.push(new Array(this.mapSize.width + 1).fill(false))
 
         self.lightGridByDistance({x: 41, y: 26}, 7);
-
-        this.scheduleOnce(function () {
-            UiHelper.instance.showUi('prefabs/game/ui_world_map');
-        }, 2);
     },
 
     update (dt) {

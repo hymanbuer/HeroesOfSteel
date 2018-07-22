@@ -71,7 +71,7 @@ cc.Class({
         falgInactive: cc.SpriteFrame,
     },
 
-    onLoad () {
+    start () {
         this.tiledMap.getObjectGroup('StateAlpha').node.destroy();
         this.tiledMap.getObjectGroup('StateBeta').node.destroy();
         this.tiledMap.getLayer('TileStateAlpha').node.destroy();
@@ -82,8 +82,8 @@ cc.Class({
 
         // TODO: get the index of location
         const index = 0;
-        this._focusOn(locations[index]);
         this._activeThisCamera();
+        this._focusOn(locations[index]);
     },
 
     onClickBack () {

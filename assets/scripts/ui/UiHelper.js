@@ -1,4 +1,6 @@
 
+const LoaderHelper = require('CCLoaderHelper');
+
 const UiHelper = cc.Class({
     extends: cc.Component,
 
@@ -19,7 +21,7 @@ const UiHelper = cc.Class({
     },
 
     onDestroy () {
-        UiHelper.instance = null;
+        // UiHelper.instance = null;
     },
 
     showUi (uiPrefabPath) {
@@ -28,40 +30,32 @@ const UiHelper = cc.Class({
         return this._loadPrefab(uiPrefabPath, uiMask);
     },
 
-    _loadPrefab(path, uiMask) {
-        const success = uiPrefab => {
-            const ui = cc.instantiate(uiPrefab);
-            this.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
-            this._removeTips();
+    _loadPrefab(uiPrefabPath, uiMask) {
+        return new Promise((resolve, reject) => {
+            const promise = LoaderHelper.loadResByUrl(uiPrefabPath, cc.Prefab);
+            promise.then(uiPrefab => {
+                const ui = cc.instantiate(uiPrefab);
+                this.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
+                this._removeTips();
 
-            const oldDestroy = ui.destroy;
-            ui.destroy = () => {
-                uiMask.destroy();
-                oldDestroy.call(ui, ...arguments);
-            };
+                const oldDestroy = ui.destroy;
+                ui.destroy = () => {
+                    uiMask.destroy();
+                    oldDestroy.call(ui, ...arguments);
+                    if (typeof ui.ondestroy === 'function')
+                        ui.ondestroy();
+                };
 
-            return ui;
-        };
-
-        const uiPrefab = cc.loader.getRes(path, cc.Prefab);
-        if (uiPrefab)
-            return new Promise((resolve, reject) => {
-                const ui = success(uiPrefab);
                 resolve(ui);
             });
-        else
-            return new Promise((resolve, reject) => {
-                cc.loader.loadRes(path, cc.Prefab, (err, uiPrefab) => {
-                    if (err) {
-                        uiMask.destroy();
-                        this._removeTips();
-                        return reject(err);
-                    }
-                    
-                    const ui = success(uiPrefab);
-                    resolve(ui);
-                });
+
+            promise.catch(err => {
+                uiMask.destroy();
+                this._removeTips();
+
+                reject(err);
             });
+        });
     },
 
     _addMask () {

@@ -1,4 +1,6 @@
 
+const UiHelper = require('UiHelper');
+
 cc.Class({
     extends: cc.Component,
 
@@ -19,15 +21,15 @@ cc.Class({
     },
 
     onClickWorldMap () {
-        cc.log('onClickWorldMap');
+        UiHelper.instance.showUi('prefabs/game/ui_world_map');
     },
 
     onClickOptions () {
-        cc.log('onClickOptions');
+        UiHelper.instance.showUi('prefabs/main/ui_options');
     },
 
     onClickMainMenu () {
-        cc.log('onClickMainMenu');
+        cc.director.loadScene('main');
     },
 
     onTouchEnd () {
