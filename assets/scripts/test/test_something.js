@@ -8,7 +8,6 @@ cc.Class({
 
     onLoad () {
         this.node.on('touchend', this.onTouchEnd, this);
-        // this.node.on('touchmove', this.onTouchMove, this);
     },
 
     start () {
@@ -20,6 +19,7 @@ cc.Class({
         if (touches.length > 1) return;
 
         let pos = this.node.convertTouchToNodeSpaceAR(touches[0]);
+        
         const actions = [];
         this.hero.setAnimation(0, 'Stand', true);
         this.hero.timeScale = 1.0;
@@ -35,13 +35,6 @@ cc.Class({
         }));
         this.hero.node.stopAllActions();
         this.hero.node.runAction(cc.sequence(actions));
-    },
-
-    onTouchMove (event) {
-        const touches = event.getTouches();
-        let pos = this.node.convertTouchToNodeSpaceAR(touches[0]);
-
-        this.rotateTo(pos);
     },
 
     rotateTo (target) {

@@ -72,11 +72,11 @@ class AStarSearch {
 
         const path = [];
         let node = this._closest;
-        path.unshift(node);
-        while (node != this._start && this._route[node] != 0) {
-            node = this._route[node];
+        do {
             path.unshift(node);
-        }
+            node = this._route[node];
+        } while (node !== 0 && node !== this._start);
+
         return path;
     }
 

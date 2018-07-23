@@ -115,8 +115,9 @@ class GridGraph {
     }
 
     getEdgeCost (from, to) {
-        const [x1, y1, x2, y2] = indexes2grids(this, from, to); 
-        return x1 !== x2 && y1 !== y2 ? Math.SQRT2 : 1;
+        // const [x1, y1, x2, y2] = indexes2grids(this, from, to); 
+        // return x1 !== x2 && y1 !== y2 ? Math.SQRT2 : 1;
+        return 1;
     }
 
     getNodeNeighbors (index) {

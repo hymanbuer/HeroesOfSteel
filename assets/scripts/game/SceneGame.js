@@ -6,6 +6,9 @@ const time = () => window.performance ? window.performance.now() : new Date().ge
 
 const UiHelper = require('UiHelper');
 
+const CameraControl = require('CameraControl');
+const CharacterControl = require('CharacterControl');
+
 const fogIds = [
     0, 4, 8, 12,
     1, 5, 9, 13,
@@ -35,8 +38,8 @@ cc.Class({
         foregroundLayerName: 'Foreground',
 
         tiledMap: cc.TiledMap,
-        camera: cc.Node,
-        player: cc.Node,
+        cameraCtrl: CameraControl,
+        playerCtrl: CharacterControl,
     },
 
     onLoad () {
@@ -44,8 +47,8 @@ cc.Class({
     },
 
     start () {
-        this.camera.x = this.player.x;
-        this.camera.y = this.player.y;
+        this.cameraCtrl.node.x = this.playerCtrl.node.x;
+        this.cameraCtrl.node.y = this.playerCtrl.node.y;
 
         this.mapSize = this.tiledMap.getMapSize();
         this.tileSize = this.tiledMap.getTileSize();
@@ -89,29 +92,16 @@ cc.Class({
 
         const self = this;
         this.followPath = (path) => {
-            const actions = [];
-            cc.log('----- follow path -------');
+            const posList = [];
             for (const index of path) {
                 const grid = this.graph.index2grid(index);
                 const pos = this.getPositionAt(grid);
-                // actions.push(cc.callFunc(function () {
-                //     const tile = self.layerFog.getTileAt(grid);
-                //     if (tile) tile.runAction(cc.fadeOut(0.2));
-                // }));
-                actions.push(cc.moveTo(0.2, pos));
-                actions.push(cc.callFunc(function () {
-                    self.lightGridByDistance(grid, 7);
-                }));
-                // cc.log(grid, pos);
+                posList.push(pos);
+                // self.lightGridByDistance(grid, 7);
             }
-            this.player.runAction(cc.sequence(actions));
-        };
-
-        this.setTo = (pos) => {
-            // this.camera.x = this.player.x = pos.x;
-            // this.camera.y = this.player.y = pos.y;
-            this.player.x = pos.x;
-            this.player.y = pos.y;
+            this.playerCtrl.followPath(posList);
+            // this.cameraCtrl.followingTarget = this.playerCtrl.node;
+            this.cameraCtrl.targetPos = posList[posList.length - 1];
         };
 
         this.getPositionAt = (grid) => {
@@ -151,15 +141,8 @@ cc.Class({
         self.lightGridByDistance({x: 41, y: 26}, 7);
     },
 
-    update (dt) {
-        // if (this.player.getNumberOfRunningActions() > 0) {
-        //     this.camera.x = this.player.x;
-        //     this.camera.y = this.player.y;
-        // }
-    },
-
     onTouchWorld (worldPos) {
-        const startGrid = this.pos2grid(this.player.getPosition());
+        const startGrid = this.pos2grid(this.playerCtrl.node.getPosition());
         const start = this.graph.grid2index(startGrid.x, startGrid.y);
         const targetGrid = this.pos2grid(worldPos);
         const target = this.graph.grid2index(targetGrid.x, targetGrid.y);
@@ -172,8 +155,6 @@ cc.Class({
         const isFound = this.astar.search(start, target);
         const endTime = time();
         // if (isFound) {
-            this.player.stopAllActions();
-            this.setTo(this.getPositionAt(startGrid));
             this.followPath(this.astar.path);
         // }
 

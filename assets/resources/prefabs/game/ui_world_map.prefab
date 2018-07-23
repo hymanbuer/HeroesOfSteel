@@ -1288,7 +1288,7 @@
     "target": {
       "__id__": 46
     },
-    "component": "CameraControler",
+    "component": "CameraControl",
     "handler": "onScaleScreen",
     "customEventData": ""
   },
@@ -1371,7 +1371,8 @@
     "node": {
       "__id__": 46
     },
-    "_enabled": true
+    "_enabled": true,
+    "followingTarget": null
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1403,7 +1404,7 @@
     "target": {
       "__id__": 46
     },
-    "component": "CameraControler",
+    "component": "CameraControl",
     "handler": "onScaleScreen",
     "customEventData": ""
   },
@@ -1426,7 +1427,7 @@
     "target": {
       "__id__": 46
     },
-    "component": "CameraControler",
+    "component": "CameraControl",
     "handler": "onMoveScreen",
     "customEventData": ""
   },
