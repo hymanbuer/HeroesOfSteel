@@ -18,29 +18,39 @@ cc.Class({
 
     onLoad () {
         cc.game.addPersistRootNode(this.node);
-        this.init();
+        this.title.string = '';
+        this.tips.string = '';
+        this._setPercent(0);
+
+        this.resources = [];
+        this.resources.push({uuid: UUID.GameScene});
     },
 
     start () {
-        const info = {uuid: UUID.GameScene, type: 'scene'};
-        const progress = (count, totalCount, _) => {
-            const percent = count / totalCount * 100
-            this.setPercent(percent);
+        this._add('295fd607-9328-45c0-a6f3-ad4bf3d9ba48');
+        
+        this._startLoad();
+    },
+
+    _add (uuid) {
+        this.resources.push({uuid});
+    },
+
+    _startLoad () {
+        const progress = (count, totalCount, asset) => {
+            const percent = count / totalCount * 100;
+            this._setPercent(percent);
+            // cc.log('progress:', count, totalCount, asset.id);
         };
         const complete = (err, asset) => {
             if (err) throw new Error(err);
-            this._runScene(asset.scene)
+            // cc.log('complete:', asset);
+            this._runScene('game');
         };
-        cc.loader.load(info, progress, complete);
+        cc.loader.load(this.resources, progress, complete);
     },
 
-    init (params = {}) {
-        this.title.string = params.title || '';
-        this.tips.string = params.tips || '';
-        this.setPercent(params.percent || 0);
-    },
-
-    setPercent (percent) {
+    _setPercent (percent) {
         const name = getAnimationNameByPercent(percent);
         if (this.progress.animation !== name) {
             const oldEntry = this.progress.getCurrent(0);
@@ -49,8 +59,8 @@ cc.Class({
         }
     },
 
-    _runScene (scene) {
-        cc.director.runScene(scene, () => {
+    _runScene (name) {
+        cc.director.loadScene(name, () => {
             const animation = this.getComponent(cc.Animation);
             animation.play();
             animation.on('finished', this._destroy, this);

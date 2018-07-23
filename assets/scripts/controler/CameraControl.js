@@ -12,8 +12,7 @@ cc.Class({
     },
 
     properties: {
-        followingTarget: cc.Node,
-        targetPos: null,
+        
     },
 
     onLoad () {},
@@ -36,6 +35,10 @@ cc.Class({
                 }
             }
         }
+    },
+
+    placeOn (pos) {
+        this.node.position = pos;
     },
 
     onScaleScreen (step) {
