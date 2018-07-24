@@ -1,9 +1,15 @@
 
-const BACKGROUND_NAME = 'Background';
-const FOREGROUND_NAME = 'Foreground';
+const LayerName = cc.Enum({
+    Background: 'Background',
+    Foreground: 'Foreground',
+});
 
 cc.Class({
     extends: cc.Component,
+
+    statics: {
+        LayerName: LayerName,
+    },
 
     properties: {
         tiledMap: cc.TiledMap,
@@ -20,8 +26,8 @@ cc.Class({
 
         this.mapSize = this.tiledMap.getMapSize();
         this.tileSize = this.tiledMap.getTileSize();
-        this.layerBackground = this.tiledMap.getLayer(BACKGROUND_NAME);
-        this.layerForeground = this.tiledMap.getLayer(FOREGROUND_NAME);
+        this.layerBackground = this.tiledMap.getLayer(LayerName.Background);
+        this.layerForeground = this.tiledMap.getLayer(LayerName.Foreground);
     },
 
     getPositionAt (grid) {
@@ -29,6 +35,16 @@ cc.Class({
         pos.x += this.tileSize.width/2.0;
         pos.y += this.tileSize.height/2.0;
         return pos;
+    },
+
+    setTileIdAt (grid, id, layerName = LayerName.Background) {
+        const layer = this.tiledMap.getLayer(layerName);
+        const gid = id + layer.getTileSet().firstGid;
+        layer.setTileGID(gid, grid);
+    },
+
+    addEntity (node) {
+        this.tiledMap.node.addChild(node);
     },
 
     _prehandler () {

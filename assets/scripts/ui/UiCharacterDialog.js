@@ -8,6 +8,7 @@ cc.Class({
         portrait: cc.Sprite,
         text: cc.Label,
         fonts: [cc.Font],
+        talkList: [],
     },
 
     onLoad () {
@@ -16,30 +17,8 @@ cc.Class({
         this.text.font = this.fonts[0];
     },
 
-    init (talkList) {
-        this.talkList = talkList || [];
-        this._showNextTalk();
-    },
-
     start () {
-        const talkList = [
-            {
-                portrait: '89d9db05-84ae-439b-a471-161852fa0c6d',
-                font: 0,
-                text: 'Hello Wolrd',
-            },
-            {
-                portrait: '89d9db05-84ae-439b-a471-161852fa0c6d',
-                font: 1,
-                text: 'Hello Wolrd 2222222222',
-            },
-            {
-                portrait: '89d9db05-84ae-439b-a471-161852fa0c6d',
-                font: 0,
-                text: 'Hello Wolrd 33333333333',
-            },
-        ];
-        this.init(talkList);
+        this._showNextTalk();
     },
 
     onClickAnywhere () {
