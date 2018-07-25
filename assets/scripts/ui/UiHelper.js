@@ -24,9 +24,14 @@ const UiHelper = cc.Class({
         // UiHelper.instance = null;
     },
 
-    showUi (uiPrefabPath) {
-        const uiMask = this._addMask();
-        this.scheduleOnce(this._addTips, 0.05);
+    showUi (uiPrefabPath, options = {}) {
+        let uiMask = null;
+        if (!options.hideMask)
+            uiMask = this._addMask();
+
+        if (!options.hideTips)
+            this.scheduleOnce(this._addTips, 0.05);
+
         return this._loadPrefab(uiPrefabPath, uiMask);
     },
 
@@ -40,7 +45,9 @@ const UiHelper = cc.Class({
 
                 const oldDestroy = ui.destroy;
                 ui.destroy = () => {
-                    uiMask.destroy();
+                    if (uiMask)
+                        uiMask.destroy();
+
                     oldDestroy.call(ui, ...arguments);
                     if (typeof ui.ondestroy === 'function')
                         ui.ondestroy();
@@ -50,7 +57,8 @@ const UiHelper = cc.Class({
             });
 
             promise.catch(err => {
-                uiMask.destroy();
+                if (uiMask)
+                    uiMask.destroy();
                 this._removeTips();
 
                 reject(err);

@@ -5,11 +5,10 @@ const SkeletonHelper = require('SkeletonHelper');
 const TiledMapControl = require('TiledMapControl');
 const CameraControl = require('CameraControl');
 const CharacterControl = require('CharacterControl');
+const HudControl = require('HudControl');
 
 const PlotParser = require('PlotParser');
 const PlotConfig = require('PlotConfig');
-
-
 
 cc.Class({
     extends: cc.Component,
@@ -17,6 +16,8 @@ cc.Class({
     properties: {
         tildMapCtrl: TiledMapControl,
         cameraCtrl: CameraControl,
+        hudControl: HudControl,
+        inputHandler: cc.Node,
     },
 
     onLoad () {
@@ -26,13 +27,21 @@ cc.Class({
     start () {
         this.placeCameraOn(cc.v2(7, 65));
 
-        this._test_plot();
+        this.showPlot(PlotConfig.startPlot);
     },
 
-    _test_plot () {
-        const plot = PlotConfig.startPlot;
+    showPlot (plot) {
         const action = this._plotParser.parse(plot);
-        this.node.runAction(action);
+        if (!action)
+            throw new Error(`invalid plot <${plot}>`);
+        
+        const restore = cc.callFunc(()=> {
+            this.inputHandler.active = true;
+            this.hudControl.node.active = true;
+        });
+        this.inputHandler.active = false;
+        this.hudControl.node.active = false;
+        this.node.runAction(cc.sequence(action, restore));
     },
 
     placeCameraOn (grid) {
@@ -60,7 +69,7 @@ cc.Class({
             node.tag = args.tag;
             node.name = args.name;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
-            this.tildMapCtrl.addEntity(node);
+            this.tildMapCtrl.addCharacter(node);
         });
     },
 });

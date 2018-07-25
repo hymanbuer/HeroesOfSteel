@@ -3082,6 +3082,12 @@
     },
     "cameraCtrl": {
       "__id__": 8
+    },
+    "hudControl": {
+      "__id__": 80
+    },
+    "inputHandler": {
+      "__id__": 10
     }
   }
 ]

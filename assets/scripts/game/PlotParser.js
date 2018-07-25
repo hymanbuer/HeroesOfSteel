@@ -1,9 +1,13 @@
 
-const ConditionAction = cc.FiniteTimeAction.extend({
+const UiHelper = require('UiHelper');
+const UiConfig = require('UiConfig');
+const UiCharacterDialog = require('UiCharacterDialog');
+
+const ConditionAction = cc.ActionInterval.extend({
     _condition: null,
 
     ctor: function (condition) {
-        cc.FiniteTimeAction.prototype.ctor.call(this);
+        cc.ActionInterval.prototype.ctor.call(this, Number.MAX_SAFE_INTEGER);
         cc.assert(typeof condition === 'function');
         this._condition = condition;
     },
@@ -16,13 +20,9 @@ const ConditionAction = cc.FiniteTimeAction.extend({
         return new ConditionAction(this._condition);
     },
 
-    step: function (dt) {
-    },
-
     update: function (dt) {
     },
 });
-
 
 class PlotParser {
 	constructor (game) {
@@ -57,7 +57,18 @@ class PlotParser {
     // --------------- System ---------------
 
     SYS_SHOW_DIALOG (args) {
-		return cc.callFunc( ()=> cc.log('cmd -> SYS_SHOW_DIALOG') );
+        let flag = false;
+        const show = cc.callFunc(()=> {
+            const options = {hideMask: true, hideTips: true};
+            const p = UiHelper.instance.showUi(UiConfig.UiCharacterDialog, options);
+            p.then(ui => {
+                ui.ondestroy = ()=> flag = true;
+                ui.getComponent(UiCharacterDialog).talkList = args.dialog;
+            });
+            p.catch(err => flag = true);
+        });
+        const finish = new ConditionAction(()=> flag);
+        return cc.sequence(show, finish);
     }
 
 	SYS_DELAY_TIME (args) {
