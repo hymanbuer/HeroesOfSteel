@@ -35,6 +35,14 @@ cc.Class({
         this.layerCharacters.addChild(node);
     },
 
+    removeCharacterByTag (tag) {
+        this.layerCharacters.removeChildByTag(tag);
+    },
+
+    getCharacterByTag (tag) {
+        return this.layerCharacters.getChildByTag(tag);
+    },
+
     _initLayers () {
         this.tiledMap.getObjectGroup('Rooms').node.destroy();
         this.tiledMap.getObjectGroup('Blocks').node.destroy();

@@ -59,14 +59,30 @@ cc.Class({
     // name: 'Char Name',
     // tag: 101,
     // grid: {x: 18, y: 61}
-    createCharacter (args, callback) {
+    addCharacter (args, callback) {
         LoaderHelper.loadResByUuid(args.uuid).then(skeletonData => {
             const node = SkeletonHelper.createHero(skeletonData, 'Unarmed', 'Stand');
+            const control = node.addComponent(CharacterControl);
+            control.skeleton = node.skeleton;
+
             node.tag = args.tag;
             node.name = args.name;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
             this.tildMapCtrl.addCharacter(node);
+        }).finally(()=> {
             if (typeof callback === 'function') callback();
         });
+    },
+
+    removeCharacterByTag (nodeOrTag) {
+        this.tildMapCtrl.removeCharacterByTag(nodeOrTag);
+    },
+
+    getCharacterByTag (tag) {
+        return this.tildMapCtrl.getCharacterByTag(tag);
+    },
+
+    getPositionAt (grid) {
+        return this.tildMapCtrl.getPositionAt(grid);
     },
 });

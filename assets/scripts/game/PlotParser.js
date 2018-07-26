@@ -2,6 +2,7 @@
 const UiHelper = require('UiHelper');
 const UiConfig = require('UiConfig');
 const UiCharacterDialog = require('UiCharacterDialog');
+const CharacterControl = require('CharacterControl');
 
 class PlotParser {
 	constructor (game) {
@@ -15,14 +16,14 @@ class PlotParser {
 		const asyncFuncs = [];
 		plot.forEach(obj => {
 			if (obj instanceof Array) {
-				const acts = obj.map(o => this._parseCmd(o));
-				asyncFuncs.push(acts);
+				const fns = obj.map(o => this._parseCmd(o));
+				asyncFuncs.push(fns);
 			} else {
 				asyncFuncs.push(this._parseCmd(obj));
 			}
 		});
 
-		return co.wrapTimeline(asyncFuncs);
+		return co.timeline(asyncFuncs);
 	}
 
 	_parseCmd (obj) {
@@ -63,28 +64,32 @@ class PlotParser {
     
     CHAR_ADD (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.createCharacter(args, resolve);
+            this.game.addCharacter(args, resolve);
         });
     }
     
     CHAR_REMOVE (args) {
 		return ()=> new Promise((resolve, reject) => {
-            cc.log('cmd -> CHAR_REMOVE');
+            this.game.removeCharacterByTag(args.tag);
             resolve();
         });
     }
     
     CHAR_FOLLOW_PATH (args) {
 		return ()=> new Promise((resolve, reject) => {
-            cc.log('cmd -> CHAR_FOLLOW_PATH');
-            resolve();
+            const char = this.game.getCharacterByTag(args.tag);
+            const ctrl = char.getComponent(CharacterControl);
+            const posList = args.path.map(grid => this.game.getPositionAt(grid));
+            ctrl.followPath(posList, resolve);
         });
     }
 
     CHAR_FACE_TO (args) {
 		return ()=> new Promise((resolve, reject) => {
-            cc.log('cmd -> CHAR_FACE_TO');
-            resolve();
+            const char = this.game.getCharacterByTag(args.tag);
+            const ctrl = char.getComponent(CharacterControl);
+            const pos = this.game.getPositionAt(args.grid);
+            ctrl.rotateTo(pos, resolve);
         });
     }
 

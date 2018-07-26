@@ -18,10 +18,14 @@ window.co = co;
 
 /**
  * Wrap async functions that return a promise.
+ * Because cocos creator's normal script not support generator,
+ * so I write this helper function in here.
+ * 
+ * author: Jinfeng Li
  * 
  * @param {Function Array} fns 
  */
-co.wrapTimeline = function (fns) {
+co.timeline = function (fns) {
     return function () {
         return co(function* () {
             if (!(fns instanceof Array))
