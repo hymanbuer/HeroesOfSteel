@@ -6,6 +6,7 @@ const TiledMapControl = require('TiledMapControl');
 const CameraControl = require('CameraControl');
 const CharacterControl = require('CharacterControl');
 const HudControl = require('HudControl');
+const FogSystem = require('FogSystem');
 
 const PlotParser = require('PlotParser');
 const PlotConfig = require('PlotConfig');
@@ -18,6 +19,7 @@ cc.Class({
         cameraCtrl: CameraControl,
         hudControl: HudControl,
         inputHandler: cc.Node,
+        fogSystem: FogSystem,
     },
 
     onLoad () {
@@ -67,6 +69,7 @@ cc.Class({
 
             node.tag = args.tag;
             node.name = args.name;
+            node.rotation = args.rotation || 0;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
             this.tildMapCtrl.addCharacter(node);
         }).finally(()=> {
