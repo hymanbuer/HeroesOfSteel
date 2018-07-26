@@ -716,7 +716,7 @@
     "target": {
       "__id__": 19
     },
-    "component": "HudControler",
+    "component": "HudControl",
     "handler": "onClickMenu",
     "customEventData": ""
   },

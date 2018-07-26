@@ -26,22 +26,18 @@ cc.Class({
 
     start () {
         this.placeCameraOn(cc.v2(7, 65));
-
+        
         this.showPlot(PlotConfig.startPlot);
     },
 
     showPlot (plot) {
-        const action = this._plotParser.parse(plot);
-        if (!action)
-            throw new Error(`invalid plot <${plot}>`);
-        
-        const restore = cc.callFunc(()=> {
+        const timeline = this._plotParser.parse(plot);
+        this.inputHandler.active = false;
+        this.hudControl.node.active = false;
+        timeline().then(()=> {
             this.inputHandler.active = true;
             this.hudControl.node.active = true;
         });
-        this.inputHandler.active = false;
-        this.hudControl.node.active = false;
-        this.node.runAction(cc.sequence(action, restore));
     },
 
     placeCameraOn (grid) {
@@ -70,6 +66,7 @@ cc.Class({
             node.name = args.name;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
             this.tildMapCtrl.addCharacter(node);
+            if (typeof callback === 'function') callback();
         });
     },
 });

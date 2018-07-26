@@ -43,14 +43,14 @@ const talkList = [
 
 
 exports.startPlot = [
-    // { cmd: 'SYS_DELAY_TIME', delay: 2 },
+    { cmd: 'SYS_DELAY_TIME', delay: 2 },
     { cmd: 'SYS_SHOW_DIALOG', dialog: talkList},
 
-    // {
-    //         cmd: 'CHAR_ADD',
-    //         uuid: '43f0f278-c2c3-4a70-b81a-65f75fc3d72b',
-    //         name: 'Thief',
-    //         tag: 101,
-    //         grid: {x: 9, y: 61}
-    //     }
+    {
+            cmd: 'CHAR_ADD',
+            uuid: '43f0f278-c2c3-4a70-b81a-65f75fc3d72b',
+            name: 'Thief',
+            tag: 101,
+            grid: {x: 9, y: 61}
+        }
 ];
