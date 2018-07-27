@@ -29,7 +29,7 @@ cc.Class({
     start () {
         this.placeCameraOn(cc.v2(7, 65));
         
-        this.showPlot(PlotConfig.startPlot);
+        // this.showPlot(PlotConfig.startPlot);
     },
 
     showPlot (plot) {
@@ -87,5 +87,12 @@ cc.Class({
 
     getPositionAt (grid) {
         return this.tildMapCtrl.getPositionAt(grid);
+    },
+
+    // -----------
+
+    onTouchWorld (worldPos) {
+        const grid = this.tildMapCtrl.getGridAt(worldPos);
+        this.fogSystem.reveal(grid, 6);
     },
 });

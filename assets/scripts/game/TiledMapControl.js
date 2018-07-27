@@ -18,11 +18,25 @@ cc.Class({
         this.tileSize = this.tiledMap.getTileSize();
     },
 
+    getMapSize () {
+        return this.mapSize;
+    },
+
+    getTileSize () {
+        return this.tileSize;
+    },
+
     getPositionAt (grid) {
         const pos = this.layerBackground.getPositionAt(grid);
         pos.x += this.tileSize.width/2.0;
         pos.y += this.tileSize.height/2.0;
         return pos;
+    },
+
+    getGridAt (pos) {
+        const x = Math.floor((pos.x+0.5) / this.tileSize.width);
+        const y = (this.mapSize.height-1) - Math.floor((pos.y+0.5)/this.tileSize.height);
+        return cc.v2(x, y);
     },
 
     setTileIdAt (grid, id, layerName) {

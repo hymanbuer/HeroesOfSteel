@@ -130,5 +130,5 @@ exports.startPlot =
     
 
 
-    sys_delay_time(99999),
+    // sys_delay_time(99999),
 ];
