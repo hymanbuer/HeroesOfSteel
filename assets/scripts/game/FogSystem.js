@@ -2,13 +2,13 @@
 const TiledMapControl = require('TiledMapControl');
 
 const MAX_FOG_INDEX = 15;
-const FOG_IDS = [
+const DARK_IDS = [
     0, 4, 8, 12,
     1, 5, 9, 13,
     2, 6, 10, 14,
     3, 7, 11, 15,
 ];
-const BLOCK_IDS = FOG_IDS.map(id => id + 16);
+const GREY_IDS = DARK_IDS.map(id => id + 16);
 
 const FogFlag = cc.Enum({
     TOP_LEFT: 0x80000000,
@@ -44,6 +44,13 @@ const EIGHT_DIRECTIONS = [
     [1, 1],
 ];
 
+const FOUR_DIRECTIONS = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1],
+];
+
 cc.Class({
     extends: cc.Component,
 
@@ -57,32 +64,30 @@ cc.Class({
 
     start () {
         this._mapSize = this.tiledMapCtrl.getMapSize();
-        this._fogStates = [];
-        this._blockStates = [];
-        for (let y = 0; y <= this._mapSize.height; ++y) {
-            this._fogStates[y] = new Array(this._mapSize.width).fill(0);
-            this._blockStates[y] = new Array(this._mapSize.width).fill(0);
-        }
+        this._darkStates = this._createFogStates('Fog', DARK_IDS);
+        this._greyStates = this._createFogStates('Blocks', GREY_IDS);
 
         for (let y = 0; y < this._mapSize.height; ++y) {
             for (let x = 0; x < this._mapSize.width; ++x) {
-                const fogId = FOG_IDS[this._getFogIndex(x, y)];
-                const blockId = BLOCK_IDS[ this._blockStates[y][x] ];
-                this.tiledMapCtrl.setTileIdAt({x, y}, fogId, 'Fog');
-                // this.tiledMapCtrl.setTileIdAt({x, y}, blockId, 'Blocks');
+                this._darkStates.updateTile(x, y);
+                this._greyStates.updateTile(x, y);
             }
         }
 
         this._searchRevealGrids = this._createSearchMethod();
     },
 
-    reveal (startGrid, brightDistance, greyDistance) {
-        const grids = this._searchRevealGrids(startGrid, brightDistance);
-        grids.forEach(grid => this._revealGrid(grid));
+    reveal (startGrid, brightDistance = 0, greyDistance = 0) {
+        const totalDistance = brightDistance + greyDistance;
+        const darkGrids = this._searchRevealGrids(startGrid, totalDistance);
+        const greyGrids = this._searchRevealGrids(startGrid, brightDistance);
+        darkGrids.forEach(grid => this._darkStates.revealGrid(grid));
+        greyGrids.forEach(grid => this._greyStates.revealGrid(grid));
     },
 
     conceal (startGrid, distance) {
-
+        const greyGrids = this._searchRevealGrids(startGrid, distance);
+        greyGrids.forEach(grid => this._greyStates.concealGrid(grid));
     },
 
     _createSearchMethod () {
@@ -128,41 +133,97 @@ cc.Class({
         };
     },
 
-    _revealGrid (grid) {
-        for (const offset of GRID_POINTS) {
-            const point = cc.v2(grid.x + offset[0], grid.y + offset[1]);
-            if (!this._isValidPointXY(point.x, point.y)) continue;
-            if (this._isRevealedPoint(point)) continue;
-
-            this._revealPoint(point);
+    _createFogStates (layerName, IDS) {
+        const states = [];
+        const revealCounts = [];
+        for (let y = 0; y <= this._mapSize.height; ++y) {
+            states[y] = new Array(this._mapSize.width).fill(0);
+            revealCounts[y] = new Array(this._mapSize.width).fill(0);
         }
-    },
 
-    _revealPoint (point) {
-        for (const offset of POINT_GRIDS) {
-            const x = point.x + offset[0];
-            const y = point.y + offset[1];
-            if (this._isValidGridXY(x, y)) {
-                let fogInex = this._getFogIndex(x, y) + offset[2];
-                fogInex =  Math.min(fogInex, MAX_FOG_INDEX);
+        const getFogIndex = (x, y) => {
+            return (states[y][x] & FogFlag.FOG_MASK) >>> 0;
+        };
 
-                let flags = (this._fogStates[y][x] & FogFlag.FOG_ALL | offset[3]) >>> 0;
-                this._fogStates[y][x] = (flags | fogInex) >>> 0;
-
-                const fogId = FOG_IDS[fogInex];
-                this.tiledMapCtrl.setTileIdAt({x, y}, fogId, 'Fog');
+        const isRevealedPoint = (point) => {
+            for (const offset of POINT_GRIDS) {
+                const x = point.x + offset[0];
+                const y = point.y + offset[1];
+                if (this._isValidGridXY(x, y) && (states[y][x] & offset[3]))
+                    return true;
             }
-        }
-    },
+            return false;
+        };
 
-    _isRevealedPoint (point) {
-        for (const offset of POINT_GRIDS) {
-            const x = point.x + offset[0];
-            const y = point.y + offset[1];
-            if (this._isValidGridXY(x, y) && (this._fogStates[y][x] & offset[3]))
-                return true;
-        }
-        return false;
+        const revealPoint = (point) => {
+            for (const offset of POINT_GRIDS) {
+                const x = point.x + offset[0];
+                const y = point.y + offset[1];
+                if (this._isValidGridXY(x, y)) {
+                    let fogInex = getFogIndex(x, y) + offset[2];
+                    fogInex = Math.min(fogInex, MAX_FOG_INDEX);
+    
+                    let flags = (states[y][x] & FogFlag.FOG_ALL | offset[3]) >>> 0;
+                    states[y][x] = (flags | fogInex) >>> 0;
+    
+                    const id = IDS[fogInex];
+                    this.tiledMapCtrl.setTileIdAt({x, y}, id, layerName);
+                }
+            }
+        };
+
+        const concealPoint = (point) => {
+            for (const offset of POINT_GRIDS) {
+                const x = point.x + offset[0];
+                const y = point.y + offset[1];
+                if (this._isValidGridXY(x, y)) {
+                    let fogInex = getFogIndex(x, y) - offset[2];
+                    fogInex = Math.max(fogInex, 0);
+    
+                    let flags = (states[y][x] & FogFlag.FOG_ALL) >>> 0;
+                    flags = (flags & (~(FogFlag.FOG_ALL & offset[3]))) >>> 0;
+                    states[y][x] = (flags | fogInex) >>> 0;
+    
+                    const id = IDS[fogInex];
+                    this.tiledMapCtrl.setTileIdAt({x, y}, id, layerName);
+                }
+            }
+        };
+
+        return {
+            updateTile: (x, y) => {
+                const id = IDS[getFogIndex(x, y)];
+                this.tiledMapCtrl.setTileIdAt({x, y}, id, layerName);
+            },
+
+            revealGrid: (grid) => {
+                revealCounts[grid.y][grid.x] += 1;
+                if (revealCounts[grid.y][grid.x] > 1) return;
+
+                for (const offset of GRID_POINTS) {
+                    const point = cc.v2(grid.x + offset[0], grid.y + offset[1]);
+                    if (!this._isValidPointXY(point.x, point.y)) continue;
+                    if (isRevealedPoint(point)) continue;
+        
+                    revealPoint(point);
+                }
+            },
+
+            concealGrid: (grid) => {
+                if (revealCounts[grid.y][grid.x] === 0) return;
+                
+                revealCounts[grid.y][grid.x] -= 1;
+                if (revealCounts[grid.y][grid.x] > 0) return;
+
+                for (const offset of GRID_POINTS) {
+                    const point = cc.v2(grid.x + offset[0], grid.y + offset[1]);
+                    if (!this._isValidPointXY(point.x, point.y)) continue;
+                    if (!isRevealedPoint(point)) continue;
+
+                    concealPoint(point);
+                }
+            },
+        };
     },
 
     _isValidPointXY (x, y) {
@@ -173,9 +234,5 @@ cc.Class({
     _isValidGridXY (x, y) {
         return x >= 0 && x < this._mapSize.width
             && y >= 0 && y < this._mapSize.height;
-    },
-
-    _getFogIndex (x, y) {
-        return (this._fogStates[y][x] & FogFlag.FOG_MASK) >>> 0;
     },
 });

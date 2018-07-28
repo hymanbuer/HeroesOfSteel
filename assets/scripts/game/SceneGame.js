@@ -30,6 +30,7 @@ cc.Class({
         this.placeCameraOn(cc.v2(7, 65));
         
         // this.showPlot(PlotConfig.startPlot);
+        this.fogSystem.reveal(cc.v2(11, 61), 5, 1);
     },
 
     showPlot (plot) {
@@ -93,6 +94,9 @@ cc.Class({
 
     onTouchWorld (worldPos) {
         const grid = this.tildMapCtrl.getGridAt(worldPos);
-        this.fogSystem.reveal(grid, 6);
+        if (this.lastGrid)
+            this.fogSystem.conceal(this.lastGrid, 5);
+        this.lastGrid = grid;
+        this.fogSystem.reveal(grid, 5, 1);
     },
 });
