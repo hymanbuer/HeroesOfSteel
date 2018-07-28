@@ -109,7 +109,9 @@ cc.Class({
         for (const grid of lightSourceGrids)
             revealCounts.push(this._greyStates.getRevealCountAt(grid));
 
+        const greyGridsArray = [];
         for (const grid of lightSourceGrids) {
+            const arr = [];
             for (const s of this.getLightSourcesAt(grid)) {
                 const distance = s.light.bright + s.light.grey;
                 const greyGrids = this._searchRevealGrids(grid, distance);
@@ -119,13 +121,20 @@ cc.Class({
                     if (index >= 0)
                         revealCounts[index] -= 1;
                 });
+                arr.push(greyGrids);
             }
+            greyGridsArray.push(arr);
         }
 
         for (let i = 0; i < revealCounts.length; ++i) {
-            const grid = lightSourceGrids[i];
-            if (revealCounts[i] <= 0)
-                this.removeAllLightSourceAt(grid);
+            if (revealCounts[i] > 0) continue;
+
+            const arr = greyGridsArray[i];
+            for (const greyGrids of arr) {
+                greyGrids.forEach(grid => {
+                    this._greyStates.concealGrid(grid);
+                });
+            }
         }
     },
 
