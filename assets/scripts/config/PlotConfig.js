@@ -83,6 +83,10 @@ function cam_place_on(x, y) {
     return { cmd: 'CAM_PLACE_ON', grid: {x, y} };
 }
 
+function cam_move_on(x, y) {
+    return { cmd: 'CAM_MOVE_ON', grid: {x, y} };
+}
+
 function char_add(uuid, name, tag, x, y, rotation) {
     return {
         cmd: 'CHAR_ADD',
@@ -130,5 +134,5 @@ exports.startPlot =
     
 
 
-    sys_delay_time(99999),
+    // sys_delay_time(99999),
 ];

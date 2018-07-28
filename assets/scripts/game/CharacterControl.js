@@ -39,7 +39,13 @@ cc.Class({
     },
 
     moveTo (target, callback) {
-        const action = this._moveTo(target, callback);
+        const oldPos = cc.v2(this.node.x, this.node.y);
+        const action = this._moveTo(target, ()=> {
+            const event = new cc.Event.EventCustom('moveend', true);
+            event.detail = oldPos;
+            this.node.dispatchEvent(event)
+            if (typeof callback === 'function') callback();
+        });
         this.node.runAction(action);
     },
 

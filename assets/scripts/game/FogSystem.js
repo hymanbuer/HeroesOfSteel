@@ -78,71 +78,34 @@ cc.Class({
         this._searchRevealGrids = this._createSearchMethod();
     },
 
-    reveal (startGrid, brightDistance = 0, greyDistance = 0) {
-        const totalDistance = brightDistance + greyDistance;
-        const darkGrids = this._searchRevealGrids(startGrid, totalDistance);
-        const greyGrids = this._searchRevealGrids(startGrid, brightDistance);
-        const addLightGrids = [];
-        darkGrids.forEach(grid => this._darkStates.revealGrid(grid));
+    reveal (startGrid, brightDistance = 5, greyDistance = 1) {
+        const greyGrids = this._doReveal(startGrid, brightDistance, greyDistance);
         greyGrids.forEach(grid => {
             const light = this.tiledMapCtrl.getLightConfigAt(grid)
-            this._greyStates.revealGrid(grid)
             if (light && this._greyStates.getRevealCountAt(grid) === 1) {
-                addLightGrids.push([grid, light.bright, light.grey]);
+                this.addLightSource(grid, light.bright, light.grey);
             }
         });
-
-        for (const [grid, bright, grey] of addLightGrids)
-            this.addLightSource(grid, bright, grey);
     },
 
-    conceal (startGrid, distance = 0) {
-        const greyGrids = this._searchRevealGrids(startGrid, distance);
-        const lightSourceGrids = [];
+    conceal (startGrid, distance = 5) {
+        const greyGrids = this._doConceal(startGrid, distance);
         greyGrids.forEach(grid => {
-            this._greyStates.concealGrid(grid);
-            if (this.getLightSourceCountAt(grid) > 0)
-                lightSourceGrids.push(grid);
+            for (let i = this._lightSources.length - 1; i >= 0; --i) {
+                const s = this._lightSources[i];
+                if (s.grid.x === grid.x && s.grid.y === grid.y) {
+                    this._lightSources.splice(i, 1);
+                    this._doConceal(grid, s.light.bright);
+                }
+            }
         });
-
-        const revealCounts = [];
-        for (const grid of lightSourceGrids)
-            revealCounts.push(this._greyStates.getRevealCountAt(grid));
-
-        const greyGridsArray = [];
-        for (const grid of lightSourceGrids) {
-            const arr = [];
-            for (const s of this.getLightSourcesAt(grid)) {
-                const distance = s.light.bright + s.light.grey;
-                const greyGrids = this._searchRevealGrids(grid, distance);
-                greyGrids.forEach(a => {
-                    const predicate = b => a.x === b.x && a.y === b.y;
-                    const index = lightSourceGrids.findIndex(predicate);
-                    if (index >= 0)
-                        revealCounts[index] -= 1;
-                });
-                arr.push(greyGrids);
-            }
-            greyGridsArray.push(arr);
-        }
-
-        for (let i = 0; i < revealCounts.length; ++i) {
-            if (revealCounts[i] > 0) continue;
-
-            const arr = greyGridsArray[i];
-            for (const greyGrids of arr) {
-                greyGrids.forEach(grid => {
-                    this._greyStates.concealGrid(grid);
-                });
-            }
-        }
     },
 
     addLightSource (grid, bright = 0, grey = 0) {
         if (!this.findLightSource(grid, bright, grey)) {
             const light = {bright, grey};
             this._lightSources.push({grid, light});
-            this.reveal(grid, bright, grey);
+            this._doReveal(grid, bright, grey);
         }
     },
 
@@ -154,7 +117,7 @@ cc.Class({
         const index = this._lightSources.findIndex(predicate);
         if (index >= 0) {
             this._lightSources.splice(index, 1);
-            this.conceal(grid, bright + grey);
+            this.conceal(grid, bright);
         }
     },
 
@@ -163,7 +126,7 @@ cc.Class({
         this._lightSources = [];
         for (const s of lightSources) {
             if (s.grid.x === grid.x && s.grid.y === grid.y)
-                this.conceal(grid, s.light.bright + s.light.grey);
+                this.conceal(grid, s.light.bright);
         }
     },
 
@@ -191,6 +154,21 @@ cc.Class({
                 sources.push(s);
         }
         return sources;
+    },
+
+    _doReveal (startGrid, brightDistance, greyDistance) {
+        const totalDistance = brightDistance + greyDistance;
+        const darkGrids = this._searchRevealGrids(startGrid, totalDistance);
+        const greyGrids = this._searchRevealGrids(startGrid, brightDistance);
+        darkGrids.forEach(grid => this._darkStates.revealGrid(grid));
+        greyGrids.forEach(grid => this._greyStates.revealGrid(grid));
+        return greyGrids;
+    },
+
+    _doConceal (startGrid, distance) {
+        const greyGrids = this._searchRevealGrids(startGrid, distance);
+        greyGrids.forEach(grid => this._greyStates.concealGrid(grid));
+        return greyGrids;
     },
 
     _createSearchMethod () {
@@ -345,4 +323,27 @@ cc.Class({
         return x >= 0 && x < this._mapSize.width
             && y >= 0 && y < this._mapSize.height;
     },
+
+    greyFogStatesMap (grid, distance = 7) {
+        const minX = grid.x - distance, maxX = grid.x + distance;
+        const minY = grid.y - distance, maxY = grid.y + distance;
+        const retStr = [];
+        for (let y = minY; y <= maxY; ++y) {
+            const rowStr = [];
+            for (let x = minX; x <= maxX; ++x) {
+                if (x === grid.x && y === grid.y) {
+                    rowStr.push('X');
+                    continue;
+                }
+
+                if (this._isValidGridXY(x, y)) {
+                    rowStr.push(this._greyStates.getRevealCountAt(cc.v2(x, y)));
+                } else {
+                    rowStr.push(0);
+                }
+            }
+            retStr.push(rowStr.join(' '));
+        }
+        return retStr.join('\n');
+    }
 });
