@@ -57,6 +57,30 @@ cc.Class({
         return this.layerCharacters.getChildByTag(tag);
     },
 
+    isBlockViewAt (grid) {
+        return !this._testTilePropertiesAt(grid, 'Background', /[ms]/i)
+            && this._getTileGidAt(grid, 'Foreground') === 0;
+    },
+
+    _testTilePropertiesAt (grid, layerName, regExp) {
+        for (const key in this._getTilePropertiesAt(grid, layerName)) {
+            if (regExp.test(key)) return true;
+        }
+        return false;
+    },
+
+    _getTilePropertiesAt (grid, layerName) {
+        const gid = this._getTileGidAt(grid, layerName);
+        const tp = this.tiledMap.getPropertiesForGID(gid);
+        return tp || {};
+    },
+
+    _getTileGidAt (grid, layerName) {
+        const layer = this.tiledMap.getLayer(layerName);
+        const gid = layer.getTileGIDAt(grid.x, grid.y);
+        return gid;
+    },
+
     _initLayers () {
         this.tiledMap.getObjectGroup('Rooms').node.destroy();
         this.tiledMap.getObjectGroup('Blocks').node.destroy();

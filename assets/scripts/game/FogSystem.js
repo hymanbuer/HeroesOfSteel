@@ -92,8 +92,10 @@ cc.Class({
 
     _createSearchMethod () {
         const getNeighbors = next => {
+            if (this.tiledMapCtrl.isBlockViewAt(next)) return [];
+
             const grids = [];
-            for (const offset of EIGHT_DIRECTIONS) {
+            for (const offset of FOUR_DIRECTIONS) {
                 const x = next.x + offset[0];
                 const y = next.y + offset[1];
                 if (this._isValidGridXY(x, y))

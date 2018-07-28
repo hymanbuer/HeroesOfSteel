@@ -8,8 +8,7 @@ class AStarSearch {
      * @param {Number} maxSize 
      * @param {Function} heuristic 
      */
-    constructor (graph, maxSize, heuristic) {
-        this._graph = graph;
+    constructor (maxSize, getNeighbors, getEdgeCost, heuristic) {
         this._hMap = new Map();
         this._gCosts = new Array(maxSize + 1).fill(0);
         this._fCosts = new Array(maxSize + 1).fill(0);
@@ -20,6 +19,8 @@ class AStarSearch {
         this._pq = new IndexedPQ((index1, index2) => {
             return this._fCosts[index1] > this._fCosts[index2];
         }, maxSize);
+        this._getNeighbors = getNeighbors;
+        this._getEdgeCost = getEdgeCost;
         this._heuristic = heuristic;
         this.clear();
     }
@@ -41,10 +42,10 @@ class AStarSearch {
             }
 
             this._closed[current] = true;
-            for (const next of this._graph.getNodeNeighbors(current)) {
+            for (const next of this._getNeighbors(current)) {
                 if (this._closed[next]) continue;
 
-                const g = this._gCosts[current] + this._graph.getEdgeCost(current, next);
+                const g = this._gCosts[current] + this._getEdgeCost(current, next);
                 if (!this._visited[next] || g < this._gCosts[next]) {
                     if (!this._visited[next]) this._dirty.push(next);
 
@@ -96,16 +97,16 @@ class AStarSearch {
     }
 
     _hCost (from, to) {
-        const key1 = `(${from}, ${to})`;
-        const key2 = `(${to}, ${from})`;
-        let h = this._hMap.get(key1) || this._hMap.get(key2);
-        if (!h) {
-            h = this._heuristic(from, to);
-            this._hMap.set(key1, h);
-            this._hMap.set(key2, h);
-        }
-        return h;
-        // return this._heuristic(from, to);
+        // const key1 = `(${from}, ${to})`;
+        // const key2 = `(${to}, ${from})`;
+        // let h = this._hMap.get(key1) || this._hMap.get(key2);
+        // if (!h) {
+        //     h = this._heuristic(from, to);
+        //     this._hMap.set(key1, h);
+        //     this._hMap.set(key2, h);
+        // }
+        // return h;
+        return this._heuristic(from, to);
     }
 }
 

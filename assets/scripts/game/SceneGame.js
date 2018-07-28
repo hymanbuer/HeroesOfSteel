@@ -30,7 +30,7 @@ cc.Class({
         this.placeCameraOn(cc.v2(7, 65));
         
         // this.showPlot(PlotConfig.startPlot);
-        this.fogSystem.reveal(cc.v2(11, 61), 5, 1);
+        // this.fogSystem.reveal(cc.v2(7, 65), 5, 1);
     },
 
     showPlot (plot) {
@@ -73,6 +73,8 @@ cc.Class({
             node.rotation = args.rotation || 0;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
             this.tildMapCtrl.addCharacter(node);
+
+            this.fogSystem.reveal(args.grid, 4, 2);
         }).finally(()=> {
             if (typeof callback === 'function') callback();
         });
