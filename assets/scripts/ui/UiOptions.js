@@ -27,7 +27,7 @@ cc.Class({
 
     onClickSwitcher (_, switchName) {
         const index = switchConfigs.findIndex(config => config.name === switchName);
-        cc.assert(index !== -1, 'wrong switch name -> ' + switchName);
+        cc.assert(index >= 0, 'wrong switch name -> ' + switchName);
         this._toggleSwitch(index);
     },
 

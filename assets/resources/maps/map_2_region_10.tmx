@@ -983,6 +983,31 @@
  </tileset>
  <tileset firstgid="513" name="foreground" tilewidth="64" tileheight="64" tilecount="256" columns="16">
   <image source="foreground2.png" width="1024" height="1024"/>
+  <tile id="2">
+   <properties>
+    <property name="ls" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="ls" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="ls" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="ls" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="ls" value=""/>
+   </properties>
+  </tile>
   <tile id="193">
    <properties>
     <property name="c" value="1"/>

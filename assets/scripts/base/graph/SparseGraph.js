@@ -42,7 +42,7 @@ module.exports = class SparseGraph {
         this._edgeLists[index] = [];
         this._edgeLists.forEach(list => {
             const i = list.findIndex(edge => edge.to === index);
-            if (i > 0) list.splice(i, 1);
+            if (i >= 0) list.splice(i, 1);
         });
     }
 
@@ -63,7 +63,7 @@ module.exports = class SparseGraph {
         cc.assert(from < this._nextNodeIndex && to < this._nextNodeIndex);
         const list = this._edgeLists[from] || [];
         const index = list.findIndex(edge => edge.to === to);
-        if (index > 0) list.splice(index, 1);
+        if (index >= 0) list.splice(index, 1);
     }
 
     getNumNodes () {

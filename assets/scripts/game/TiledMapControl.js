@@ -1,4 +1,5 @@
 
+
 cc.Class({
     extends: cc.Component,
 
@@ -60,6 +61,16 @@ cc.Class({
     isBlockViewAt (grid) {
         return !this._testTilePropertiesAt(grid, 'Background', /[ms]/i)
             && this._getTileGidAt(grid, 'Foreground') === 0;
+    },
+
+    isLightSourceAt (grid) {
+        return this._testTilePropertiesAt(grid, 'Foreground', /ls/i)
+    },
+
+    getLightConfigAt (grid) {
+        if (this.isLightSourceAt(grid))
+            return {bright: 2, grey: 1};
+        return null;
     },
 
     _testTilePropertiesAt (grid, layerName, regExp) {
