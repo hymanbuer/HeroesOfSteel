@@ -65,7 +65,7 @@ cc.Class({
     // grid: {x: 18, y: 61}
     addCharacter (args, callback) {
         LoaderHelper.loadResByUuid(args.uuid).then(skeletonData => {
-            const node = SkeletonHelper.createHero(skeletonData, 'Unarmed', 'Stand');
+            const node = SkeletonHelper.createHero(skeletonData, args.defaultSkin, 'Stand');
             const control = node.addComponent(CharacterControl);
             control.skeleton = node.skeleton;
 
@@ -73,8 +73,12 @@ cc.Class({
             node.name = args.name;
             node.rotation = args.rotation || 0;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
-            this.tildMapCtrl.addCharacter(node);
+            if (args.fadeIn) {
+                node.opacity = 0;
+                node.runAction(cc.fadeIn(0.5));
+            }
 
+            this.tildMapCtrl.addCharacter(node);
             this.fogSystem.reveal(args.grid);
         }).finally(()=> {
             if (typeof callback === 'function') callback();
@@ -82,6 +86,11 @@ cc.Class({
     },
 
     removeCharacterByTag (nodeOrTag) {
+        const node = this.tildMapCtrl.getCharacterByTag(nodeOrTag);
+        if (node) {
+            const grid = this.tildMapCtrl.getGridAt(node.position);
+            this.fogSystem.conceal(grid);
+        }
         this.tildMapCtrl.removeCharacterByTag(nodeOrTag);
     },
 
