@@ -58,11 +58,6 @@ cc.Class({
         this.tildMapCtrl.setTileIdAt(grid, id, layerName);
     },
 
-    // cmd: 'CHAR_ADD',
-    // uuid: '',
-    // name: 'Char Name',
-    // tag: 101,
-    // grid: {x: 18, y: 61}
     addCharacter (args, callback) {
         LoaderHelper.loadResByUuid(args.uuid).then(skeletonData => {
             const node = SkeletonHelper.createHero(skeletonData, args.defaultSkin, 'Stand');
