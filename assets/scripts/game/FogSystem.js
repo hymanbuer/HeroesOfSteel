@@ -117,7 +117,7 @@ cc.Class({
         const index = this._lightSources.findIndex(predicate);
         if (index >= 0) {
             this._lightSources.splice(index, 1);
-            this.conceal(grid, bright);
+            this._doConceal(grid, bright);
         }
     },
 
@@ -126,7 +126,7 @@ cc.Class({
         this._lightSources = [];
         for (const s of lightSources) {
             if (s.grid.x === grid.x && s.grid.y === grid.y)
-                this.conceal(grid, s.light.bright);
+                this._doConceal(grid, s.light.bright);
         }
     },
 
@@ -221,12 +221,16 @@ cc.Class({
         const states = [];
         const revealCounts = [];
         for (let y = 0; y <= this._mapSize.height; ++y) {
-            states[y] = new Array(this._mapSize.width).fill(0);
-            revealCounts[y] = new Array(this._mapSize.width).fill(0);
+            states[y] = new Array(this._mapSize.width + 1).fill(0);
+            revealCounts[y] = new Array(this._mapSize.width + 1).fill(0);
         }
         
         const getFogIndex = (x, y) => {
             return (states[y][x] & FogFlag.FOG_MASK) >>> 0;
+        };
+
+        const getFogFlags = (x, y) => {
+            return (states[y][x] & FogFlag.FOG_ALL) >>> 0;
         };
 
         const isRevealedPoint = (point) => {
@@ -281,36 +285,33 @@ cc.Class({
             },
 
             revealGrid: (grid) => {
-                revealCounts[grid.y][grid.x] += 1;
-                if (revealCounts[grid.y][grid.x] > 1) return;
-
                 for (const offset of GRID_POINTS) {
                     const point = cc.v2(grid.x + offset[0], grid.y + offset[1]);
                     if (!this._isValidPointXY(point.x, point.y)) continue;
-                    if (isRevealedPoint(point)) continue;
-        
-                    revealPoint(point);
+
+                    revealCounts[point.y][point.x] += 1;
+                    if (revealCounts[point.y][point.x] === 1 && !isRevealedPoint(point))
+                        revealPoint(point);
                 }
             },
 
             concealGrid: (grid) => {
-                if (revealCounts[grid.y][grid.x] === 0) return;
-                
-                revealCounts[grid.y][grid.x] -= 1;
-                if (revealCounts[grid.y][grid.x] > 0) return;
-
                 for (const offset of GRID_POINTS) {
                     const point = cc.v2(grid.x + offset[0], grid.y + offset[1]);
                     if (!this._isValidPointXY(point.x, point.y)) continue;
-                    if (!isRevealedPoint(point)) continue;
 
-                    concealPoint(point);
+                    revealCounts[point.y][point.x] -= 1;
+                    if (revealCounts[point.y][point.x] === 0 && isRevealedPoint(point))
+                        concealPoint(point);
                 }
             },
 
             getRevealCountAt: (grid) => {
                 return revealCounts[grid.y][grid.x];
             },
+
+            getFogIndex: getFogIndex,
+            getFogFlags: getFogFlags,
         };
     },
 
@@ -324,26 +325,33 @@ cc.Class({
             && y >= 0 && y < this._mapSize.height;
     },
 
-    greyFogStatesMap (grid, distance = 7) {
+    printGreyFogStates (grid, distance = 7) {
         const minX = grid.x - distance, maxX = grid.x + distance;
         const minY = grid.y - distance, maxY = grid.y + distance;
         const retStr = [];
         for (let y = minY; y <= maxY; ++y) {
             const rowStr = [];
             for (let x = minX; x <= maxX; ++x) {
-                if (x === grid.x && y === grid.y) {
-                    rowStr.push('X');
-                    continue;
-                }
+                // if (x === grid.x && y === grid.y) {
+                //     rowStr.push('X');
+                //     continue;
+                // }
 
                 if (this._isValidGridXY(x, y)) {
                     rowStr.push(this._greyStates.getRevealCountAt(cc.v2(x, y)));
+                    // const flags = this._greyStates.getFogFlags(x, y);
+                    // let id = 0;
+                    // if (flags & FogFlag.TOP_LEFT) id += 8;
+                    // if (flags & FogFlag.TOP_RIGHT) id += 4;
+                    // if (flags & FogFlag.BOTTOM_LEFT) id += 2;
+                    // if (flags & FogFlag.BOTTOM_RIGHT) id += 1;
+                    // rowStr.push(id);
                 } else {
-                    rowStr.push(0);
+                    rowStr.push('0');
                 }
             }
             retStr.push(rowStr.join(' '));
         }
-        return retStr.join('\n');
+        cc.log(retStr.join('\n'));
     }
 });

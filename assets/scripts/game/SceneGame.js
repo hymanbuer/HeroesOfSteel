@@ -101,11 +101,7 @@ cc.Class({
             this.fogSystem.conceal(this.lastGrid);
         }
         this.lastGrid = grid;
-        cc.log('-------- before -------');
-        cc.log(this.fogSystem.greyFogStatesMap(cc.v2(7, 64)));
         this.fogSystem.reveal(grid);
-        cc.log('-------- after -------', grid.x, grid.y);
-        cc.log(this.fogSystem.greyFogStatesMap(cc.v2(7, 64)));
     },
 
     onCharacterMoveEnd (event) {
@@ -113,12 +109,7 @@ cc.Class({
         const oldPos = event.detail;
         const newGrid = this.tildMapCtrl.getGridAt(newPos);
         const oldGrid = this.tildMapCtrl.getGridAt(oldPos);
-        cc.log(oldGrid.x, oldGrid.y, newGrid.x, newGrid.y);
-        cc.log('-------- before -------');
-        cc.log(this.fogSystem.greyFogStatesMap(cc.v2(7, 64)));
         this.fogSystem.conceal(oldGrid);
         this.fogSystem.reveal(newGrid);
-        cc.log('-------- after -------');
-        cc.log(this.fogSystem.greyFogStatesMap(cc.v2(7, 64)));
     },
 });
