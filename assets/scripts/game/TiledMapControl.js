@@ -1,4 +1,5 @@
 
+const LoaderHelper = require('CCLoaderHelper');
 
 cc.Class({
     extends: cc.Component,
@@ -8,15 +9,17 @@ cc.Class({
     },
 
     onLoad () {
-        const tmxAsset = cc.loader.getRes('maps/map_2_region_10');
-        this.tiledMap = this.addComponent(cc.TiledMap);
-        this.tiledMap.tmxAsset = tmxAsset;
+        const p = LoaderHelper.loadResByUrl('maps/map_2_region_10', cc.TiledMapAsset);
+        p.then((tmxAsset)=> {
+            this.tiledMap = this.addComponent(cc.TiledMap);
+            this.tiledMap.tmxAsset = tmxAsset;
+            this.mapSize = this.tiledMap.getMapSize();
+            this.tileSize = this.tiledMap.getTileSize();
+            this._initLayers();
+        })
     },
 
     start () {
-        this._initLayers();
-        this.mapSize = this.tiledMap.getMapSize();
-        this.tileSize = this.tiledMap.getTileSize();
     },
 
     getMapSize () {

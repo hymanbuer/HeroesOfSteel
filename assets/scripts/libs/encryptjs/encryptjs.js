@@ -34,19 +34,7 @@
 })('encryptjs', function (encryptjs) {
 
     'use strict';
-    var readline = require('readline');
-    var fs=require('fs');
-    var rl;
-    //Electron doesnt support stdin, so dont setup CLI if its not available.
-    try {
-        rl = readline.createInterface({
-            input: process.stdin,
-            output: process.stdout
-			  });
-    } catch (e) {
-        rl = null;
-        console.log('Command line is not supported on this platform', e);
-    }
+
     encryptjs = { version: '1.0.0' };
 
     //Right before exporting the validator object, pass each of the builtins
@@ -176,53 +164,6 @@
         plaintext = plaintext.utf8Decode();  // decode from UTF8 back to Unicode multi-byte chars
 
         return plaintext;
-    };
-
-    encryptjs.getTextEncryptAndSaveToTextFile = function(filePath,password,nBits) {
-        if (!rl) throw Error("Command line not supported on this platform");
-        rl.question("Enter the text to be encrypted: ", function(answer) {
-            // TODO: Log the answer in a database
-            console.log("'"+answer+"' This text will be encrypted and stored in a text file 'encrypted.txt'");
-           var cipherText=encryptjs.encrypt(answer,password,nBits);
-            fs.writeFile(filePath,cipherText,function(){
-                console.log("'encrypted.txt' File created in your local directory, if not present refresh your project");
-            });
-            rl.close();
-        });
-    };
-
-    encryptjs.getTextEncryptAndSaveToJSONFile = function(filePath,password,nBits) {
-        if (!rl) throw Error("Command line not supported on this platform");
-        rl.question("Enter the text to be encrypted: ", function(answer) {
-            // TODO: Log the answer in a database
-            console.log("'"+answer+"' This text will be encrypted and stored in a text file 'encrypted.txt'");
-            var cipherText=encryptjs.encrypt(answer,password,nBits);
-            encryptjs.writeCipherTextToJSON(filePath,{EncryptedText:cipherText},function(){
-                console.log("'encryptedText.JSON' File created in your local directory, if not present refresh your project");
-            });
-            rl.close();
-        });
-    };
-
-    encryptjs.writeCipherTextToJSON=function(file, obj, options, callback) {
-        if (callback == null) {
-            callback = options;
-            options = {}
-        }
-
-        var spaces = typeof options === 'object' && options !== null
-            ? 'spaces' in options
-            ? options.spaces : this.spaces
-            : this.spaces;
-
-        var str = '';
-        try {
-            str = JSON.stringify(obj, options ? options.replacer : null, spaces) + '\n'
-        } catch (err) {
-            if (callback) return callback(err, null)
-        }
-
-        fs.writeFile(file, str, options, callback)
     };
 
     if (typeof String.prototype.utf8Encode == 'undefined') {

@@ -3,6 +3,7 @@ const UiHelper = require('UiHelper');
 const UiConfig = require('UiConfig');
 const UiCharacterDialog = require('UiCharacterDialog');
 const CharacterControl = require('CharacterControl');
+const Timeline = require('Timeline');
 
 class PlotParser {
 	constructor (game) {
@@ -23,7 +24,7 @@ class PlotParser {
 			}
 		});
 
-		return co.timeline(asyncFuncs);
+		return Timeline.create(asyncFuncs);
 	}
 
 	_parseCmd (obj) {

@@ -18,6 +18,7 @@ cc.Class({
     },
 
     start () {
+        this._current = 0;
         this._showNextTalk();
     },
 
@@ -30,12 +31,12 @@ cc.Class({
     },
 
     _showNextTalk () {
-        if (this.talkList.length === 0) {
+        if (this._current >= this.talkList.length) {
             this.node.destroy();
             return;
         }
 
-        const talk = this.talkList.shift();
+        const talk = this.talkList[this._current++];
         LoaderHelper.loadResByUuid(talk.portrait).then(portrait => {
             this._setText(talk.text, talk.font);
             this.portrait.spriteFrame = portrait;

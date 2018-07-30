@@ -1,8 +1,5 @@
 
-const UUID = module.exports = cc.Enum({
-    MainScene: '408e5c63-4c22-4560-b94f-d0641712455e',
-    GameScene: 'ce90c548-a936-485d-90e8-767286cb1fea',
-});
+const UUID = module.exports = {}
 
 UUID.Skeleton = cc.Enum({
     Outlander: 'f7487cd8-f0fe-41e8-b674-7252994369e4',

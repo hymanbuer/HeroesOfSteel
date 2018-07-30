@@ -28,10 +28,9 @@ cc.Class({
     },
 
     start () {
-        this.placeCameraOn(cc.v2(7, 65));
-        
-        this.showPlot(PlotConfig.startPlot);
-        // this.fogSystem.reveal(cc.v2(7, 64));
+        this.scheduleOnce(()=> {
+            this.showPlot(PlotConfig.startPlot);
+        }, 0);
     },
 
     showPlot (plot) {
@@ -75,7 +74,7 @@ cc.Class({
 
             this.tildMapCtrl.addCharacter(node);
             this.fogSystem.reveal(args.grid);
-        }).finally(()=> {
+
             if (typeof callback === 'function') callback();
         });
     },

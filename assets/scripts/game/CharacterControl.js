@@ -1,4 +1,6 @@
 
+const Timeline = require('Timeline');
+
 cc.Class({
     extends: cc.Component,
 
@@ -25,7 +27,7 @@ cc.Class({
             asyncFuncs.push(fns);
         }
 
-        const timeline = co.timeline(asyncFuncs)
+        const timeline = Timeline.create(asyncFuncs)
         this.node.stopAllActions();
         timeline().then(()=> {
             this._stand();

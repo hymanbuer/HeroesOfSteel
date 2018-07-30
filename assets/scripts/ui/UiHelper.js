@@ -17,6 +17,7 @@ const UiHelper = cc.Class({
     },
 
     onLoad () {
+        if (UiHelper.instance) return;
         UiHelper.instance = this;
     },
 

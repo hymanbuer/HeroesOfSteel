@@ -21,14 +21,20 @@ cc.Class({
         this.title.string = '';
         this.tips.string = '';
         this._setPercent(0);
-
         this.resources = [];
-        this.resources.push({uuid: UUID.GameScene});
+
+        const info = cc.director._getSceneUuid('game');
+        if (info) {
+            cc.log('ready to preload game scene.');
+            this.resources.push({uuid: info.uuid, type: 'uuid'});
+        } else {
+            cc.error('can not preload the game scene!');
+        }
     },
 
     start () {
         this._add('295fd607-9328-45c0-a6f3-ad4bf3d9ba48');
-        
+
         this._startLoad();
     },
 
@@ -40,11 +46,11 @@ cc.Class({
         const progress = (count, totalCount, asset) => {
             const percent = count / totalCount * 100;
             this._setPercent(percent);
-            // cc.log('progress:', count, totalCount, asset.id);
+            cc.log('progress:', count, totalCount, asset.id);
         };
         const complete = (err, asset) => {
             if (err) throw new Error(err);
-            // cc.log('complete:', asset);
+            cc.log('complete:', asset);
             this._runScene('game');
         };
         cc.loader.load(this.resources, progress, complete);
