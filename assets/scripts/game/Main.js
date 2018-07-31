@@ -1,4 +1,7 @@
 
+const LocalStorage = require('LocalStorage');
+const GameSetting = require('GameSetting');
+
 const Main = cc.Class({
     extends: cc.Component,
 
@@ -13,6 +16,7 @@ const Main = cc.Class({
     onLoad () {
         cc.game.addPersistRootNode(this.node);
         Main.instance = this;
+        this._init();
     },
 
     onDestroy () {
@@ -25,6 +29,13 @@ const Main = cc.Class({
     },
 
     update (dt) {
+
+    },
+
+    _init () {
+        const setting = LocalStorage.getItem('GameSetting', {});
+        GameSetting.init(setting);
+
 
     },
 });
