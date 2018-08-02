@@ -91,6 +91,17 @@ cc.Class({
         this.node.destroy();
     },
 
+    onScaleScreen (step) {
+        this.camera.zoomRatio += step;
+        this.camera.zoomRatio = cc.clampf(this.camera.zoomRatio, 0.5, 2);
+    },
+
+    onMoveScreen (delta) {
+        delta = cc.pMult(delta, 1 / this.camera.zoomRatio);
+        this.camera.node.x += delta.x;
+        this.camera.node.y += delta.y;
+    },
+
     _focusOn (grid) {
         const tileSize = this.tiledMap.getTileSize();
         const background = this.tiledMap.getLayer('Background');

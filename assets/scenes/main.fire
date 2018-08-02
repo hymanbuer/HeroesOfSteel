@@ -362,7 +362,7 @@
     },
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "playOnLoad": true,
+    "playOnLoad": false,
     "_autoRemoveOnFinish": false,
     "_totalParticles": 150,
     "_duration": -1,
@@ -437,7 +437,7 @@
     "_endRadiusVar": 0,
     "_rotatePerS": 0,
     "_rotatePerSVar": 0,
-    "_N$preview": true
+    "_N$preview": false
   },
   {
     "__type__": "cc.Node",
@@ -1489,6 +1489,9 @@
     "node": {
       "__id__": 5
     },
-    "_enabled": true
+    "_enabled": true,
+    "fire": {
+      "__id__": 10
+    }
   }
 ]

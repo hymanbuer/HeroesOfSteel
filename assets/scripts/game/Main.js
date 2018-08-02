@@ -33,9 +33,12 @@ const Main = cc.Class({
     },
 
     _init () {
-        const setting = LocalStorage.getItem('GameSetting', {});
-        GameSetting.init(setting);
-
-
+        try {
+            const setting = LocalStorage.getItem('GameSetting', {});
+            GameSetting.init(setting);
+        } catch (err) {
+            cc.error(err.message);
+            LocalStorage.clear();
+        }
     },
 });

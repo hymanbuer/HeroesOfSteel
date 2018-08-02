@@ -9,9 +9,6 @@ const UiHelper = cc.Class({
     },
 
     properties: {
-        canvas: {
-            get () { return cc.director.getScene().getChildByName('Canvas'); }
-        },
         uiMaskPrefab: cc.Prefab,
         loadingTipsPrefab: cc.Prefab,
     },
@@ -41,7 +38,7 @@ const UiHelper = cc.Class({
             const promise = LoaderHelper.loadResByUrl(uiPrefabPath, cc.Prefab);
             promise.then(uiPrefab => {
                 const ui = cc.instantiate(uiPrefab);
-                this.canvas.addChild(ui, Number.MAX_SAFE_INTEGER);
+                this._getCanvas().addChild(ui, Number.MAX_SAFE_INTEGER);
                 this._removeTips();
 
                 const oldDestroy = ui.destroy;
@@ -69,13 +66,13 @@ const UiHelper = cc.Class({
 
     _addMask () {
         const uiMask = cc.instantiate(this.uiMaskPrefab);
-        this.canvas.addChild(uiMask, Number.MAX_SAFE_INTEGER);
+        this._getCanvas().addChild(uiMask, Number.MAX_SAFE_INTEGER);
         return uiMask;
     },
 
     _addTips () {
         this.loadingTips = cc.instantiate(this.loadingTipsPrefab);
-        this.canvas.addChild(this.loadingTips, Number.MAX_SAFE_INTEGER);
+        this._getCanvas().addChild(this.loadingTips, Number.MAX_SAFE_INTEGER);
     },
 
     _removeTips() {
@@ -84,5 +81,9 @@ const UiHelper = cc.Class({
             this.loadingTips = null;
         }
         this.unschedule(this._addTips);
-    }
+    },
+
+    _getCanvas () {
+        return cc.director.getScene().getChildByName('Canvas');
+    },
 });

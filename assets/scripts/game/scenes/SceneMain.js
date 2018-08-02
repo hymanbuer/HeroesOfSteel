@@ -12,7 +12,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-
+        fire: cc.ParticleSystem,
     },
 
     onLoad () {
@@ -20,7 +20,7 @@ cc.Class({
     },
 
     start () {
-
+        this.scheduleOnce(()=> this.fire.resetSystem(), 0);
     },
 
     onClickMenu (event) {
