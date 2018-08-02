@@ -13,6 +13,7 @@ cc.Class({
 
     properties: {
         fire: cc.ParticleSystem,
+        container: cc.Node,
     },
 
     onLoad () {
@@ -26,7 +27,13 @@ cc.Class({
     onClickMenu (event) {
         const menuName = event.target.name;
         const prefabPath = menuMap.get(menuName);
-        if (prefabPath)
-            UiHelper.instance.showUi(prefabPath);
+        if (prefabPath) {
+            const p = UiHelper.instance.showUi(prefabPath);
+            p.then(ui => {
+                if (menuName === 'options') return;
+                this.container.active = false;
+                ui.ondestroy = ()=> this.container.active = true;
+            });
+        }
     }
 });
