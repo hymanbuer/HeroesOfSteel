@@ -8,17 +8,17 @@ const Timeline = module.exports = {};
  * 
  * author: Jinfeng Li
  * 
- * @param {Function Array} fns 
+ * @param {Function|Array} fns 
  */
 Timeline.create = function (fns) {
-    return function () {
+    return function (args) {
         return new Promise(function (resolve, reject) {
             if (!(fns instanceof Array))
                 fns = fns ? [fns] : [];
 
-            const exec = next => {
+            const exec = (lastResult, next) => {
                 if (next >= fns.length) {
-                    resolve();
+                    resolve(lastResult);
                     return;
                 }
 
@@ -27,20 +27,22 @@ Timeline.create = function (fns) {
                     const arr = fn;
                     fn = ()=> new Promise((ok, err) => {
                         let count = 0;
+                        const results = [];
                         for (const f of arr) {
-                            f().then(()=> {
+                            f(lastResult).then(result => {
                                 count += 1;
+                                results.push(result);
                                 if (count >= arr.length)
-                                    ok();
+                                    ok(results);
                             }, err);
                         }
                     });
                 }
 
-                fn().then(()=> exec(next + 1), reject);
+                fn(lastResult).then(result => exec(result, next + 1), reject);
             };
 
-            exec(0);
+            exec(args, 0);
         });
     };
 }
