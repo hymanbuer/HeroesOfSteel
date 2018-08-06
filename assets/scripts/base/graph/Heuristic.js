@@ -1,11 +1,13 @@
 
 const Heuristic = module.exports = {};
 
-Heuristic.Type = cc.Enum({
+
+const Type = cc.Enum({
     Manhattan: -1,
     Diagonal: -1,
     MaxDiagonal: -1,
 });
+Heuristic.Type = Type;
 
 function indexes2grids(index2grid, index1, index2) {
     const grid1 = index2grid(index1);
@@ -15,7 +17,7 @@ function indexes2grids(index2grid, index1, index2) {
 
 Heuristic.create = function(type, index2grid) {
     switch (type) {
-    case GridGraph.HeuristicType.Manhattan:
+    case Type.Manhattan:
         return (index1, index2) => {
             const [x1, y1, x2, y2] = indexes2grids(index2grid, index1, index2);
             const d1 = Math.abs(x1 - x2);
@@ -23,7 +25,7 @@ Heuristic.create = function(type, index2grid) {
             return d1 + d2;
         };
 
-    case GridGraph.HeuristicType.Diagonal:
+    case Type.Diagonal:
         return (index1, index2) => {
             const [x1, y1, x2, y2] = indexes2grids(index2grid, index1, index2);
             const D = 1;
@@ -33,7 +35,7 @@ Heuristic.create = function(type, index2grid) {
             return (D * (d1 + d2)) + ((D2 - (2 * D)) * Math.min(d1, d2));
         };
 
-    case GridGraph.HeuristicType.MaxDiagonal:
+    case Type.MaxDiagonal:
         return (index1, index2) => {
             const [x1, y1, x2, y2] = indexes2grids(index2grid, index1, index2);
             const d1 = Math.abs(x1 - x2);

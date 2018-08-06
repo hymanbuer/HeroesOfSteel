@@ -59,18 +59,23 @@ cc.Class({
     },
 
     isBlockViewAt (grid) {
-        return !this._testTilePropertiesAt(grid, 'Background', /[ms]/i)
+        return !this._testTilePropertiesAt(grid, 'Background', /[ms]/)
             && this._getTileGidAt(grid, 'Foreground') === 0;
     },
 
     isLightSourceAt (grid) {
-        return this._testTilePropertiesAt(grid, 'Foreground', /ls/i)
+        return this._testTilePropertiesAt(grid, 'Foreground', /ls/)
     },
 
     getLightConfigAt (grid) {
         if (this.isLightSourceAt(grid))
             return {bright: 2, grey: 1};
         return null;
+    },
+
+    isWalkableAt (grid) {
+        return this._testTilePropertiesAt(grid, 'Background', /m/)
+            && this._getTileGidAt(grid, 'Foreground') === 0;
     },
 
     _testTilePropertiesAt (grid, layerName, regExp) {

@@ -10,6 +10,11 @@ const HeroesManager = require('HeroesManager')
 
 const Tags = require('Tags');
 
+const GridGraph = require('GridGraph');
+const AStarSearch = require('AStarSearch');
+const DisjointSet = require('DisjointSet');
+const Heuristic = require('Heuristic');
+
 function createCharacter(uuid, defaultSkin, defaultAnimation = 'Stand') {
     return LoaderHelper.loadResByUuid(uuid).then(skeletonData => {
         const node = SkeletonHelper.createHero(skeletonData, defaultSkin, defaultAnimation);
@@ -41,6 +46,8 @@ cc.Class({
             .then(()=> {
                 this.fogSystem.init();
                 this._initHeroes();
+                this._initGraph();
+                this._initSearch();
             });
     },
 
@@ -136,5 +143,33 @@ cc.Class({
     _initHeroes () {
         this._heroesManager = new HeroesManager();
 
+    },
+
+    _initGraph () {
+        const mapSize = this.tildMapCtrl.getMapSize();
+        const walkableGrids = [];
+        for (let y = 0; y < mapSize.height; ++y) {
+            for (let x = 0; x < mapSize.width; ++x) {
+                const grid = {x, y};
+                if (this.tildMapCtrl.isWalkableAt(grid)) {
+                    walkableGrids.push(grid);
+                }
+            }
+        }
+        this._worldGraph = new GridGraph(mapSize, walkableGrids, true);
+    },
+
+    _initSearch () {
+        const heuristicType = Heuristic.Type.Diagonal;
+        const index2grid = index => this._worldGraph.index2grid(index);
+        const heuristc = Heuristic.create(heuristicType, index2grid);
+        const getNeighbors = index => this._worldGraph.getNodeNeighbors(index);
+        const getEdgeCost = (from, to) => this._worldGraph.getEdgeCost(from, to);
+        this._worldSearch = new AStarSearch(this._worldGraph.maxSize, getNeighbors, getEdgeCost, heuristc);
+
+        const start = this._worldGraph.grid2index(7, 62);
+        const target = this._worldGraph.grid2index(9, 64);
+        this._worldSearch.search(start, target);
+        cc.log(this._worldSearch.path);
     },
 });

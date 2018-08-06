@@ -30,9 +30,9 @@ class GridNode {
 }
 
 class GridGraph {
-    constructor (maxRows, maxColumns, grids, isDiagonal) {
-        this._maxRows = maxRows;
-        this._maxColumns = maxColumns;
+    constructor (size, grids, isDiagonal) {
+        this._maxRows = size.height;
+        this._maxColumns = size.width;
         this._isDiagonal = !!isDiagonal;
         this._nodes = new Array(this.maxSize + 1);
         for (const grid of grids)
