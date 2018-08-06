@@ -5,46 +5,43 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        tiledMap: cc.TiledMap,
+        
     },
 
-    onLoad () {
-        const p = LoaderHelper.loadResByUrl('maps/map_2_region_10', cc.TiledMapAsset);
-        p.then((tmxAsset)=> {
-            this.tiledMap = this.addComponent(cc.TiledMap);
-            this.tiledMap.tmxAsset = tmxAsset;
-            this.mapSize = this.tiledMap.getMapSize();
-            this.tileSize = this.tiledMap.getTileSize();
-            this._initLayers();
-        })
-    },
-
-    start () {
+    init (tiledMapUrl) {
+        return LoaderHelper.loadResByUrl(tiledMapUrl, cc.TiledMapAsset)
+            .then((tmxAsset)=> {
+                this._tiledMap = this.addComponent(cc.TiledMap);
+                this._tiledMap.tmxAsset = tmxAsset;
+                this._mapSize = this._tiledMap.getMapSize();
+                this._tileSize = this._tiledMap.getTileSize();
+                this._initLayers();
+            });
     },
 
     getMapSize () {
-        return this.mapSize;
+        return this._mapSize;
     },
 
     getTileSize () {
-        return this.tileSize;
+        return this._tileSize;
     },
 
     getPositionAt (grid) {
         const pos = this.layerBackground.getPositionAt(grid);
-        pos.x += this.tileSize.width/2.0;
-        pos.y += this.tileSize.height/2.0;
+        pos.x += this._tileSize.width/2.0;
+        pos.y += this._tileSize.height/2.0;
         return pos;
     },
 
     getGridAt (pos) {
-        const x = Math.floor((pos.x+0.5) / this.tileSize.width);
-        const y = (this.mapSize.height-1) - Math.floor((pos.y+0.5)/this.tileSize.height);
+        const x = Math.floor((pos.x+0.5) / this._tileSize.width);
+        const y = (this._mapSize.height-1) - Math.floor((pos.y+0.5)/this._tileSize.height);
         return cc.v2(x, y);
     },
 
     setTileIdAt (grid, id, layerName) {
-        const layer = this.tiledMap.getLayer(layerName);
+        const layer = this._tiledMap.getLayer(layerName);
         const gid = id + layer.getTileSet().firstGid;
         layer.setTileGID(gid, grid);
     },
@@ -85,28 +82,28 @@ cc.Class({
 
     _getTilePropertiesAt (grid, layerName) {
         const gid = this._getTileGidAt(grid, layerName);
-        const tp = this.tiledMap.getPropertiesForGID(gid);
+        const tp = this._tiledMap.getPropertiesForGID(gid);
         return tp || {};
     },
 
     _getTileGidAt (grid, layerName) {
-        const layer = this.tiledMap.getLayer(layerName);
+        const layer = this._tiledMap.getLayer(layerName);
         const gid = layer.getTileGIDAt(grid.x, grid.y);
         return gid;
     },
 
     _initLayers () {
-        this.tiledMap.getObjectGroup('Rooms').node.destroy();
-        this.tiledMap.getObjectGroup('Blocks').node.destroy();
+        this._tiledMap.getObjectGroup('Rooms').node.destroy();
+        this._tiledMap.getObjectGroup('Blocks').node.destroy();
 
         // origin tile layers
-        this.layerBackground = this.tiledMap.getLayer('Background');
-        this.layerEffects = this.tiledMap.getLayer('Effects');
-        this.layerForeground = this.tiledMap.getLayer('Foreground');
-        this.layerBlocks = this.tiledMap.getLayer('Blocks');
-        this.layerFog = this.tiledMap.getLayer('Fog');
-        this.layerCollision = this.tiledMap.getLayer('Collision');
-        this.layerRooms = this.tiledMap.getLayer('Rooms');
+        this.layerBackground = this._tiledMap.getLayer('Background');
+        this.layerEffects = this._tiledMap.getLayer('Effects');
+        this.layerForeground = this._tiledMap.getLayer('Foreground');
+        this.layerBlocks = this._tiledMap.getLayer('Blocks');
+        this.layerFog = this._tiledMap.getLayer('Fog');
+        this.layerCollision = this._tiledMap.getLayer('Collision');
+        this.layerRooms = this._tiledMap.getLayer('Rooms');
 
         // constom layers
         this.layerSystemEffects = new cc.Node('SystemEffects');

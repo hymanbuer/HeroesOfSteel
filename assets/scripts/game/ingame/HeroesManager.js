@@ -1,8 +1,8 @@
 
+
 class HeroesManager {
-    constructor (game) {
-        this.game = game;
-        
+    constructor () {
+        this._heroes = [];
     }
 
     getSelectedHero () {
@@ -21,7 +21,7 @@ class HeroesManager {
 
     }
 
-    unGlomHeroes () {
+    unglomHeroes () {
 
     }
 }

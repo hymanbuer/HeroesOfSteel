@@ -58,11 +58,7 @@ cc.Class({
         tiledMapCtrl: TiledMapControl,
     },
 
-    onLoad () {
-
-    },
-
-    start () {
+    init () {
         this._mapSize = this.tiledMapCtrl.getMapSize();
         this._darkStates = this._createFogStates('Fog', DARK_IDS);
         this._greyStates = this._createFogStates('Blocks', GREY_IDS);

@@ -6,8 +6,8 @@ const CharacterControl = require('CharacterControl');
 const Timeline = require('Timeline');
 
 class PlotParser {
-	constructor (game) {
-        this.game = game;
+	constructor (world) {
+        this.world = world;
 	}
 
 	parse (plot) {
@@ -50,7 +50,7 @@ class PlotParser {
 
 	SYS_DELAY_TIME (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.scheduleOnce(resolve, args.delay)
+            this.world.scheduleOnce(resolve, args.delay)
         });
     }
 
@@ -65,31 +65,31 @@ class PlotParser {
     
     CHAR_ADD (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.addCharacter(args, resolve);
+            this.world.addCharacter(args, resolve);
         });
     }
     
     CHAR_REMOVE (args) {
 		return ()=> new Promise((resolve, reject) => {
-            this.game.removeCharacterByTag(args.tag);
+            this.world.removeCharacterByTag(args.tag);
             resolve();
         });
     }
     
     CHAR_FOLLOW_PATH (args) {
 		return ()=> new Promise((resolve, reject) => {
-            const char = this.game.getCharacterByTag(args.tag);
+            const char = this.world.getCharacterByTag(args.tag);
             const ctrl = char.getComponent(CharacterControl);
-            const posList = args.path.map(grid => this.game.getPositionAt(grid));
+            const posList = args.path.map(grid => this.world.getPositionAt(grid));
             ctrl.followPath(posList, resolve);
         });
     }
 
     CHAR_FACE_TO (args) {
 		return ()=> new Promise((resolve, reject) => {
-            const char = this.game.getCharacterByTag(args.tag);
+            const char = this.world.getCharacterByTag(args.tag);
             const ctrl = char.getComponent(CharacterControl);
-            const pos = this.game.getPositionAt(args.grid);
+            const pos = this.world.getPositionAt(args.grid);
             ctrl.rotateTo(pos, resolve);
         });
     }
@@ -98,7 +98,7 @@ class PlotParser {
 
     MAP_REPLACE_TILE (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.setTileIdAt(args.grid, args.id, args.layerName);
+            this.world.setTileIdAt(args.grid, args.id, args.layerName);
             resolve();
         });
     }
@@ -107,14 +107,14 @@ class PlotParser {
 
     CAM_PLACE_ON (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.placeCameraOn(args.grid);
+            this.world.placeCameraOn(args.grid);
             resolve();
         });
     }
 
     CAM_MOVE_ON (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.game.moveCameraOn(args.grid, resolve);
+            this.world.moveCameraOn(args.grid, resolve);
         });
     }
 
