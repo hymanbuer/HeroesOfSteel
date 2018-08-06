@@ -1,5 +1,6 @@
 
 const UiHelper = require('UiHelper');
+const HosWorld = require('HosWorld');
 
 cc.Class({
     extends: cc.Component,
@@ -7,6 +8,8 @@ cc.Class({
     properties: {
         btnInfo: cc.Node,
         talentsPanel: cc.Node,
+
+        world: HosWorld,
     },
 
     onLoad () {
@@ -23,6 +26,42 @@ cc.Class({
         this.node.active = false;
     },
 
+    // -- status
+
+    onClickHeadPortrait () {
+        UiHelper.instance.showUi('prefabs/game/ui_character_profile');
+    },
+
+    onClickGlom () {
+
+    },
+
+    onClickUnglom () {
+
+    },
+
+    onClickNext () {
+        this.world.selectNextHero();
+    },
+
+    onClickHeroList () {
+
+    },
+
+    onClickEndRound () {
+
+    },
+
+    // -- sidebar
+
+    onClickTalents () {
+
+    },
+
+    onClickItems () {
+
+    },
+
     onClickTalentIcon () {
         this.isTalentSelected = !this.isTalentSelected;
         this.btnInfo.active = this.isTalentSelected;
@@ -32,5 +71,4 @@ cc.Class({
         // widget.updateAlignment();
         // scroll.scrollToBottom();
     },
-
 });

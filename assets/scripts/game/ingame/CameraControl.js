@@ -5,7 +5,8 @@ const FOLLOW_RATIO = 0.05;
 const FOLLOW_THRESHOLD = 64;
 const UNFOLLOW_THRESHOLD = 16;
 
-const MOVE_SPEED = 480;
+const MOVE_SPEED = 512;
+const MAX_DURATION = 1.0;
 
 cc.Class({
     extends: cc.Component,
@@ -47,8 +48,8 @@ cc.Class({
         // this.targetPos = pos;
         // this._isFollowing = true;
 
-        const distance = cc.pDistance(pos, this.node.position);
-        const duration = distance / MOVE_SPEED;
+        const distance = cc.pDistance(pos, this.node.position) * this.camera.zoomRatio;
+        const duration = Math.min(MAX_DURATION, distance / MOVE_SPEED);
         const move = cc.moveTo(duration, pos);
         this.node.stopAllActions();
         if (typeof callback === 'function')

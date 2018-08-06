@@ -65,7 +65,7 @@ class PlotParser {
     
     CHAR_ADD (args) {
         return ()=> new Promise((resolve, reject) => {
-            this.world.addCharacter(args, resolve);
+            this.world.addCharacter(args).then(resolve);
         });
     }
     

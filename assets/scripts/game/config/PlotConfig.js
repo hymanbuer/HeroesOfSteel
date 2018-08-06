@@ -190,7 +190,7 @@ function cam_move_on(x, y) {
     return { cmd: 'CAM_MOVE_ON', grid: {x, y} };
 }
 
-function char_add(uuid, defaultSkin, name, tag, x, y, rotation, fadeIn) {
+function char_add(uuid, defaultSkin, name, tag, x, y, rotation, fadeIn, disableFogEffect) {
     return {
         cmd: 'CHAR_ADD',
         uuid,
@@ -200,6 +200,7 @@ function char_add(uuid, defaultSkin, name, tag, x, y, rotation, fadeIn) {
         grid: {x, y},
         rotation,
         fadeIn,
+        disableFogEffect,
     };
 }
 
@@ -242,7 +243,7 @@ exports.startPlot =
         char_add(Skeleton.Wizard, 'Unarmed', 'Wizard', 102, 8, 58, 90),
         char_add(Skeleton.Thief, 'Unarmed', 'Thief', 104, 7, 64, 90),
     ],
-    
+/*    
     char_follow_path(101, [13, 65, 13, 66]),
     sys_delay_time(0.5),
     char_follow_path(101, [12, 65]),
@@ -321,4 +322,5 @@ exports.startPlot =
     sys_delay_time(0.2),
     sys_show_dialog(Dialogs[5]),
     sys_delay_time(0.2),
+*/
 ];

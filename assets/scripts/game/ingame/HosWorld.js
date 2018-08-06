@@ -6,6 +6,18 @@ const TiledMapControl = require('TiledMapControl');
 const FogSystem = require('FogSystem');
 const CameraControl = require('CameraControl');
 const CharacterControl = require('CharacterControl');
+const HeroesManager = require('HeroesManager')
+
+const Tags = require('Tags');
+
+function createCharacter(uuid, defaultSkin, defaultAnimation = 'Stand') {
+    return LoaderHelper.loadResByUuid(uuid).then(skeletonData => {
+        const node = SkeletonHelper.createHero(skeletonData, defaultSkin, defaultAnimation);
+        const control = node.addComponent(CharacterControl);
+        control.skeleton = node.skeleton;
+        return node;
+    });
+}
 
 cc.Class({
     extends: cc.Component,
@@ -26,7 +38,10 @@ cc.Class({
 
     init () {
         return this.tildMapCtrl.init('maps/map_2_region_10')
-            .then(()=> this.fogSystem.init() );
+            .then(()=> {
+                this.fogSystem.init();
+                this._initHeroes();
+            });
     },
 
     placeCameraOn (grid) {
@@ -43,12 +58,8 @@ cc.Class({
         this.tildMapCtrl.setTileIdAt(grid, id, layerName);
     },
 
-    addCharacter (args, callback) {
-        LoaderHelper.loadResByUuid(args.uuid).then(skeletonData => {
-            const node = SkeletonHelper.createHero(skeletonData, args.defaultSkin, 'Stand');
-            const control = node.addComponent(CharacterControl);
-            control.skeleton = node.skeleton;
-
+    addCharacter (args) {
+        return createCharacter(args.uuid, args.defaultSkin).then(node => {
             node.tag = args.tag;
             node.name = args.name;
             node.rotation = args.rotation || 0;
@@ -59,9 +70,15 @@ cc.Class({
             }
 
             this.tildMapCtrl.addCharacter(node);
-            this.fogSystem.reveal(args.grid);
+            node.disableFogEffect = args.disableFogEffect;
+            if (!args.disableFogEffect)
+                this.fogSystem.reveal(args.grid);
 
-            if (typeof callback === 'function') callback();
+            if (args.tag >= Tags.HeroStart && args.tag <= Tags.HeroEnd) {
+                this._heroesManager.addHero(node);
+            }
+
+            return node;
         });
     },
 
@@ -82,6 +99,16 @@ cc.Class({
         return this.tildMapCtrl.getPositionAt(grid);
     },
 
+    selectHero (index) {
+        const hero = this._heroesManager.selectHero(index);
+        this.cameraCtrl.moveOn(hero.position);
+    },
+
+    selectNextHero () {
+        const hero = this._heroesManager.selectNextHero();
+        this.cameraCtrl.moveOn(hero.position);
+    },
+
     // --------------------
 
     onTouchWorld (worldPos) {
@@ -94,11 +121,20 @@ cc.Class({
     },
 
     onCharacterMoveEnd (event) {
+        if (event.target.disableFogEffect) return;
+
         const newPos = event.target.position;
         const oldPos = event.detail;
         const newGrid = this.tildMapCtrl.getGridAt(newPos);
         const oldGrid = this.tildMapCtrl.getGridAt(oldPos);
         this.fogSystem.conceal(oldGrid);
         this.fogSystem.reveal(newGrid);
+    },
+
+    // ------------------
+
+    _initHeroes () {
+        this._heroesManager = new HeroesManager();
+
     },
 });
