@@ -79,9 +79,7 @@ class PlotParser {
     CHAR_FOLLOW_PATH (args) {
 		return ()=> new Promise((resolve, reject) => {
             const char = this.world.getCharacterByTag(args.tag);
-            const ctrl = char.getComponent(CharacterControl);
-            const posList = args.path.map(grid => this.world.getPositionAt(grid));
-            ctrl.followPath(posList, resolve);
+            this.world.traverseGridPath(char, args.path).then(resolve);
         });
     }
 
@@ -90,7 +88,7 @@ class PlotParser {
             const char = this.world.getCharacterByTag(args.tag);
             const ctrl = char.getComponent(CharacterControl);
             const pos = this.world.getPositionAt(args.grid);
-            ctrl.rotateTo(pos, resolve);
+            ctrl.rotateTo(pos).then(resolve);
         });
     }
 

@@ -34,7 +34,7 @@ cc.Class({
     },
 
     onLoad () {
-        this.node.on('moveend', this.onCharacterMoveEnd, this);
+        
     },
 
     start () {
@@ -116,6 +116,57 @@ cc.Class({
         this.cameraCtrl.moveOn(hero.position);
     },
 
+    traverseIndexPath (character, path) {
+        path = path.map(index => this._worldGraph.index2grid(index));
+        return this.traverseGridPath(character, path);
+    },
+
+    traverseGridPath (character, path) {
+        if (path.length === 0) return;
+
+        const control = character.getComponent(CharacterControl);
+        control.walk();
+
+        let isStop = false;
+        const stop = result => {
+            isStop = true;
+            control.stop();
+            result(false);
+        };
+
+        let walkNext = null;
+        const moveTo = (info, result) => {
+            this.onBeforeExitGrid(character, info.oldGrid).then(()=> {
+                control.rotateTo(info.pos);
+                control.moveTo(info.pos)
+                    .then(()=> this.onAfterExitGrid(character, info.oldGrid))
+                    .then(()=> this.onAfterEnterGrid(character, info.grid))
+                    .then(success => 
+                        success ? walkNext(info.next + 1, result) 
+                                : stop(result));
+            });
+        };
+
+        walkNext = (next, result) => {
+            if (isStop) return result(false);
+            if (next >= path.length) {
+                control.stop();
+                return result(true);
+            }
+
+            const grid = path[next];
+            const pos = this.tildMapCtrl.getPositionAt(grid);
+            const oldPos = cc.v2(character.position);
+            const oldGrid = this.tildMapCtrl.getGridAt(oldPos);
+            const info = {next, grid, pos, oldPos, oldGrid};
+
+            this.onBeforeEnterGrid(character, grid)
+                .then(success => success ? moveTo(info, result) : stop(result));
+        };
+
+        return new Promise(result => walkNext(0, result));
+    },
+
     // --------------------
 
     onTouchWorld (worldPos) {
@@ -127,15 +178,22 @@ cc.Class({
         this.fogSystem.reveal(grid);
     },
 
-    onCharacterMoveEnd (event) {
-        if (event.target.disableFogEffect) return;
+    onBeforeEnterGrid (character, grid) {
+        return Promise.resolve(true);
+    },
 
-        const newPos = event.target.position;
-        const oldPos = event.detail;
-        const newGrid = this.tildMapCtrl.getGridAt(newPos);
-        const oldGrid = this.tildMapCtrl.getGridAt(oldPos);
-        this.fogSystem.conceal(oldGrid);
-        this.fogSystem.reveal(newGrid);
+    onAfterEnterGrid (character, grid) {
+        this.fogSystem.reveal(grid);
+        return Promise.resolve(true);
+    },
+
+    onBeforeExitGrid (character, grid) {
+        return Promise.resolve(true);
+    },
+
+    onAfterExitGrid (character, grid) {
+        this.fogSystem.conceal(grid);
+        return Promise.resolve(true);
     },
 
     // ------------------
@@ -166,10 +224,5 @@ cc.Class({
         const getNeighbors = index => this._worldGraph.getNodeNeighbors(index);
         const getEdgeCost = (from, to) => this._worldGraph.getEdgeCost(from, to);
         this._worldSearch = new AStarSearch(this._worldGraph.maxSize, getNeighbors, getEdgeCost, heuristc);
-
-        const start = this._worldGraph.grid2index(7, 62);
-        const target = this._worldGraph.grid2index(9, 64);
-        this._worldSearch.search(start, target);
-        cc.log(this._worldSearch.path);
     },
 });
