@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "05079e4e-d92b-4b2f-a168-e4400a75818e",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "portrait_captain_barnett_giova": {
       "ver": "1.0.3",

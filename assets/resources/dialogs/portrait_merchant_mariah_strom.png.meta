@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "8c5a7a12-bf6b-49da-922d-79beb9691c48",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "portrait_merchant_mariah_strom": {
       "ver": "1.0.3",

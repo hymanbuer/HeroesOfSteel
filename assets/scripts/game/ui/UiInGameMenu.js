@@ -24,6 +24,10 @@ cc.Class({
         UiHelper.instance.showUi('prefabs/game/ui_world_map');
     },
 
+    onClickLibrary () {
+        cc.log('onClickLibrary');
+    },
+
     onClickOptions () {
         UiHelper.instance.showUi('prefabs/main/ui_options');
     },

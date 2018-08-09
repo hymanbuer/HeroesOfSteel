@@ -1,5 +1,15 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.0.1",
   "uuid": "4556e42f-8a97-4e7a-a1a3-ea503ef0e2c7",
-  "subMetas": {}
+  "subMetas": {
+    "peffect_cortias_attack2": {
+      "ver": "2.2.0",
+      "uuid": "8a6ab36d-2713-4f75-b320-d10e25659f12",
+      "type": "raw",
+      "wrapMode": "clamp",
+      "filterMode": "bilinear",
+      "premultiplyAlpha": false,
+      "subMetas": {}
+    }
+  }
 }

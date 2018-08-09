@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "68f3438c-0ca7-48da-8f4c-15e13b2aa264",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "portrait_ks_wyatt_daughter": {
       "ver": "1.0.3",

@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "de52b599-feee-4b69-8750-7fad098b4576",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "portrait_arhaive_soldier_heavy1_possessed": {
       "ver": "1.0.3",

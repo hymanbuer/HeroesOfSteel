@@ -1,9 +1,10 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.2.0",
   "uuid": "8667a138-9cb8-416e-9af6-e6208ba2ef4c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "white_char_portrait_sorcerer": {
       "ver": "1.0.3",
