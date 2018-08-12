@@ -9,11 +9,11 @@ cc.Class({
     },
 
     onEnable () {
-        this.node.on('touchmove', this.onTouchMove, this);
+        this.node.on('touchmove', this.onTouchMove, this, true);
     },
 
     onDisable () {
-        this.node.off('touchmove', this.onTouchMove, this);
+        this.node.off('touchmove', this.onTouchMove, this, true);
     },
 
     onTouchMove (event) {

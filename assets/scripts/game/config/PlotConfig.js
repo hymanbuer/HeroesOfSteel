@@ -190,13 +190,12 @@ function cam_move_on(x, y) {
     return { cmd: 'CAM_MOVE_ON', grid: {x, y} };
 }
 
-function char_add(uuid, defaultSkin, name, tag, x, y, rotation, fadeIn, disableFogEffect) {
+function char_add(uuid, defaultSkin, name, x, y, rotation, fadeIn, disableFogEffect) {
     return {
         cmd: 'CHAR_ADD',
         uuid,
         defaultSkin,
         name,
-        tag,
         grid: {x, y},
         rotation,
         fadeIn,
@@ -204,21 +203,21 @@ function char_add(uuid, defaultSkin, name, tag, x, y, rotation, fadeIn, disableF
     };
 }
 
-function char_remove(tag) {
-    return { cmd: 'CHAR_REMOVE', tag: tag };
+function char_remove(name) {
+    return { cmd: 'CHAR_REMOVE', name: name };
 }
 
-function char_follow_path(tag, path) {
+function char_follow_path(name, path) {
     const list = [];
     for (let i = 0; i < path.length; i += 2) {
         const x = path[i], y = path[i + 1];
         list.push({x, y});
     }
-    return { cmd: 'CHAR_FOLLOW_PATH', tag: tag, path: list};
+    return { cmd: 'CHAR_FOLLOW_PATH', name: name, path: list};
 }
 
-function char_face_to(tag, x, y) {
-    return { cmd: 'CHAR_FACE_TO', tag: tag, grid: {x, y} };
+function char_face_to(name, x, y) {
+    return { cmd: 'CHAR_FACE_TO', name: name, grid: {x, y} };
 }
 
 function sys_delay_time(delay) {
@@ -239,28 +238,28 @@ exports.startPlot =
     cam_place_on(12, 64),
 
     [
-        char_add(Skeleton.Outlander, 'Unarmed', 'Outlander', 101, 12, 64, 90),
-        char_add(Skeleton.Wizard, 'Unarmed', 'Wizard', 102, 8, 58, 90),
-        char_add(Skeleton.Thief, 'Unarmed', 'Thief', 104, 7, 64, 90),
+        char_add(Skeleton.Outlander, 'Unarmed', 'Outlander', 12, 64, 90),
+        char_add(Skeleton.Wizard, 'Unarmed', 'Wizard', 8, 58, 90),
+        char_add(Skeleton.Thief, 'Unarmed', 'Thief', 7, 64, 90),
     ],
-// /*    
-    char_follow_path(101, [13, 65, 13, 66]),
+/*    
+    char_follow_path('Outlander', [13, 65, 13, 66]),
     sys_delay_time(0.5),
-    char_follow_path(101, [12, 65]),
+    char_follow_path('Outlander', [12, 65]),
     sys_delay_time(0.5),
-    char_follow_path(101, [13, 64]),
+    char_follow_path('Outlander', [13, 64]),
 
     [
         sys_delay_time(0.5),
-        char_face_to(104, 8, 63),
-        char_face_to(102, 9, 59),
+        char_face_to('Thief', 8, 63),
+        char_face_to('Wizard', 9, 59),
         cam_move_on(13, 64),
     ],
 
     [
-        char_add(Skeleton.Cleric, 'Unarmed', 'Cleric', 103, 20, 61, 180, true),
-        char_add(Skeleton.MonsterHuman, 'Baron Soldier', '', 201, 19, 61, 180, true),
-        char_add(Skeleton.MonsterHuman, 'Baron Soldier', '', 202, 21, 61, 180, true),
+        char_add(Skeleton.Cleric, 'Unarmed', 'Cleric', 20, 61, 180, true),
+        char_add(Skeleton.MonsterHuman, 'Baron Soldier', 'Soldier 1', 19, 61, 180, true),
+        char_add(Skeleton.MonsterHuman, 'Baron Soldier', 'Soldier 2', 21, 61, 180, true),
     ],
     
     sys_delay_time(0.5),
@@ -274,15 +273,15 @@ exports.startPlot =
     sys_delay_time(0.2),
 
     [
-        char_follow_path(201, [18, 61, 17, 60, 16, 60, 15, 60, 14, 60, 13, 60]),
+        char_follow_path('Soldier 1', [18, 61, 17, 60, 16, 60, 15, 60, 14, 60, 13, 60]),
         cam_move_on(19, 61),
     ],
-    char_face_to(201, 13, 59),
+    char_face_to('Soldier 1', 13, 59),
     map_replace_tile(13, 59, 245, 'Background'),
 
     [
-        char_follow_path(103, [19, 61, 18, 61, 17, 61, 16, 61, 15, 61, 14, 61]),
-        char_follow_path(202, [20, 61, 19, 61, 18, 61, 17, 61, 16, 61, 15, 61]),
+        char_follow_path('Cleric', [19, 61, 18, 61, 17, 61, 16, 61, 15, 61, 14, 61]),
+        char_follow_path('Soldier 2', [20, 61, 19, 61, 18, 61, 17, 61, 16, 61, 15, 61]),
         cam_move_on(13, 61),
     ],
 
@@ -291,19 +290,19 @@ exports.startPlot =
     sys_delay_time(0.2),
 
     [
-        char_follow_path(103, [14, 60, 13, 59, 13, 58]),
+        char_follow_path('Cleric', [14, 60, 13, 59, 13, 58]),
         cam_move_on(13, 58),
-        char_face_to(101, 13, 63),
+        char_face_to('Outlander', 13, 63),
     ],
     map_replace_tile(13, 59, 246, 'Background'),
-    char_face_to(103, 13, 59),
+    char_face_to('Cleric', 13, 59),
 
     sys_delay_time(0.2),
     sys_show_dialog(Dialogs[3]),
     sys_delay_time(0.2),
 
     [
-        char_follow_path(201, [12, 61, 11, 61, 10, 61, 9, 60]),
+        char_follow_path('Soldier 1', [12, 61, 11, 61, 10, 61, 9, 60]),
         cam_move_on(11, 61),
     ],
 
@@ -312,15 +311,15 @@ exports.startPlot =
     sys_delay_time(0.2),
 
     [
-        char_follow_path(201, [10, 61, 11, 61, 12, 61, 13, 61, 14, 61, 15, 61,
+        char_follow_path('Soldier 1', [10, 61, 11, 61, 12, 61, 13, 61, 14, 61, 15, 61,
             16, 61, 17, 61, 18, 61, 19, 61, 20, 61, 21, 61, 22, 61]),
-        char_follow_path(202, [16, 61, 17, 61, 18, 61, 19, 61, 20, 61, 21, 61, 22, 61]),
+        char_follow_path('Soldier 2', [16, 61, 17, 61, 18, 61, 19, 61, 20, 61, 21, 61, 22, 61]),
     ],
-    char_remove(201),
-    char_remove(202),
+    char_remove('Soldier 1'),
+    char_remove('Soldier 2'),
 
     sys_delay_time(0.2),
     sys_show_dialog(Dialogs[5]),
     sys_delay_time(0.2),
-// */
+*/
 ];

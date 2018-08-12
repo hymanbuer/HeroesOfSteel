@@ -47,7 +47,7 @@ cc.Class({
     },
 
     _setText (text, font) {
-        this.text.string = text;
+        this.text.string = text || '';
         this.text.font = this.fonts[font || 0];
     },
 });

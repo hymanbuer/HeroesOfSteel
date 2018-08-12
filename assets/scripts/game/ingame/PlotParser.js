@@ -71,21 +71,21 @@ class PlotParser {
     
     CHAR_REMOVE (args) {
 		return ()=> new Promise((resolve, reject) => {
-            this.world.removeCharacterByTag(args.tag);
+            this.world.removeCharacterByName(args.name);
             resolve();
         });
     }
     
     CHAR_FOLLOW_PATH (args) {
 		return ()=> new Promise((resolve, reject) => {
-            const char = this.world.getCharacterByTag(args.tag);
+            const char = this.world.getCharacterByName(args.name);
             this.world.traverseGridPath(char, args.path).then(resolve);
         });
     }
 
     CHAR_FACE_TO (args) {
 		return ()=> new Promise((resolve, reject) => {
-            const char = this.world.getCharacterByTag(args.tag);
+            const char = this.world.getCharacterByName(args.name);
             const ctrl = char.getComponent(CharacterControl);
             const pos = this.world.getPositionAt(args.grid);
             ctrl.rotateTo(pos).then(resolve);

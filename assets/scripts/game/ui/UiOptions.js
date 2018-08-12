@@ -89,7 +89,7 @@ cc.Class({
     },
 
     _changeMusicVolume (step) {
-        const volume = cc.clampf(GameSetting.musicVolume + step, 10, 100);
+        const volume = cc.misc.clampf(GameSetting.musicVolume + step, 10, 100);
         if (volume === GameSetting.musicVolume) return;
 
         GameSetting.musicVolume = volume;
@@ -97,7 +97,7 @@ cc.Class({
     },
 
     _changeSoundVolume (step) {
-        const volume = cc.clampf(GameSetting.soundVolume + step, 10, 100);
+        const volume = cc.misc.clampf(GameSetting.soundVolume + step, 10, 100);
         if (volume === GameSetting.soundVolume) return;
 
         GameSetting.soundVolume = volume;

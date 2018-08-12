@@ -2,7 +2,7 @@
 const UUID = require('UUID');
 
 function getAnimationNameByPercent(percent) {
-    percent = cc.clampf(percent, 0, 100);
+    percent = cc.misc.clampf(percent, 0, 100);
     percent = Math.floor(percent / 10);
     return `${percent*10} Percent`;
 }

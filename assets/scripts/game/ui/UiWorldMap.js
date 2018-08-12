@@ -1,31 +1,26 @@
 
-// TODO Add this method if necessary
-// This method is removed because it's not existed in native.
-function getTileFlagsAt(layer, pos, y) {
-    if (layer && layer._sgNode && pos) {
-        return layer._sgNode.getTileFlagsAt(pos, y);
-    }
-    return 0;
-}
-
 function checkTileFlags(layer) {
     const TileFlag = cc.TiledMap.TileFlag;
     const layerSize = layer.getLayerSize();
     const tileSize = layer.getMapTileSize();
     for (let y = 0; y < layerSize.height; ++y) {
         for (let x = 0; x < layerSize.width; ++x) {
-            const tile = layer.getTileAt(x, y);
-            if (!tile) continue;
+            const gid = layer.getTileGIDAt(x, y);
+            if (gid === 0) continue;
 
-            // why x would be null in sometimes?
-            const flags = getTileFlagsAt(layer, x, y);
+            // bug: getTileFlagsAt
+            // when x === 0, it will report pos should be non-null
+            const flags = layer.getTileFlagsAt(cc.v2(x, y));
             if (flags === 0) continue;
 
+            const tile = layer.getTiledTileAt(x, y, true).node;
             const pos = layer.getPositionAt(x, y);
-            tile.anchorX = tile.anchorY = 0.5;
-            tile.x = pos.x + tileSize.width/2.0;
-            tile.y = pos.y + tileSize.height/2.0;
-            
+            // tile.x = pos.x + tileSize.width/2.0;
+            // tile.y = pos.y + tileSize.height/2.0;
+            // tile.width = tileSize.width;
+            // tile.height = tileSize.height;
+            // tile.anchorX = tile.anchorY = 0.5;
+
             if (flags & TileFlag.DIAGONAL) {
                 const HV = (TileFlag.HORIZONTAL | TileFlag.VERTICAL) >>> 0;
                 const flag = (flags & HV) >>> 0;
@@ -64,8 +59,6 @@ cc.Class({
         tiledMap: cc.TiledMap,
         flag: cc.Sprite,
         sword: cc.Node,
-        camera: cc.Camera,
-        view: cc.Node,
 
         flagActive: cc.SpriteFrame,
         falgInactive: cc.SpriteFrame,
@@ -82,22 +75,20 @@ cc.Class({
 
         // TODO: get the index of location
         const index = 0;
-        this._activeThisCamera();
-        this._focusOn(locations[index]);
+        // this._focusOn(locations[index]);
     },
 
     onClickBack () {
-        this._restoreOldCamera();
         this.node.destroy();
     },
 
     onScaleScreen (step) {
         this.camera.zoomRatio += step;
-        this.camera.zoomRatio = cc.clampf(this.camera.zoomRatio, 0.5, 2);
+        this.camera.zoomRatio = cc.misc.clampf(this.camera.zoomRatio, 0.5, 2);
     },
 
     onMoveScreen (delta) {
-        delta = cc.pMult(delta, 1 / this.camera.zoomRatio);
+        delta = delta.mul(1 / this.camera.zoomRatio);
         this.camera.node.x += delta.x;
         this.camera.node.y += delta.y;
     },
@@ -110,20 +101,6 @@ cc.Class({
         pos.y += tileSize.height/2.0;
         this.sword.x = pos.x;
         this.sword.y = pos.y;
-        this.camera.node.x = pos.x - this.view.width/2.0;
-        this.camera.node.y = pos.y - this.view.height/2.0;
-    },
-
-    _activeThisCamera () {
-        this.oldCamera = cc.Camera.main;
-        if (this.oldCamera)
-            this.oldCamera.enabled = false;
-        this.camera.enabled = true;
-    },
-
-    _restoreOldCamera () {
-        this.camera.enabled = false;
-        if (this.oldCamera)
-            this.oldCamera.enabled = true;
+        this.camera.node.position = this.camera.getWorldToCameraPoint(pos);
     },
 });

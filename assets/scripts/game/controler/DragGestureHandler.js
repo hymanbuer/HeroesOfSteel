@@ -9,13 +9,13 @@ cc.Class({
     },
 
     onEnable () {
-        this.node.on('touchmove', this.onTouchMove, this);
-        this.node.on('touchend', this.onTouchEnd, this);
+        this.node.on('touchmove', this.onTouchMove, this, true);
+        this.node.on('touchend', this.onTouchEnd, this, true);
     },
 
     onDisable () {
-        this.node.off('touchmove', this.onTouchMove, this);
-        this.node.off('touchend', this.onTouchEnd, this);
+        this.node.off('touchmove', this.onTouchMove, this, true);
+        this.node.off('touchend', this.onTouchEnd, this, true);
     },
 
     onTouchMove (event) {
@@ -23,9 +23,9 @@ cc.Class({
         if (touches.length > 1) return;
 
         const delta = touches[0].getDelta();
-        if (cc.pLengthSQ(delta) >= DRAG_SCALE_THRESHOLD_SQUARE) {
+        if (delta.magSqr() >= DRAG_SCALE_THRESHOLD_SQUARE) {
             this.isTriggerMove = true;
-            cc.Component.EventHandler.emitEvents(this.handlers, cc.pNeg(delta));
+            cc.Component.EventHandler.emitEvents(this.handlers, delta.neg());
         }
     },
 

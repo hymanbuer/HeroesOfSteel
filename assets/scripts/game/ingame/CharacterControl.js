@@ -16,9 +16,9 @@ cc.Class({
 
     rotateTo (target) {
         const start = cc.v2(this.node.x, this.node.y);
-        const direction = cc.pSub(target, start);
-        const radians = cc.pToAngle(direction);
-        let degrees = -cc.radiansToDegrees(radians);
+        const direction = target.sub(start);
+        const radians = Math.atan2(direction.y, direction.x);
+        let degrees = -cc.misc.radiansToDegrees(radians);
         
         let differ = degrees - this.node.rotation;
         differ %= 360;
@@ -38,8 +38,8 @@ cc.Class({
     moveTo (target) {
         const moveSpeed = 360 * this.timeScale;
         const start = cc.v2(this.node.x, this.node.y);
-        const delta = cc.pSub(target, start);
-        const duration = cc.pLength(delta) / moveSpeed;
+        const delta = target.sub(start);
+        const duration = delta.mag() / moveSpeed;
         const move = cc.moveTo(duration, target);
 
         return new Promise(resolve => {

@@ -33,7 +33,7 @@ cc.Class({
         //     }
         //     if (this._isFollowing) {
         //         this.node.position = this.node.position.lerp(this.targetPos, FOLLOW_RATIO);
-        //         if (cc.pDistance(this.targetPos, this.node.position) <= UNFOLLOW_THRESHOLD) {
+        //         if (targetPos.sub(this.node.position).mag() <= UNFOLLOW_THRESHOLD) {
         //             this._isFollowing = false;
         //         }
         //     }
@@ -48,7 +48,7 @@ cc.Class({
         // this.targetPos = pos;
         // this._isFollowing = true;
 
-        const distance = cc.pDistance(pos, this.node.position) * this.camera.zoomRatio;
+        const distance = pos.sub(this.node.position).mag() * this.camera.zoomRatio;
         const duration = Math.min(MAX_DURATION, distance / MOVE_SPEED);
         const move = cc.moveTo(duration, pos);
         this.node.stopAllActions();
@@ -60,11 +60,11 @@ cc.Class({
 
     onScaleScreen (step) {
         this.camera.zoomRatio += step;
-        this.camera.zoomRatio = cc.clampf(this.camera.zoomRatio, MIN_ZOOM_RATIO, MAX_ZOOM_RATIO);
+        this.camera.zoomRatio = cc.misc.clampf(this.camera.zoomRatio, MIN_ZOOM_RATIO, MAX_ZOOM_RATIO);
     },
 
     onMoveScreen (delta) {
-        delta = cc.pMult(delta, 1 / this.camera.zoomRatio);
+        delta = delta.mul(1 / this.camera.zoomRatio);
         this.camera.node.x += delta.x;
         this.camera.node.y += delta.y;
 

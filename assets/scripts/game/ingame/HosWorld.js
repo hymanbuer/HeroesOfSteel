@@ -67,7 +67,6 @@ cc.Class({
 
     addCharacter (args) {
         return createCharacter(args.uuid, args.defaultSkin).then(node => {
-            node.tag = args.tag;
             node.name = args.name;
             node.rotation = args.rotation || 0;
             node.position = this.tildMapCtrl.getPositionAt(args.grid);
@@ -81,25 +80,25 @@ cc.Class({
             if (!args.disableFogEffect)
                 this.fogSystem.reveal(args.grid);
 
-            if (args.tag >= Tags.HeroStart && args.tag <= Tags.HeroEnd) {
-                this._heroesManager.addHero(node);
-            }
+            // if (args.tag >= Tags.HeroStart && args.tag <= Tags.HeroEnd) {
+            //     this._heroesManager.addHero(node);
+            // }
 
             return node;
         });
     },
 
-    removeCharacterByTag (nodeOrTag) {
-        const node = this.tildMapCtrl.getCharacterByTag(nodeOrTag);
+    removeCharacterByName (name) {
+        const node = this.tildMapCtrl.getCharacterByName(name);
         if (node) {
             const grid = this.tildMapCtrl.getGridAt(node.position);
             this.fogSystem.conceal(grid);
         }
-        this.tildMapCtrl.removeCharacterByTag(nodeOrTag);
+        this.tildMapCtrl.removeCharacterByName(name);
     },
 
-    getCharacterByTag (tag) {
-        return this.tildMapCtrl.getCharacterByTag(tag);
+    getCharacterByName (name) {
+        return this.tildMapCtrl.getCharacterByName(name);
     },
 
     getPositionAt (grid) {

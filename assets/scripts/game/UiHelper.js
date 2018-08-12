@@ -38,7 +38,7 @@ const UiHelper = cc.Class({
             const promise = LoaderHelper.loadResByUrl(uiPrefabPath, cc.Prefab);
             promise.then(uiPrefab => {
                 const ui = cc.instantiate(uiPrefab);
-                this._getCanvas().addChild(ui, Number.MAX_SAFE_INTEGER);
+                this._getCanvas().addChild(ui, cc.macro.MAX_ZINDEX);
                 this._removeTips();
 
                 const oldDestroy = ui.destroy;
@@ -66,13 +66,13 @@ const UiHelper = cc.Class({
 
     _addMask () {
         const uiMask = cc.instantiate(this.uiMaskPrefab);
-        this._getCanvas().addChild(uiMask, Number.MAX_SAFE_INTEGER);
+        this._getCanvas().addChild(uiMask, cc.macro.MAX_ZINDEX);
         return uiMask;
     },
 
     _addTips () {
         this.loadingTips = cc.instantiate(this.loadingTipsPrefab);
-        this._getCanvas().addChild(this.loadingTips, Number.MAX_SAFE_INTEGER);
+        this._getCanvas().addChild(this.loadingTips, cc.macro.MAX_ZINDEX);
     },
 
     _removeTips() {

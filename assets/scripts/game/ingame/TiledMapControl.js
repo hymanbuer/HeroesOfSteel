@@ -43,19 +43,20 @@ cc.Class({
     setTileIdAt (grid, id, layerName) {
         const layer = this._tiledMap.getLayer(layerName);
         const gid = id + layer.getTileSet().firstGid;
-        layer.setTileGID(gid, grid);
+        layer.setTileGIDAt(gid, grid);
     },
 
     addCharacter (node) {
         this.layerCharacters.addChild(node);
     },
 
-    removeCharacterByTag (tag) {
-        this.layerCharacters.removeChildByTag(tag);
+    removeCharacterByName (name) {
+        const node = this.layerCharacters.getChildByName(name);
+        if (node) node.destroy();
     },
 
-    getCharacterByTag (tag) {
-        return this.layerCharacters.getChildByTag(tag);
+    getCharacterByName (name) {
+        return this.layerCharacters.getChildByName(name);
     },
 
     isBlockViewAt (grid) {
@@ -98,8 +99,8 @@ cc.Class({
     },
 
     _initLayers () {
-        this._tiledMap.getObjectGroup('Rooms').node.destroy();
-        this._tiledMap.getObjectGroup('Blocks').node.destroy();
+        // this._tiledMap.getObjectGroup('Rooms').node.destroy();
+        // this._tiledMap.getObjectGroup('Blocks').node.destroy();
 
         // origin tile layers
         this.layerBackground = this._tiledMap.getLayer('Background');
@@ -118,15 +119,15 @@ cc.Class({
         this.node.addChild(this.layerCharacters);
         this.node.addChild(this.layerTalentEffects);
 
-        this.layerBackground.node.setLocalZOrder(0);
-        this.layerEffects.node.setLocalZOrder(1);
-        this.layerForeground.node.setLocalZOrder(2);
-        this.layerBlocks.node.setLocalZOrder(3);
-        this.layerFog.node.setLocalZOrder(4);
-        this.layerCollision.node.setLocalZOrder(5);
-        this.layerRooms.node.setLocalZOrder(6);
-        this.layerSystemEffects.setLocalZOrder(4);
-        this.layerCharacters.setLocalZOrder(5);
-        this.layerTalentEffects.setLocalZOrder(6);
+        this.layerBackground.node.zIndex = 0;
+        this.layerEffects.node.zIndex = 1;
+        this.layerForeground.node.zIndex = 2;
+        this.layerBlocks.node.zIndex = 3;
+        this.layerFog.node.zIndex = 4;
+        this.layerCollision.node.zIndex = 5;
+        this.layerRooms.node.zIndex = 6;
+        this.layerSystemEffects.zIndex = 4;
+        this.layerCharacters.zIndex = 5;
+        this.layerTalentEffects.zIndex = 6;
     },
 });

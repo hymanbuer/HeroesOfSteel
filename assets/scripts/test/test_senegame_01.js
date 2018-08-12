@@ -133,7 +133,7 @@ cc.Class({
             this.fogStates.push(new Array(this.mapSize.width).fill(0));
             this.fogLightedPoints.push(new Array(this.mapSize.width + 1).fill(false))
             for (let x = 0; x < this.mapSize.width; ++x) {
-                self.layerFog.setTileGID(self.fogTileset.firstGid, {x, y});
+                self.layerFog.setTileGIDAt(self.fogTileset.firstGid, {x, y});
             }
         }
         this.fogLightedPoints.push(new Array(this.mapSize.width + 1).fill(false))
@@ -178,7 +178,7 @@ cc.Class({
                         this.fogStates[y][x] = Math.min(this.fogStates[y][x] + dir2[2], fogIds.length - 1);
                         const fogId = fogIds[this.fogStates[y][x]];
                         const gid = fogId + this.fogTileset.firstGid;
-                        this.layerFog.setTileGID(gid, {x, y});
+                        this.layerFog.setTileGIDAt(gid, {x, y});
                     }
                 }
             }
