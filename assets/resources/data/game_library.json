@@ -1,0 +1,22 @@
+{
+    "topics": [
+        [
+            1, 
+            "Attributes", 
+            "Inside their battle suits, Templar are a humans of the Zendu-bloodline. Attributes represent their physical and mental strengths and capabilities.",
+            "Any attributes can be raised to a maximum of 16."
+        ],
+        [
+            "Fortitude",
+            "Fortitude detemines the maximum amount of damage a Templar can sustain before death, and contributes to damage soak. See Toughness.",
+            "Each point results in between 4 and 7 HP, depending on the Templar type. The Captain receives the maximum amount of HP per point of Fortitude. Fortitude is a critical attribute for any Templar."
+        ]
+    ],
+
+    "initialContent": [
+        "Templar Library",
+        "Pick a topic of study from the list on the left.",
+        "To lead your squad to victory, you will need to lean the rules of the game.",
+        "Unlock the memories of your Lineage, become a Templar war master."
+    ]
+}
