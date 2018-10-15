@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "0daf66c0-2324-405d-856b-a1a227f16d74",
-  "subMetas": {
-    "peffect_paladin_concsecrateddefense": {
-      "ver": "2.2.0",
-      "uuid": "76921da8-3397-425d-acd6-f9da21c6f479",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }

@@ -1,0 +1,3 @@
+
+const TalentConfig = module.exports = {};
+

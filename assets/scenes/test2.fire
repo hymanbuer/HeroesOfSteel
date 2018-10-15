@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.7184104759575747,
-      "y": 0.7184104759575747,
+      "x": 0.5150842361144562,
+      "y": 0.5150842361144562,
       "z": 1
     },
     "_quat": {
@@ -120,7 +120,7 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "_localZOrder": 2172,
+    "_localZOrder": 2239,
     "groupIndex": 0,
     "_id": "0a5gcLaFFOGLHYvaRk8FdI"
   },
@@ -2566,6 +2566,9 @@
     },
     "symbolAtals": {
       "__uuid__": "f5c863b3-2159-44ba-a766-4abe992bff7d"
+    },
+    "library": {
+      "__uuid__": "52c62348-024b-4170-95eb-06426a0704d3"
     },
     "catalog": {
       "__id__": 12

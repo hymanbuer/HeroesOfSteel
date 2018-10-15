@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "5307f359-998b-4dde-9caf-0847057632bb",
-  "subMetas": {
-    "peffect_paladin_cortiasshield": {
-      "ver": "2.2.0",
-      "uuid": "c88bce39-d0c4-47fb-9dd2-de66f0bac7d8",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }

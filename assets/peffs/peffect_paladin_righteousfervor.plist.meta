@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "5181ff8c-9a13-42db-8e4f-543d1f142028",
-  "subMetas": {
-    "peffect_paladin_righteousfervor": {
-      "ver": "2.2.0",
-      "uuid": "bf26eb08-a50f-47c7-8e75-88d3fe6f0181",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }

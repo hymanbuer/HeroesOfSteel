@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "b729a3f6-f5be-4322-84b6-1f960c805efe",
-  "subMetas": {
-    "peffect_paladin_healing3": {
-      "ver": "2.2.0",
-      "uuid": "b521d80d-5c8f-4544-abf3-e7f816233564",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }

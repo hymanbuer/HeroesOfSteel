@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "36e710ff-e08d-4ec0-bb26-db98cfefe175",
-  "subMetas": {
-    "peffect_paladin_holystrickening": {
-      "ver": "2.2.0",
-      "uuid": "7c347b23-8345-4f44-880f-bf7e540df7de",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }

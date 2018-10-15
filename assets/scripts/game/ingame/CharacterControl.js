@@ -63,5 +63,27 @@ cc.Class({
     stop () {
         this.node.stopAllActions();
         this.stand();
+    },
+
+    play (animationName) {
+        if (this.skeleton.animation === animationName)
+            return Promise.reject(`already play: ${animationName}`);
+
+        return new Promise(resolve => {
+            const trackEntry = this.skeleton.setAnimation(0, animationName, false);
+            this.skeleton.timeScale = 1.0;
+            this.skeleton.setTrackCompleteListener(trackEntry, ()=> {
+                this.skeleton.setAnimation(0, 'Stand', true);
+                resolve();
+            });
+        });
+    },
+
+    getBonePosition (boneName) {
+        const bone = this.skeleton.findBone(boneName);
+        if (!bone) return cc.v2(0, 0);
+
+        const offset = cc.v2(bone.x, bone.y);
+        return this.skeleton.node.convertToWorldSpaceAR(offset);
     }
 });

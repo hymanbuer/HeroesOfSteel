@@ -1,15 +1,5 @@
 {
-  "ver": "2.0.1",
+  "ver": "2.0.0",
   "uuid": "7db5c995-0dc0-4455-a88c-582125096a7c",
-  "subMetas": {
-    "peffect_cortias_arrow": {
-      "ver": "2.2.0",
-      "uuid": "70e7e3e2-2798-41bb-87bf-b0caea9818bc",
-      "type": "raw",
-      "wrapMode": "clamp",
-      "filterMode": "bilinear",
-      "premultiplyAlpha": false,
-      "subMetas": {}
-    }
-  }
+  "subMetas": {}
 }
