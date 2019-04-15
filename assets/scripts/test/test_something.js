@@ -208,10 +208,7 @@ cc.Class({
             })));
 
             const rotation = getMinRotationBy(fire.position, targetPosition);
-            const rotateSpeed = 720 * this.timeScale;
-            const duration = Math.abs(rotation) / rotateSpeed;
-            const rotate = cc.rotateBy(duration, rotation);
-            fire.runAction(rotate);
+            fire.rotation = rotation
         });
     },
 

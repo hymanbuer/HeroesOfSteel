@@ -41,7 +41,7 @@ cc.Class({
     },
 
     onClickNext () {
-        this.world.selectNextHero();
+        // this.world.selectNextHero();
     },
 
     onClickHeroList () {
@@ -63,11 +63,11 @@ cc.Class({
     },
 
     onClickTalentIcon () {
-        this.isTalentSelected = !this.isTalentSelected;
-        this.btnInfo.active = this.isTalentSelected;
-        const widget = this.talentsPanel.getComponent(cc.Widget);
-        const scroll = this.talentsPanel.getComponent(cc.ScrollView);
-        widget.bottom = this.isTalentSelected ? 137+52 : 137;
+        // this.isTalentSelected = !this.isTalentSelected;
+        // this.btnInfo.active = this.isTalentSelected;
+        // const widget = this.talentsPanel.getComponent(cc.Widget);
+        // const scroll = this.talentsPanel.getComponent(cc.ScrollView);
+        // widget.bottom = this.isTalentSelected ? 137+52 : 137;
         // widget.updateAlignment();
         // scroll.scrollToBottom();
     },
