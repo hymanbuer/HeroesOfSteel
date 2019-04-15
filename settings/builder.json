@@ -1,19 +1,31 @@
 {
-  "appKey": "",
-  "appSecret": "",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
   "encryptJs": true,
   "excludeScenes": [
-    "049cefe1-35c0-4886-9815-b235c3f8164f"
+    "049cefe1-35c0-4886-9815-b235c3f8164f",
+    "b9fd4e01-bbd0-4ffe-aa8d-77c52727a290",
+    "12b427ae-6ba8-4c37-8eb9-1e4540570c43"
   ],
   "fb-instant-games": {},
-  "includeAnySDK": false,
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": false,
-  "jailbreakPlatform": false,
   "md5Cache": true,
   "mergeStartScene": false,
-  "oauthLoginServer": "",
   "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
@@ -22,12 +34,10 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.HeroesOfSteel",
-  "privateKey": "",
   "qqplay": {
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait"
   },
-  "renderMode": "0",
   "startScene": "408e5c63-4c22-4560-b94f-d0641712455e",
   "title": "HeroesOfSteel",
   "webOrientation": "landscape",
