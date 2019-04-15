@@ -105,10 +105,10 @@ p.footer {
 }
 
 .loading {
-  width: 80px;
-  height: 98px;
+  width: 386px;
+  height: 144px;
   margin-bottom: 12px;
-  background: url(./loading.gif) no-repeat center;
+  background: url(./main_banner.png) no-repeat center;
 }
 
 .tips {
